@@ -3,34 +3,33 @@ from django.shortcuts import render
 # Create your views here.
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.parsers import MultiPartParser, FormParser
+import pandas as pd
+import json
+import os
+from django.http import JsonResponse
+
 
 class CicloviasAPIView(APIView):
     def get(self, request):
-        ciclovias_data = {
-            "type": "FeatureCollection",
-            "features": [
-                {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [-46.625290, -23.533773]
-                    },
-                    "properties": {
-                        "name": "Ciclovia 1",
-                        "description": "Descrição da Ciclovia 1"
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [-46.620290, -23.530773]
-                    },
-                    "properties": {
-                        "name": "Ciclovia 2",
-                        "description": "Descrição da Ciclovia 2"
-                    }
-                }
-            ]
-        }
-        return Response(ciclovias_data)
+        # Show current path
+        print(f"Current working directory: {os.getcwd()}")
+        geojson_file_path = os.path.join("ciclovias/estacoes", "estacoes.geojson")
+        print(f"GeoJSON file path: {geojson_file_path}")
+
+        try:
+            # Open and load the GeoJSON file
+            with open(geojson_file_path, "r", encoding="utf-8") as file:
+                ciclovias_data = json.load(file)
+        except FileNotFoundError:
+            print("GeoJSON file not found.")
+            return Response({"error": "GeoJSON file not found."}, status=404)
+        except json.JSONDecodeError as e:
+            print(f"Invalid GeoJSON format: {e}")
+            return Response({"error": "Invalid GeoJSON format."}, status=400)
+        except Exception as e:
+            print(f"Unexpected error: {e}")
+            return Response({"error": "Internal server error."}, status=500)
+
+        print("GeoJSON data loaded successfully.")
+        return JsonResponse(ciclovias_data, safe=False)
