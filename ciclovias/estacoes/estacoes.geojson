@@ -10,7 +10,10 @@
                     -23.5668309564147
                 ]
             },
-            "properties": "Largo da Batata"
+            "properties": {
+                "name": "Largo da Batata",
+                "id": 0
+            }
         },
         {
             "type": "Feature",
@@ -21,7 +24,10 @@
                     -23.56692
                 ]
             },
-            "properties": "SESC Pinheiros"
+            "properties": {
+                "name": "SESC Pinheiros",
+                "id": 1
+            }
         },
         {
             "type": "Feature",
@@ -32,7 +38,10 @@
                     -23.5664776214954
                 ]
             },
-            "properties": "CPTM Pinheiros"
+            "properties": {
+                "name": "CPTM Pinheiros",
+                "id": 2
+            }
         },
         {
             "type": "Feature",
@@ -43,7 +52,10 @@
                     -23.5691446194095
                 ]
             },
-            "properties": "Rua Diogo Moreira"
+            "properties": {
+                "name": "Rua Diogo Moreira",
+                "id": 3
+            }
         },
         {
             "type": "Feature",
@@ -54,7 +66,10 @@
                     -23.5698942495294
                 ]
             },
-            "properties": "Chicão Vive"
+            "properties": {
+                "name": "Chicão Vive",
+                "id": 4
+            }
         },
         {
             "type": "Feature",
@@ -65,7 +80,10 @@
                     -23.5721366373874
                 ]
             },
-            "properties": "Rua Manduri"
+            "properties": {
+                "name": "Rua Manduri",
+                "id": 5
+            }
         },
         {
             "type": "Feature",
@@ -76,7 +94,10 @@
                     -23.5725441757412
                 ]
             },
-            "properties": "Praça Joaquim Roberto"
+            "properties": {
+                "name": "Praça Joaquim Roberto",
+                "id": 6
+            }
         },
         {
             "type": "Feature",
@@ -87,7 +108,10 @@
                     -23.575610896422
                 ]
             },
-            "properties": "Rua Grécia"
+            "properties": {
+                "name": "Rua Grécia",
+                "id": 7
+            }
         },
         {
             "type": "Feature",
@@ -98,7 +122,10 @@
                     -23.5746792860054
                 ]
             },
-            "properties": "Rua Campo Verde"
+            "properties": {
+                "name": "Rua Campo Verde",
+                "id": 8
+            }
         },
         {
             "type": "Feature",
@@ -109,7 +136,10 @@
                     -23.5655687544014
                 ]
             },
-            "properties": "Praça Faria Lima"
+            "properties": {
+                "name": "Praça Faria Lima",
+                "id": 9
+            }
         },
         {
             "type": "Feature",
@@ -120,7 +150,10 @@
                     -23.5661641536793
                 ]
             },
-            "properties": "Largo da Batata II"
+            "properties": {
+                "name": "Largo da Batata II",
+                "id": 10
+            }
         },
         {
             "type": "Feature",
@@ -131,7 +164,10 @@
                     -23.5795958800921
                 ]
             },
-            "properties": "Esporte Clube Pinheiros Funcionários"
+            "properties": {
+                "name": "Esporte Clube Pinheiros Funcionários",
+                "id": 11
+            }
         },
         {
             "type": "Feature",
@@ -142,7 +178,10 @@
                     -23.5808802329648
                 ]
             },
-            "properties": "Museu da Casa Brasileira"
+            "properties": {
+                "name": "Museu da Casa Brasileira",
+                "id": 12
+            }
         },
         {
             "type": "Feature",
@@ -153,7 +192,10 @@
                     -23.5824196171547
                 ]
             },
-            "properties": "Rua Prof. Artur Ramos"
+            "properties": {
+                "name": "Rua Prof. Artur Ramos",
+                "id": 13
+            }
         },
         {
             "type": "Feature",
@@ -164,7 +206,10 @@
                     -23.5823017032445
                 ]
             },
-            "properties": "Esporte Clube Pinheiros Boliche"
+            "properties": {
+                "name": "Esporte Clube Pinheiros Boliche",
+                "id": 14
+            }
         },
         {
             "type": "Feature",
@@ -175,7 +220,10 @@
                     -23.5843221297715
                 ]
             },
-            "properties": "Rua José Gonçalves de Oliveira"
+            "properties": {
+                "name": "Rua José Gonçalves de Oliveira",
+                "id": 15
+            }
         },
         {
             "type": "Feature",
@@ -186,7 +234,10 @@
                     -23.5866957209891
                 ]
             },
-            "properties": "Itaú Faria Lima"
+            "properties": {
+                "name": "Itaú Faria Lima",
+                "id": 16
+            }
         },
         {
             "type": "Feature",
@@ -197,7 +248,10 @@
                     -23.5957237516205
                 ]
             },
-            "properties": "Av. Dr. Cardoso de Melo"
+            "properties": {
+                "name": "Av. Dr. Cardoso de Melo",
+                "id": 17
+            }
         },
         {
             "type": "Feature",
@@ -208,7 +262,10 @@
                     -23.5850202930326
                 ]
             },
-            "properties": "CPTM Cidade Jardim"
+            "properties": {
+                "name": "CPTM Cidade Jardim",
+                "id": 18
+            }
         },
         {
             "type": "Feature",
@@ -219,7 +276,10 @@
                     -23.5890444167307
                 ]
             },
-            "properties": "Parque do Povo portão 1"
+            "properties": {
+                "name": "Parque do Povo portão 1",
+                "id": 19
+            }
         },
         {
             "type": "Feature",
@@ -230,7 +290,10 @@
                     -23.5892048894301
                 ]
             },
-            "properties": "Rua Leopoldo Couto"
+            "properties": {
+                "name": "Rua Leopoldo Couto",
+                "id": 20
+            }
         },
         {
             "type": "Feature",
@@ -241,7 +304,10 @@
                     -23.5939175701022
                 ]
             },
-            "properties": "CPTM Vila Olímpia"
+            "properties": {
+                "name": "CPTM Vila Olímpia",
+                "id": 21
+            }
         },
         {
             "type": "Feature",
@@ -252,7 +318,10 @@
                     -23.5926646139517
                 ]
             },
-            "properties": "Rua Funchal"
+            "properties": {
+                "name": "Rua Funchal",
+                "id": 22
+            }
         },
         {
             "type": "Feature",
@@ -263,7 +332,10 @@
                     -23.5927625500081
                 ]
             },
-            "properties": "Rua Helena"
+            "properties": {
+                "name": "Rua Helena",
+                "id": 23
+            }
         },
         {
             "type": "Feature",
@@ -274,7 +346,10 @@
                     -23.5954418983024
                 ]
             },
-            "properties": "Praça Pierre Germayel"
+            "properties": {
+                "name": "Praça Pierre Germayel",
+                "id": 24
+            }
         },
         {
             "type": "Feature",
@@ -285,7 +360,10 @@
                     -23.5933504143939
                 ]
             },
-            "properties": "Rua Comendador Miguel Calfat"
+            "properties": {
+                "name": "Rua Comendador Miguel Calfat",
+                "id": 25
+            }
         },
         {
             "type": "Feature",
@@ -296,7 +374,10 @@
                     -23.5902983608513
                 ]
             },
-            "properties": "Bandeira Paulista"
+            "properties": {
+                "name": "Bandeira Paulista",
+                "id": 26
+            }
         },
         {
             "type": "Feature",
@@ -307,7 +388,10 @@
                     -23.5904191029121
                 ]
             },
-            "properties": "Ibirapuera Portão 07"
+            "properties": {
+                "name": "Ibirapuera Portão 07",
+                "id": 27
+            }
         },
         {
             "type": "Feature",
@@ -318,7 +402,10 @@
                     -23.508128
                 ]
             },
-            "properties": "Parque da Juventude"
+            "properties": {
+                "name": "Parque da Juventude",
+                "id": 29
+            }
         },
         {
             "type": "Feature",
@@ -329,7 +416,10 @@
                     -23.5872880300388
                 ]
             },
-            "properties": "Rua Benedito Lapin"
+            "properties": {
+                "name": "Rua Benedito Lapin",
+                "id": 30
+            }
         },
         {
             "type": "Feature",
@@ -340,7 +430,10 @@
                     -23.5867932793431
                 ]
             },
-            "properties": "E.E. Aristides de Castro"
+            "properties": {
+                "name": "E.E. Aristides de Castro",
+                "id": 31
+            }
         },
         {
             "type": "Feature",
@@ -351,7 +444,10 @@
                     -23.5876426356319
                 ]
             },
-            "properties": "Edifício Infinity"
+            "properties": {
+                "name": "Edifício Infinity",
+                "id": 32
+            }
         },
         {
             "type": "Feature",
@@ -362,7 +458,10 @@
                     -23.5822156117651
                 ]
             },
-            "properties": "Rua Jesuíno Arruda"
+            "properties": {
+                "name": "Rua Jesuíno Arruda",
+                "id": 33
+            }
         },
         {
             "type": "Feature",
@@ -373,7 +472,10 @@
                     -23.5836480572258
                 ]
             },
-            "properties": "Brasília"
+            "properties": {
+                "name": "Brasília",
+                "id": 34
+            }
         },
         {
             "type": "Feature",
@@ -384,7 +486,10 @@
                     -23.65562
                 ]
             },
-            "properties": "CPTM Santo Amaro"
+            "properties": {
+                "name": "CPTM Santo Amaro",
+                "id": 35
+            }
         },
         {
             "type": "Feature",
@@ -395,7 +500,10 @@
                     -23.5043385999018
                 ]
             },
-            "properties": "Herois da FEB"
+            "properties": {
+                "name": "Herois da FEB",
+                "id": 36
+            }
         },
         {
             "type": "Feature",
@@ -406,7 +514,10 @@
                     -23.5033576293652
                 ]
             },
-            "properties": "Pç Tenente Coronel Heleuses Nogueira"
+            "properties": {
+                "name": "Pç Tenente Coronel Heleuses Nogueira",
+                "id": 38
+            }
         },
         {
             "type": "Feature",
@@ -417,7 +528,10 @@
                     -23.5787313776399
                 ]
             },
-            "properties": "Suzano"
+            "properties": {
+                "name": "Suzano",
+                "id": 39
+            }
         },
         {
             "type": "Feature",
@@ -428,7 +542,10 @@
                     -23.5795039033974
                 ]
             },
-            "properties": "Itacema"
+            "properties": {
+                "name": "Itacema",
+                "id": 40
+            }
         },
         {
             "type": "Feature",
@@ -439,7 +556,10 @@
                     -23.5825417630555
                 ]
             },
-            "properties": "Rua Prof. Carlos de Carvalho"
+            "properties": {
+                "name": "Rua Prof. Carlos de Carvalho",
+                "id": 41
+            }
         },
         {
             "type": "Feature",
@@ -450,7 +570,10 @@
                     -23.503586032441
                 ]
             },
-            "properties": "Braz Leme"
+            "properties": {
+                "name": "Braz Leme",
+                "id": 42
+            }
         },
         {
             "type": "Feature",
@@ -461,7 +584,10 @@
                     -23.5871323494481
                 ]
             },
-            "properties": "Google São Paulo"
+            "properties": {
+                "name": "Google São Paulo",
+                "id": 43
+            }
         },
         {
             "type": "Feature",
@@ -472,7 +598,10 @@
                     -23.5578862207592
                 ]
             },
-            "properties": "Henrique Schaumann"
+            "properties": {
+                "name": "Henrique Schaumann",
+                "id": 44
+            }
         },
         {
             "type": "Feature",
@@ -483,7 +612,10 @@
                     -23.5533637490461
                 ]
             },
-            "properties": "Praça Caetano Fracaroli"
+            "properties": {
+                "name": "Praça Caetano Fracaroli",
+                "id": 45
+            }
         },
         {
             "type": "Feature",
@@ -494,7 +626,10 @@
                     -23.5552633465693
                 ]
             },
-            "properties": "R. Lisboa"
+            "properties": {
+                "name": "R. Lisboa",
+                "id": 46
+            }
         },
         {
             "type": "Feature",
@@ -505,7 +640,10 @@
                     -23.5561973682702
                 ]
             },
-            "properties": "EBAC"
+            "properties": {
+                "name": "EBAC",
+                "id": 47
+            }
         },
         {
             "type": "Feature",
@@ -516,7 +654,10 @@
                     -23.5101281717627
                 ]
             },
-            "properties": "Euclides da Silveira"
+            "properties": {
+                "name": "Euclides da Silveira",
+                "id": 48
+            }
         },
         {
             "type": "Feature",
@@ -527,7 +668,10 @@
                     -23.518556638408
                 ]
             },
-            "properties": "Ponte da Casa Verde"
+            "properties": {
+                "name": "Ponte da Casa Verde",
+                "id": 49
+            }
         },
         {
             "type": "Feature",
@@ -538,7 +682,10 @@
                     -23.5232231767525
                 ]
             },
-            "properties": "Pça. Pe. Luís Alves de S. Castro"
+            "properties": {
+                "name": "Pça. Pe. Luís Alves de S. Castro",
+                "id": 50
+            }
         },
         {
             "type": "Feature",
@@ -549,7 +696,10 @@
                     -23.5685869226542
                 ]
             },
-            "properties": "Club Athletico Paulistano"
+            "properties": {
+                "name": "Club Athletico Paulistano",
+                "id": 51
+            }
         },
         {
             "type": "Feature",
@@ -560,7 +710,10 @@
                     -23.5220468993985
                 ]
             },
-            "properties": "Av. Marques de São Vicente"
+            "properties": {
+                "name": "Av. Marques de São Vicente",
+                "id": 52
+            }
         },
         {
             "type": "Feature",
@@ -571,7 +724,10 @@
                     -23.5252688094018
                 ]
             },
-            "properties": "Terminal Barra Funda "
+            "properties": {
+                "name": "Terminal Barra Funda ",
+                "id": 53
+            }
         },
         {
             "type": "Feature",
@@ -582,7 +738,10 @@
                     -23.5268792944008
                 ]
             },
-            "properties": "Metrô Barra Funda"
+            "properties": {
+                "name": "Metrô Barra Funda",
+                "id": 54
+            }
         },
         {
             "type": "Feature",
@@ -593,7 +752,10 @@
                     -23.5302119408073
                 ]
             },
-            "properties": "Matarazzo"
+            "properties": {
+                "name": "Matarazzo",
+                "id": 55
+            }
         },
         {
             "type": "Feature",
@@ -604,7 +766,10 @@
                     -23.5703822522674
                 ]
             },
-            "properties": "Praça Nicolau Scarpa"
+            "properties": {
+                "name": "Praça Nicolau Scarpa",
+                "id": 56
+            }
         },
         {
             "type": "Feature",
@@ -615,7 +780,10 @@
                     -23.5657634935473
                 ]
             },
-            "properties": "Oscar Freire"
+            "properties": {
+                "name": "Oscar Freire",
+                "id": 57
+            }
         },
         {
             "type": "Feature",
@@ -626,7 +794,10 @@
                     -23.5699175975531
                 ]
             },
-            "properties": "Pamplona"
+            "properties": {
+                "name": "Pamplona",
+                "id": 59
+            }
         },
         {
             "type": "Feature",
@@ -637,7 +808,10 @@
                     -23.5727335213451
                 ]
             },
-            "properties": "Queluz"
+            "properties": {
+                "name": "Queluz",
+                "id": 60
+            }
         },
         {
             "type": "Feature",
@@ -648,7 +822,10 @@
                     -23.5770321440522
                 ]
             },
-            "properties": "Ginásio Ibirapuera"
+            "properties": {
+                "name": "Ginásio Ibirapuera",
+                "id": 61
+            }
         },
         {
             "type": "Feature",
@@ -659,7 +836,10 @@
                     -23.5801537882927
                 ]
             },
-            "properties": "Círculo Militar"
+            "properties": {
+                "name": "Círculo Militar",
+                "id": 62
+            }
         },
         {
             "type": "Feature",
@@ -670,7 +850,10 @@
                     -23.5803036309472
                 ]
             },
-            "properties": "Viaduto Tutóia"
+            "properties": {
+                "name": "Viaduto Tutóia",
+                "id": 63
+            }
         },
         {
             "type": "Feature",
@@ -681,7 +864,10 @@
                     -23.5742984595697
                 ]
             },
-            "properties": "8º Batalhão"
+            "properties": {
+                "name": "8º Batalhão",
+                "id": 64
+            }
         },
         {
             "type": "Feature",
@@ -692,7 +878,10 @@
                     -23.570389641893
                 ]
             },
-            "properties": "Alameda J. Eugênio de Lima"
+            "properties": {
+                "name": "Alameda J. Eugênio de Lima",
+                "id": 65
+            }
         },
         {
             "type": "Feature",
@@ -703,7 +892,10 @@
                     -23.5281721668385
                 ]
             },
-            "properties": "Pça David Raw"
+            "properties": {
+                "name": "Pça David Raw",
+                "id": 66
+            }
         },
         {
             "type": "Feature",
@@ -714,7 +906,10 @@
                     -23.5645177063061
                 ]
             },
-            "properties": "Praça Alexandre de Gusmão"
+            "properties": {
+                "name": "Praça Alexandre de Gusmão",
+                "id": 67
+            }
         },
         {
             "type": "Feature",
@@ -725,7 +920,10 @@
                     -23.5252011996403
                 ]
             },
-            "properties": "SESC Pompéia"
+            "properties": {
+                "name": "SESC Pompéia",
+                "id": 68
+            }
         },
         {
             "type": "Feature",
@@ -736,7 +934,10 @@
                     -23.5295509375709
                 ]
             },
-            "properties": "Palestra Itália"
+            "properties": {
+                "name": "Palestra Itália",
+                "id": 69
+            }
         },
         {
             "type": "Feature",
@@ -747,7 +948,10 @@
                     -23.562835912553
                 ]
             },
-            "properties": "Augusta"
+            "properties": {
+                "name": "Augusta",
+                "id": 70
+            }
         },
         {
             "type": "Feature",
@@ -758,7 +962,10 @@
                     -23.5559579861242
                 ]
             },
-            "properties": "Praça do Ciclista"
+            "properties": {
+                "name": "Praça do Ciclista",
+                "id": 71
+            }
         },
         {
             "type": "Feature",
@@ -769,7 +976,10 @@
                     -23.5584250062578
                 ]
             },
-            "properties": "Shopping Center 3"
+            "properties": {
+                "name": "Shopping Center 3",
+                "id": 72
+            }
         },
         {
             "type": "Feature",
@@ -780,7 +990,10 @@
                     -23.56004
                 ]
             },
-            "properties": "Parque Prefeito Mário Covas"
+            "properties": {
+                "name": "Parque Prefeito Mário Covas",
+                "id": 73
+            }
         },
         {
             "type": "Feature",
@@ -791,7 +1004,10 @@
                     -23.5354050849495
                 ]
             },
-            "properties": "João Ramalho"
+            "properties": {
+                "name": "João Ramalho",
+                "id": 74
+            }
         },
         {
             "type": "Feature",
@@ -802,7 +1018,10 @@
                     -23.53826440252
                 ]
             },
-            "properties": "Caiubí"
+            "properties": {
+                "name": "Caiubí",
+                "id": 75
+            }
         },
         {
             "type": "Feature",
@@ -813,7 +1032,10 @@
                     -23.5645728749771
                 ]
             },
-            "properties": "Alameda Campinas"
+            "properties": {
+                "name": "Alameda Campinas",
+                "id": 76
+            }
         },
         {
             "type": "Feature",
@@ -824,7 +1046,10 @@
                     -23.5662497091298
                 ]
             },
-            "properties": "Paulista 778"
+            "properties": {
+                "name": "Paulista 778",
+                "id": 77
+            }
         },
         {
             "type": "Feature",
@@ -835,7 +1060,10 @@
                     -23.5681059122191
                 ]
             },
-            "properties": "Metrô Brigadeiro"
+            "properties": {
+                "name": "Metrô Brigadeiro",
+                "id": 78
+            }
         },
         {
             "type": "Feature",
@@ -846,7 +1074,10 @@
                     -23.5666631175994
                 ]
             },
-            "properties": "R. Carlos Sampaio"
+            "properties": {
+                "name": "R. Carlos Sampaio",
+                "id": 79
+            }
         },
         {
             "type": "Feature",
@@ -857,7 +1088,10 @@
                     -23.5681587220928
                 ]
             },
-            "properties": "R. Manoel da Nóbrega "
+            "properties": {
+                "name": "R. Manoel da Nóbrega ",
+                "id": 80
+            }
         },
         {
             "type": "Feature",
@@ -868,7 +1102,10 @@
                     -23.5738230003483
                 ]
             },
-            "properties": "Tutóia"
+            "properties": {
+                "name": "Tutóia",
+                "id": 81
+            }
         },
         {
             "type": "Feature",
@@ -879,7 +1116,10 @@
                     -23.541413385853
                 ]
             },
-            "properties": "Praça Irmãos Karmam"
+            "properties": {
+                "name": "Praça Irmãos Karmam",
+                "id": 82
+            }
         },
         {
             "type": "Feature",
@@ -890,7 +1130,10 @@
                     -23.5752978
                 ]
             },
-            "properties": "Sampaio Viana"
+            "properties": {
+                "name": "Sampaio Viana",
+                "id": 83
+            }
         },
         {
             "type": "Feature",
@@ -901,7 +1144,10 @@
                     -23.5316825837021
                 ]
             },
-            "properties": "Parque da Água Branca"
+            "properties": {
+                "name": "Parque da Água Branca",
+                "id": 84
+            }
         },
         {
             "type": "Feature",
@@ -912,7 +1158,10 @@
                     -23.570439240226
                 ]
             },
-            "properties": "Itaú Cultural"
+            "properties": {
+                "name": "Itaú Cultural",
+                "id": 85
+            }
         },
         {
             "type": "Feature",
@@ -923,7 +1172,10 @@
                     -23.6049435587906
                 ]
             },
-            "properties": "Praça Gen. Gentil Falcão"
+            "properties": {
+                "name": "Praça Gen. Gentil Falcão",
+                "id": 86
+            }
         },
         {
             "type": "Feature",
@@ -934,7 +1186,10 @@
                     -23.6118685865358
                 ]
             },
-            "properties": "Rua James Watt"
+            "properties": {
+                "name": "Rua James Watt",
+                "id": 87
+            }
         },
         {
             "type": "Feature",
@@ -945,7 +1200,10 @@
                     -23.6089863999008
                 ]
             },
-            "properties": "Rua Hans Oersted"
+            "properties": {
+                "name": "Rua Hans Oersted",
+                "id": 88
+            }
         },
         {
             "type": "Feature",
@@ -956,7 +1214,10 @@
                     -23.6023654922839
                 ]
             },
-            "properties": "Praça João Duran Alonso"
+            "properties": {
+                "name": "Praça João Duran Alonso",
+                "id": 89
+            }
         },
         {
             "type": "Feature",
@@ -967,7 +1228,10 @@
                     -23.6090278763808
                 ]
             },
-            "properties": "Rua Flórida"
+            "properties": {
+                "name": "Rua Flórida",
+                "id": 90
+            }
         },
         {
             "type": "Feature",
@@ -978,7 +1242,10 @@
                     -23.6076225615591
                 ]
             },
-            "properties": "Rua Indiana"
+            "properties": {
+                "name": "Rua Indiana",
+                "id": 91
+            }
         },
         {
             "type": "Feature",
@@ -989,7 +1256,10 @@
                     -23.6034624685839
                 ]
             },
-            "properties": "Praça Oswaldo Varella"
+            "properties": {
+                "name": "Praça Oswaldo Varella",
+                "id": 92
+            }
         },
         {
             "type": "Feature",
@@ -1000,7 +1270,10 @@
                     -23.6073571436751
                 ]
             },
-            "properties": "Flórida 1670"
+            "properties": {
+                "name": "Flórida 1670",
+                "id": 93
+            }
         },
         {
             "type": "Feature",
@@ -1011,7 +1284,10 @@
                     -23.6121427531147
                 ]
             },
-            "properties": "R. Lee de Forest"
+            "properties": {
+                "name": "R. Lee de Forest",
+                "id": 94
+            }
         },
         {
             "type": "Feature",
@@ -1022,7 +1298,10 @@
                     -23.6039010735058
                 ]
             },
-            "properties": "Rua Andrade Pertence"
+            "properties": {
+                "name": "Rua Andrade Pertence",
+                "id": 95
+            }
         },
         {
             "type": "Feature",
@@ -1033,7 +1312,10 @@
                     -23.6013159108738
                 ]
             },
-            "properties": "Rua Alvorada"
+            "properties": {
+                "name": "Rua Alvorada",
+                "id": 96
+            }
         },
         {
             "type": "Feature",
@@ -1044,7 +1326,10 @@
                     -23.6001574646657
                 ]
             },
-            "properties": "Praça Procópio Ferreira"
+            "properties": {
+                "name": "Praça Procópio Ferreira",
+                "id": 97
+            }
         },
         {
             "type": "Feature",
@@ -1055,7 +1340,10 @@
                     -23.5966593672495
                 ]
             },
-            "properties": "Cubo Itaú"
+            "properties": {
+                "name": "Cubo Itaú",
+                "id": 98
+            }
         },
         {
             "type": "Feature",
@@ -1066,7 +1354,10 @@
                     -23.5977973921346
                 ]
             },
-            "properties": "Rua Júlio Diniz"
+            "properties": {
+                "name": "Rua Júlio Diniz",
+                "id": 99
+            }
         },
         {
             "type": "Feature",
@@ -1077,7 +1368,10 @@
                     -23.5970325358107
                 ]
             },
-            "properties": "Rua Quatá"
+            "properties": {
+                "name": "Rua Quatá",
+                "id": 100
+            }
         },
         {
             "type": "Feature",
@@ -1088,7 +1382,10 @@
                     -23.5997736418236
                 ]
             },
-            "properties": "Rua Gomes de Carvalho"
+            "properties": {
+                "name": "Rua Gomes de Carvalho",
+                "id": 101
+            }
         },
         {
             "type": "Feature",
@@ -1099,7 +1396,10 @@
                     -23.5978131886461
                 ]
             },
-            "properties": "Insper"
+            "properties": {
+                "name": "Insper",
+                "id": 102
+            }
         },
         {
             "type": "Feature",
@@ -1110,7 +1410,10 @@
                     -23.6006795981776
                 ]
             },
-            "properties": "Baluarte"
+            "properties": {
+                "name": "Baluarte",
+                "id": 103
+            }
         },
         {
             "type": "Feature",
@@ -1121,7 +1424,10 @@
                     -23.5948089866643
                 ]
             },
-            "properties": "R. Santa Justina"
+            "properties": {
+                "name": "R. Santa Justina",
+                "id": 104
+            }
         },
         {
             "type": "Feature",
@@ -1132,7 +1438,10 @@
                     -23.5940306200704
                 ]
             },
-            "properties": "Praça Pereira Coutinho"
+            "properties": {
+                "name": "Praça Pereira Coutinho",
+                "id": 105
+            }
         },
         {
             "type": "Feature",
@@ -1143,7 +1452,10 @@
                     -23.5972296670023
                 ]
             },
-            "properties": "Natividade"
+            "properties": {
+                "name": "Natividade",
+                "id": 106
+            }
         },
         {
             "type": "Feature",
@@ -1154,7 +1466,10 @@
                     -23.6013401704407
                 ]
             },
-            "properties": "Graúna"
+            "properties": {
+                "name": "Graúna",
+                "id": 107
+            }
         },
         {
             "type": "Feature",
@@ -1165,7 +1480,10 @@
                     -23.600369824627
                 ]
             },
-            "properties": "Jacutinga"
+            "properties": {
+                "name": "Jacutinga",
+                "id": 108
+            }
         },
         {
             "type": "Feature",
@@ -1176,7 +1494,10 @@
                     -23.596549642468
                 ]
             },
-            "properties": "R. Sampaio Góis"
+            "properties": {
+                "name": "R. Sampaio Góis",
+                "id": 109
+            }
         },
         {
             "type": "Feature",
@@ -1187,7 +1508,10 @@
                     -23.6033
                 ]
             },
-            "properties": "Praça do Pombo"
+            "properties": {
+                "name": "Praça do Pombo",
+                "id": 110
+            }
         },
         {
             "type": "Feature",
@@ -1198,7 +1522,10 @@
                     -23.5958920911892
                 ]
             },
-            "properties": "Afonso Braz"
+            "properties": {
+                "name": "Afonso Braz",
+                "id": 111
+            }
         },
         {
             "type": "Feature",
@@ -1209,7 +1536,10 @@
                     -23.5934574009144
                 ]
             },
-            "properties": "Ibirapuera Portão 06"
+            "properties": {
+                "name": "Ibirapuera Portão 06",
+                "id": 112
+            }
         },
         {
             "type": "Feature",
@@ -1220,7 +1550,10 @@
                     -23.5921163886911
                 ]
             },
-            "properties": "Ibirapuera Portão 05"
+            "properties": {
+                "name": "Ibirapuera Portão 05",
+                "id": 113
+            }
         },
         {
             "type": "Feature",
@@ -1231,7 +1564,10 @@
                     -23.5946168877796
                 ]
             },
-            "properties": "Largo Mestre de Aviz"
+            "properties": {
+                "name": "Largo Mestre de Aviz",
+                "id": 114
+            }
         },
         {
             "type": "Feature",
@@ -1242,7 +1578,10 @@
                     -23.5820532321531
                 ]
             },
-            "properties": "Ibirapuera Portão 10"
+            "properties": {
+                "name": "Ibirapuera Portão 10",
+                "id": 115
+            }
         },
         {
             "type": "Feature",
@@ -1253,7 +1592,10 @@
                     -23.5936014851943
                 ]
             },
-            "properties": "Chilon"
+            "properties": {
+                "name": "Chilon",
+                "id": 116
+            }
         },
         {
             "type": "Feature",
@@ -1264,7 +1606,10 @@
                     -23.590748349533
                 ]
             },
-            "properties": "JK Iguatemi"
+            "properties": {
+                "name": "JK Iguatemi",
+                "id": 117
+            }
         },
         {
             "type": "Feature",
@@ -1275,7 +1620,10 @@
                     -23.5827091295632
                 ]
             },
-            "properties": "Praça Luis Carlos Paraná"
+            "properties": {
+                "name": "Praça Luis Carlos Paraná",
+                "id": 118
+            }
         },
         {
             "type": "Feature",
@@ -1286,7 +1634,10 @@
                     -23.5317430614974
                 ]
             },
-            "properties": "Minhocão"
+            "properties": {
+                "name": "Minhocão",
+                "id": 119
+            }
         },
         {
             "type": "Feature",
@@ -1297,7 +1648,10 @@
                     -23.5841082600817
                 ]
             },
-            "properties": "Rua João Cachoeira"
+            "properties": {
+                "name": "Rua João Cachoeira",
+                "id": 120
+            }
         },
         {
             "type": "Feature",
@@ -1308,7 +1662,10 @@
                     -23.5870546520685
                 ]
             },
-            "properties": "Rua Iguatemi"
+            "properties": {
+                "name": "Rua Iguatemi",
+                "id": 121
+            }
         },
         {
             "type": "Feature",
@@ -1319,7 +1676,10 @@
                     -23.6049719308606
                 ]
             },
-            "properties": "CPTM Berrini"
+            "properties": {
+                "name": "CPTM Berrini",
+                "id": 122
+            }
         },
         {
             "type": "Feature",
@@ -1330,7 +1690,10 @@
                     -23.5890430938806
                 ]
             },
-            "properties": "Ibirapuera Portão 03"
+            "properties": {
+                "name": "Ibirapuera Portão 03",
+                "id": 123
+            }
         },
         {
             "type": "Feature",
@@ -1341,7 +1704,10 @@
                     -23.5751852010033
                 ]
             },
-            "properties": "Rua Afonso de Freitas"
+            "properties": {
+                "name": "Rua Afonso de Freitas",
+                "id": 124
+            }
         },
         {
             "type": "Feature",
@@ -1352,7 +1718,10 @@
                     -23.5749909630878
                 ]
             },
-            "properties": "Metrô Paraíso"
+            "properties": {
+                "name": "Metrô Paraíso",
+                "id": 125
+            }
         },
         {
             "type": "Feature",
@@ -1363,7 +1732,10 @@
                     -23.5697804473938
                 ]
             },
-            "properties": "Centro Cultural SP"
+            "properties": {
+                "name": "Centro Cultural SP",
+                "id": 126
+            }
         },
         {
             "type": "Feature",
@@ -1374,7 +1746,10 @@
                     -23.5604966383472
                 ]
             },
-            "properties": "Monsenhor Passaláqua"
+            "properties": {
+                "name": "Monsenhor Passaláqua",
+                "id": 127
+            }
         },
         {
             "type": "Feature",
@@ -1385,7 +1760,10 @@
                     -23.5578839112131
                 ]
             },
-            "properties": "R. Condessa de São Joaquim"
+            "properties": {
+                "name": "R. Condessa de São Joaquim",
+                "id": 128
+            }
         },
         {
             "type": "Feature",
@@ -1396,7 +1774,10 @@
                     -23.5626885921653
                 ]
             },
-            "properties": "Rua dos Belgas"
+            "properties": {
+                "name": "Rua dos Belgas",
+                "id": 129
+            }
         },
         {
             "type": "Feature",
@@ -1407,7 +1788,10 @@
                     -23.55988804
                 ]
             },
-            "properties": "Praça Dom Orione"
+            "properties": {
+                "name": "Praça Dom Orione",
+                "id": 130
+            }
         },
         {
             "type": "Feature",
@@ -1418,7 +1802,10 @@
                     -23.5601
                 ]
             },
-            "properties": "Alameda Rio Claro"
+            "properties": {
+                "name": "Alameda Rio Claro",
+                "id": 131
+            }
         },
         {
             "type": "Feature",
@@ -1429,7 +1816,10 @@
                     -23.5633565983964
                 ]
             },
-            "properties": "Metrô São Joaquim"
+            "properties": {
+                "name": "Metrô São Joaquim",
+                "id": 132
+            }
         },
         {
             "type": "Feature",
@@ -1440,7 +1830,10 @@
                     -23.5550645493143
                 ]
             },
-            "properties": "Herculano de Freitas"
+            "properties": {
+                "name": "Herculano de Freitas",
+                "id": 133
+            }
         },
         {
             "type": "Feature",
@@ -1451,7 +1844,10 @@
                     -23.5530167175194
                 ]
             },
-            "properties": "Paim"
+            "properties": {
+                "name": "Paim",
+                "id": 134
+            }
         },
         {
             "type": "Feature",
@@ -1462,7 +1858,10 @@
                     -23.5520481655859
                 ]
             },
-            "properties": "Cemitério Consolação"
+            "properties": {
+                "name": "Cemitério Consolação",
+                "id": 135
+            }
         },
         {
             "type": "Feature",
@@ -1473,7 +1872,10 @@
                     -23.5485777016467
                 ]
             },
-            "properties": "Praça Roosevelt"
+            "properties": {
+                "name": "Praça Roosevelt",
+                "id": 136
+            }
         },
         {
             "type": "Feature",
@@ -1484,7 +1886,10 @@
                     -23.552657354472
                 ]
             },
-            "properties": "Rua São Domingos"
+            "properties": {
+                "name": "Rua São Domingos",
+                "id": 137
+            }
         },
         {
             "type": "Feature",
@@ -1495,7 +1900,10 @@
                     -23.55507044
                 ]
             },
-            "properties": "Praça da Liberdade"
+            "properties": {
+                "name": "Praça da Liberdade",
+                "id": 138
+            }
         },
         {
             "type": "Feature",
@@ -1506,7 +1914,10 @@
                     -23.54402567
                 ]
             },
-            "properties": "Largo de São Bento"
+            "properties": {
+                "name": "Largo de São Bento",
+                "id": 139
+            }
         },
         {
             "type": "Feature",
@@ -1517,7 +1928,10 @@
                     -23.5491978637596
                 ]
             },
-            "properties": "Largo São Francisco"
+            "properties": {
+                "name": "Largo São Francisco",
+                "id": 140
+            }
         },
         {
             "type": "Feature",
@@ -1528,7 +1942,10 @@
                     -23.5579898497291
                 ]
             },
-            "properties": "R. Luis Coelho"
+            "properties": {
+                "name": "R. Luis Coelho",
+                "id": 141
+            }
         },
         {
             "type": "Feature",
@@ -1539,7 +1956,10 @@
                     -23.547640346185
                 ]
             },
-            "properties": "R. Cel. Xavier de Toledo"
+            "properties": {
+                "name": "R. Cel. Xavier de Toledo",
+                "id": 142
+            }
         },
         {
             "type": "Feature",
@@ -1550,7 +1970,10 @@
                     -23.5428158801363
                 ]
             },
-            "properties": "Av. São João"
+            "properties": {
+                "name": "Av. São João",
+                "id": 143
+            }
         },
         {
             "type": "Feature",
@@ -1561,7 +1984,10 @@
                     -23.5456630543638
                 ]
             },
-            "properties": "Av. São Luís"
+            "properties": {
+                "name": "Av. São Luís",
+                "id": 144
+            }
         },
         {
             "type": "Feature",
@@ -1572,7 +1998,10 @@
                     -23.5398674287039
                 ]
             },
-            "properties": "Metrô Santa Cecília"
+            "properties": {
+                "name": "Metrô Santa Cecília",
+                "id": 145
+            }
         },
         {
             "type": "Feature",
@@ -1583,7 +2012,10 @@
                     -23.545324819388
                 ]
             },
-            "properties": "Mackenzie"
+            "properties": {
+                "name": "Mackenzie",
+                "id": 146
+            }
         },
         {
             "type": "Feature",
@@ -1594,7 +2026,10 @@
                     -23.5488591214319
                 ]
             },
-            "properties": "Itambé"
+            "properties": {
+                "name": "Itambé",
+                "id": 147
+            }
         },
         {
             "type": "Feature",
@@ -1605,7 +2040,10 @@
                     -23.5456065509866
                 ]
             },
-            "properties": "Parque Buenos Aires"
+            "properties": {
+                "name": "Parque Buenos Aires",
+                "id": 148
+            }
         },
         {
             "type": "Feature",
@@ -1616,7 +2054,10 @@
                     -23.5706120024434
                 ]
             },
-            "properties": "CEMG Faria Lima"
+            "properties": {
+                "name": "CEMG Faria Lima",
+                "id": 149
+            }
         },
         {
             "type": "Feature",
@@ -1627,7 +2068,10 @@
                     -23.543490788406
                 ]
             },
-            "properties": "Pernambuco"
+            "properties": {
+                "name": "Pernambuco",
+                "id": 150
+            }
         },
         {
             "type": "Feature",
@@ -1638,7 +2082,10 @@
                     -23.569908843225
                 ]
             },
-            "properties": "Praça Monte Castelo"
+            "properties": {
+                "name": "Praça Monte Castelo",
+                "id": 151
+            }
         },
         {
             "type": "Feature",
@@ -1649,7 +2096,10 @@
                     -23.5415334086621
                 ]
             },
-            "properties": "Jaguaribe"
+            "properties": {
+                "name": "Jaguaribe",
+                "id": 152
+            }
         },
         {
             "type": "Feature",
@@ -1660,7 +2110,10 @@
                     -23.5369791042457
                 ]
             },
-            "properties": "Alameda Barros"
+            "properties": {
+                "name": "Alameda Barros",
+                "id": 153
+            }
         },
         {
             "type": "Feature",
@@ -1671,7 +2124,10 @@
                     -23.5390004148871
                 ]
             },
-            "properties": "Albuquerque Lins"
+            "properties": {
+                "name": "Albuquerque Lins",
+                "id": 154
+            }
         },
         {
             "type": "Feature",
@@ -1682,7 +2138,10 @@
                     -23.5358897652191
                 ]
             },
-            "properties": "Marechal Deodoro"
+            "properties": {
+                "name": "Marechal Deodoro",
+                "id": 155
+            }
         },
         {
             "type": "Feature",
@@ -1693,7 +2152,10 @@
                     -23.5351173339965
                 ]
             },
-            "properties": "Conselheiro Brotero"
+            "properties": {
+                "name": "Conselheiro Brotero",
+                "id": 156
+            }
         },
         {
             "type": "Feature",
@@ -1704,7 +2166,10 @@
                     -23.5515095992215
                 ]
             },
-            "properties": "Metrô Sumaré"
+            "properties": {
+                "name": "Metrô Sumaré",
+                "id": 157
+            }
         },
         {
             "type": "Feature",
@@ -1715,7 +2180,10 @@
                     -23.55753
                 ]
             },
-            "properties": "Consolação"
+            "properties": {
+                "name": "Consolação",
+                "id": 158
+            }
         },
         {
             "type": "Feature",
@@ -1726,7 +2194,10 @@
                     -23.5580398903081
                 ]
             },
-            "properties": "Alameda Itú 1571"
+            "properties": {
+                "name": "Alameda Itú 1571",
+                "id": 159
+            }
         },
         {
             "type": "Feature",
@@ -1737,7 +2208,10 @@
                     -23.56032
                 ]
             },
-            "properties": "Alameda Tietê"
+            "properties": {
+                "name": "Alameda Tietê",
+                "id": 160
+            }
         },
         {
             "type": "Feature",
@@ -1748,7 +2222,10 @@
                     -23.56226
                 ]
             },
-            "properties": "Bela Cintra"
+            "properties": {
+                "name": "Bela Cintra",
+                "id": 161
+            }
         },
         {
             "type": "Feature",
@@ -1759,7 +2236,10 @@
                     -23.55991951
                 ]
             },
-            "properties": "Alameda Lorena"
+            "properties": {
+                "name": "Alameda Lorena",
+                "id": 162
+            }
         },
         {
             "type": "Feature",
@@ -1770,7 +2250,10 @@
                     -23.5608
                 ]
             },
-            "properties": "Rua Capote Valente"
+            "properties": {
+                "name": "Rua Capote Valente",
+                "id": 163
+            }
         },
         {
             "type": "Feature",
@@ -1781,7 +2264,10 @@
                     -23.5633581560803
                 ]
             },
-            "properties": "Rua Estados Unidos"
+            "properties": {
+                "name": "Rua Estados Unidos",
+                "id": 164
+            }
         },
         {
             "type": "Feature",
@@ -1792,7 +2278,10 @@
                     -23.5594417332263
                 ]
             },
-            "properties": "E.E. Godofredo Furtado"
+            "properties": {
+                "name": "E.E. Godofredo Furtado",
+                "id": 165
+            }
         },
         {
             "type": "Feature",
@@ -1803,7 +2292,10 @@
                     -23.5621418901363
                 ]
             },
-            "properties": "João Moura 328"
+            "properties": {
+                "name": "João Moura 328",
+                "id": 166
+            }
         },
         {
             "type": "Feature",
@@ -1814,7 +2306,10 @@
                     -23.5651645970985
                 ]
             },
-            "properties": "Alameda Gabriel"
+            "properties": {
+                "name": "Alameda Gabriel",
+                "id": 167
+            }
         },
         {
             "type": "Feature",
@@ -1825,7 +2320,10 @@
                     -23.5625602390326
                 ]
             },
-            "properties": "R. Joaquim Antunes"
+            "properties": {
+                "name": "R. Joaquim Antunes",
+                "id": 168
+            }
         },
         {
             "type": "Feature",
@@ -1836,7 +2334,10 @@
                     -23.5643368077145
                 ]
             },
-            "properties": "R. dos Pinheiros"
+            "properties": {
+                "name": "R. dos Pinheiros",
+                "id": 169
+            }
         },
         {
             "type": "Feature",
@@ -1847,7 +2348,10 @@
                     -23.5587392337508
                 ]
             },
-            "properties": "Rua Horácio Lane"
+            "properties": {
+                "name": "Rua Horácio Lane",
+                "id": 170
+            }
         },
         {
             "type": "Feature",
@@ -1858,7 +2362,10 @@
                     -23.5620789029004
                 ]
             },
-            "properties": "Fradique Coutinho 558"
+            "properties": {
+                "name": "Fradique Coutinho 558",
+                "id": 171
+            }
         },
         {
             "type": "Feature",
@@ -1869,7 +2376,10 @@
                     -23.5655318803865
                 ]
             },
-            "properties": "Metrô Fradique Coutinho"
+            "properties": {
+                "name": "Metrô Fradique Coutinho",
+                "id": 172
+            }
         },
         {
             "type": "Feature",
@@ -1880,7 +2390,10 @@
                     -23.5687716945858
                 ]
             },
-            "properties": "Sampaio Vidal 530"
+            "properties": {
+                "name": "Sampaio Vidal 530",
+                "id": 173
+            }
         },
         {
             "type": "Feature",
@@ -1891,7 +2404,10 @@
                     -23.5610082884253
                 ]
             },
-            "properties": "R. Simão Álvares"
+            "properties": {
+                "name": "R. Simão Álvares",
+                "id": 174
+            }
         },
         {
             "type": "Feature",
@@ -1902,7 +2418,10 @@
                     -23.5661229934209
                 ]
             },
-            "properties": "R. Artur de Azevedo"
+            "properties": {
+                "name": "R. Artur de Azevedo",
+                "id": 175
+            }
         },
         {
             "type": "Feature",
@@ -1913,7 +2432,10 @@
                     -23.570130111217
                 ]
             },
-            "properties": "R. Mariana Correia"
+            "properties": {
+                "name": "R. Mariana Correia",
+                "id": 176
+            }
         },
         {
             "type": "Feature",
@@ -1924,7 +2446,10 @@
                     -23.5614126775109
                 ]
             },
-            "properties": "Instituto Tomie Ohtake"
+            "properties": {
+                "name": "Instituto Tomie Ohtake",
+                "id": 177
+            }
         },
         {
             "type": "Feature",
@@ -1935,7 +2460,10 @@
                     -23.5652988887731
                 ]
             },
-            "properties": "Rua Sumidouro"
+            "properties": {
+                "name": "Rua Sumidouro",
+                "id": 178
+            }
         },
         {
             "type": "Feature",
@@ -1946,7 +2474,10 @@
                     -23.5587771000465
                 ]
             },
-            "properties": "Praça Roquete Pinto"
+            "properties": {
+                "name": "Praça Roquete Pinto",
+                "id": 179
+            }
         },
         {
             "type": "Feature",
@@ -1957,7 +2488,10 @@
                     -23.57306366
                 ]
             },
-            "properties": "CPTM Hebraica-Rebouças"
+            "properties": {
+                "name": "CPTM Hebraica-Rebouças",
+                "id": 180
+            }
         },
         {
             "type": "Feature",
@@ -1968,7 +2502,10 @@
                     -23.5567956481546
                 ]
             },
-            "properties": "Praça Ernâni Braga"
+            "properties": {
+                "name": "Praça Ernâni Braga",
+                "id": 181
+            }
         },
         {
             "type": "Feature",
@@ -1979,7 +2516,10 @@
                     -23.55435409
                 ]
             },
-            "properties": "BNH Vila Madalena"
+            "properties": {
+                "name": "BNH Vila Madalena",
+                "id": 182
+            }
         },
         {
             "type": "Feature",
@@ -1990,7 +2530,10 @@
                     -23.5553785015848
                 ]
             },
-            "properties": "Av. dos Semaneiros"
+            "properties": {
+                "name": "Av. dos Semaneiros",
+                "id": 183
+            }
         },
         {
             "type": "Feature",
@@ -2001,7 +2544,10 @@
                     -23.5541789045117
                 ]
             },
-            "properties": "Praça Panamericana"
+            "properties": {
+                "name": "Praça Panamericana",
+                "id": 184
+            }
         },
         {
             "type": "Feature",
@@ -2012,7 +2558,10 @@
                     -23.5567967829597
                 ]
             },
-            "properties": "CPTM Cidade Universitária"
+            "properties": {
+                "name": "CPTM Cidade Universitária",
+                "id": 185
+            }
         },
         {
             "type": "Feature",
@@ -2023,7 +2572,10 @@
                     -23.5626317229985
                 ]
             },
-            "properties": "Letras"
+            "properties": {
+                "name": "Letras",
+                "id": 186
+            }
         },
         {
             "type": "Feature",
@@ -2034,7 +2586,10 @@
                     -23.5599272394511
                 ]
             },
-            "properties": "Bancos/Reitoria"
+            "properties": {
+                "name": "Bancos/Reitoria",
+                "id": 187
+            }
         },
         {
             "type": "Feature",
@@ -2045,7 +2600,10 @@
                     -23.570593
                 ]
             },
-            "properties": "Metrô Butantã"
+            "properties": {
+                "name": "Metrô Butantã",
+                "id": 188
+            }
         },
         {
             "type": "Feature",
@@ -2056,7 +2614,10 @@
                     -23.5654280569129
                 ]
             },
-            "properties": "P1"
+            "properties": {
+                "name": "P1",
+                "id": 189
+            }
         },
         {
             "type": "Feature",
@@ -2067,7 +2628,10 @@
                     -23.5601005487719
                 ]
             },
-            "properties": "Portão CPTM"
+            "properties": {
+                "name": "Portão CPTM",
+                "id": 190
+            }
         },
         {
             "type": "Feature",
@@ -2078,7 +2642,10 @@
                     -23.562020824986
                 ]
             },
-            "properties": "CEPE"
+            "properties": {
+                "name": "CEPE",
+                "id": 191
+            }
         },
         {
             "type": "Feature",
@@ -2089,7 +2656,10 @@
                     -23.5625149269804
                 ]
             },
-            "properties": "Biblioteca Brasiliana"
+            "properties": {
+                "name": "Biblioteca Brasiliana",
+                "id": 192
+            }
         },
         {
             "type": "Feature",
@@ -2100,7 +2670,10 @@
                     -23.5607214061912
                 ]
             },
-            "properties": "Bandejão Central"
+            "properties": {
+                "name": "Bandejão Central",
+                "id": 193
+            }
         },
         {
             "type": "Feature",
@@ -2111,7 +2684,10 @@
                     -23.5650987972422
                 ]
             },
-            "properties": "Bandejão Química"
+            "properties": {
+                "name": "Bandejão Química",
+                "id": 194
+            }
         },
         {
             "type": "Feature",
@@ -2122,7 +2698,10 @@
                     -23.559293584318
                 ]
             },
-            "properties": "FAU"
+            "properties": {
+                "name": "FAU",
+                "id": 195
+            }
         },
         {
             "type": "Feature",
@@ -2133,7 +2712,10 @@
                     -23.5551999484936
                 ]
             },
-            "properties": "Psicologia"
+            "properties": {
+                "name": "Psicologia",
+                "id": 196
+            }
         },
         {
             "type": "Feature",
@@ -2144,7 +2726,10 @@
                     -23.5560950313374
                 ]
             },
-            "properties": "Pedalusp Biênio"
+            "properties": {
+                "name": "Pedalusp Biênio",
+                "id": 197
+            }
         },
         {
             "type": "Feature",
@@ -2155,7 +2740,10 @@
                     -23.5528308718055
                 ]
             },
-            "properties": "Terminal de Ônibus USP"
+            "properties": {
+                "name": "Terminal de Ônibus USP",
+                "id": 198
+            }
         },
         {
             "type": "Feature",
@@ -2166,7 +2754,10 @@
                     -23.5606860577466
                 ]
             },
-            "properties": "Bandejão Física"
+            "properties": {
+                "name": "Bandejão Física",
+                "id": 199
+            }
         },
         {
             "type": "Feature",
@@ -2177,7 +2768,10 @@
                     -23.5597355337842
                 ]
             },
-            "properties": "Bandejão Prefeitura"
+            "properties": {
+                "name": "Bandejão Prefeitura",
+                "id": 200
+            }
         },
         {
             "type": "Feature",
@@ -2188,7 +2782,10 @@
                     -23.563675157567
                 ]
             },
-            "properties": "Hospital Universitário"
+            "properties": {
+                "name": "Hospital Universitário",
+                "id": 201
+            }
         },
         {
             "type": "Feature",
@@ -2199,7 +2796,10 @@
                     -23.5670983269173
                 ]
             },
-            "properties": "Odontologia"
+            "properties": {
+                "name": "Odontologia",
+                "id": 202
+            }
         },
         {
             "type": "Feature",
@@ -2210,7 +2810,10 @@
                     -23.5685409711413
                 ]
             },
-            "properties": "Vila Indiana"
+            "properties": {
+                "name": "Vila Indiana",
+                "id": 203
+            }
         },
         {
             "type": "Feature",
@@ -2221,7 +2824,10 @@
                     -23.5682352949967
                 ]
             },
-            "properties": "P3"
+            "properties": {
+                "name": "P3",
+                "id": 204
+            }
         },
         {
             "type": "Feature",
@@ -2232,7 +2838,10 @@
                     -23.5510667054953
                 ]
             },
-            "properties": "Praça Pero Vaz de Caminha"
+            "properties": {
+                "name": "Praça Pero Vaz de Caminha",
+                "id": 205
+            }
         },
         {
             "type": "Feature",
@@ -2243,7 +2852,10 @@
                     -23.5501563898634
                 ]
             },
-            "properties": "Colégio Santa Cruz"
+            "properties": {
+                "name": "Colégio Santa Cruz",
+                "id": 206
+            }
         },
         {
             "type": "Feature",
@@ -2254,7 +2866,10 @@
                     -23.5470791934803
                 ]
             },
-            "properties": "Praça Beethoven"
+            "properties": {
+                "name": "Praça Beethoven",
+                "id": 207
+            }
         },
         {
             "type": "Feature",
@@ -2265,7 +2880,10 @@
                     -23.5435015914936
                 ]
             },
-            "properties": "Parque Villa Lobos Portão 2"
+            "properties": {
+                "name": "Parque Villa Lobos Portão 2",
+                "id": 208
+            }
         },
         {
             "type": "Feature",
@@ -2276,7 +2894,10 @@
                     -23.5456078360021
                 ]
             },
-            "properties": "CPTM Villa Lobos Jaguaré"
+            "properties": {
+                "name": "CPTM Villa Lobos Jaguaré",
+                "id": 209
+            }
         },
         {
             "type": "Feature",
@@ -2287,7 +2908,10 @@
                     -23.5636823643587
                 ]
             },
-            "properties": "Hotel Maksoud Plaza"
+            "properties": {
+                "name": "Hotel Maksoud Plaza",
+                "id": 210
+            }
         },
         {
             "type": "Feature",
@@ -2298,7 +2922,10 @@
                     -23.5645330138706
                 ]
             },
-            "properties": "Praça Portugal"
+            "properties": {
+                "name": "Praça Portugal",
+                "id": 211
+            }
         },
         {
             "type": "Feature",
@@ -2309,7 +2936,10 @@
                     -23.6232726724509
                 ]
             },
-            "properties": "R. República do Iraque"
+            "properties": {
+                "name": "R. República do Iraque",
+                "id": 212
+            }
         },
         {
             "type": "Feature",
@@ -2320,7 +2950,10 @@
                     -23.6017705716527
                 ]
             },
-            "properties": "Hotel Transamérica Berrini"
+            "properties": {
+                "name": "Hotel Transamérica Berrini",
+                "id": 213
+            }
         },
         {
             "type": "Feature",
@@ -2331,7 +2964,10 @@
                     -23.5929529353691
                 ]
             },
-            "properties": "Rua Cel. Joaquim Ferreira Lobo"
+            "properties": {
+                "name": "Rua Cel. Joaquim Ferreira Lobo",
+                "id": 214
+            }
         },
         {
             "type": "Feature",
@@ -2342,7 +2978,10 @@
                     -23.592639676926
                 ]
             },
-            "properties": "Rua Cel. Joaquim Ferreira Lobo II"
+            "properties": {
+                "name": "Rua Cel. Joaquim Ferreira Lobo II",
+                "id": 215
+            }
         },
         {
             "type": "Feature",
@@ -2353,7 +2992,10 @@
                     -23.54477907
                 ]
             },
-            "properties": "Cunha Horta"
+            "properties": {
+                "name": "Cunha Horta",
+                "id": 216
+            }
         },
         {
             "type": "Feature",
@@ -2364,7 +3006,10 @@
                     -23.5339723559402
                 ]
             },
-            "properties": "Turiassu"
+            "properties": {
+                "name": "Turiassu",
+                "id": 217
+            }
         },
         {
             "type": "Feature",
@@ -2375,7 +3020,10 @@
                     -23.5312748251908
                 ]
             },
-            "properties": "Largo Padre Péricles"
+            "properties": {
+                "name": "Largo Padre Péricles",
+                "id": 218
+            }
         },
         {
             "type": "Feature",
@@ -2386,7 +3034,10 @@
                     -23.5337422
                 ]
             },
-            "properties": "Metrô Marechal Deodoro"
+            "properties": {
+                "name": "Metrô Marechal Deodoro",
+                "id": 219
+            }
         },
         {
             "type": "Feature",
@@ -2397,7 +3048,10 @@
                     -23.5789116092428
                 ]
             },
-            "properties": "Rua Domingos de Moraes"
+            "properties": {
+                "name": "Rua Domingos de Moraes",
+                "id": 220
+            }
         },
         {
             "type": "Feature",
@@ -2408,7 +3062,10 @@
                     -23.5808426571183
                 ]
             },
-            "properties": "Metrô Ana Rosa"
+            "properties": {
+                "name": "Metrô Ana Rosa",
+                "id": 221
+            }
         },
         {
             "type": "Feature",
@@ -2419,7 +3076,10 @@
                     -23.5844511087101
                 ]
             },
-            "properties": "Vergueiro"
+            "properties": {
+                "name": "Vergueiro",
+                "id": 222
+            }
         },
         {
             "type": "Feature",
@@ -2430,7 +3090,10 @@
                     -23.5808723459433
                 ]
             },
-            "properties": "Largo Ana Rosa"
+            "properties": {
+                "name": "Largo Ana Rosa",
+                "id": 223
+            }
         },
         {
             "type": "Feature",
@@ -2441,7 +3104,10 @@
                     -23.5819406080888
                 ]
             },
-            "properties": "SESC Vila Mariana"
+            "properties": {
+                "name": "SESC Vila Mariana",
+                "id": 224
+            }
         },
         {
             "type": "Feature",
@@ -2452,7 +3118,10 @@
                     -23.5909147225444
                 ]
             },
-            "properties": "R. França Pinto"
+            "properties": {
+                "name": "R. França Pinto",
+                "id": 225
+            }
         },
         {
             "type": "Feature",
@@ -2463,7 +3132,10 @@
                     -23.5871298485912
                 ]
             },
-            "properties": "Rio Grande"
+            "properties": {
+                "name": "Rio Grande",
+                "id": 226
+            }
         },
         {
             "type": "Feature",
@@ -2474,7 +3146,10 @@
                     -23.5918790017162
                 ]
             },
-            "properties": "Gandavo"
+            "properties": {
+                "name": "Gandavo",
+                "id": 227
+            }
         },
         {
             "type": "Feature",
@@ -2485,7 +3160,10 @@
                     -23.5894563363639
                 ]
             },
-            "properties": "MUBA"
+            "properties": {
+                "name": "MUBA",
+                "id": 228
+            }
         },
         {
             "type": "Feature",
@@ -2496,7 +3174,10 @@
                     -23.5898021306398
                 ]
             },
-            "properties": "Metrô Vila Mariana"
+            "properties": {
+                "name": "Metrô Vila Mariana",
+                "id": 229
+            }
         },
         {
             "type": "Feature",
@@ -2507,7 +3188,10 @@
                     -23.5950450453396
                 ]
             },
-            "properties": "Rua Cunha"
+            "properties": {
+                "name": "Rua Cunha",
+                "id": 230
+            }
         },
         {
             "type": "Feature",
@@ -2518,7 +3202,10 @@
                     -23.6042263595434
                 ]
             },
-            "properties": "Luis Góis"
+            "properties": {
+                "name": "Luis Góis",
+                "id": 231
+            }
         },
         {
             "type": "Feature",
@@ -2529,7 +3216,10 @@
                     -23.6005561179321
                 ]
             },
-            "properties": "Parque das Bicicletas"
+            "properties": {
+                "name": "Parque das Bicicletas",
+                "id": 232
+            }
         },
         {
             "type": "Feature",
@@ -2540,7 +3230,10 @@
                     -23.5976149401058
                 ]
             },
-            "properties": "METRÔ AACD SERVIDOR"
+            "properties": {
+                "name": "METRÔ AACD SERVIDOR",
+                "id": 233
+            }
         },
         {
             "type": "Feature",
@@ -2551,7 +3244,10 @@
                     -23.5981107484271
                 ]
             },
-            "properties": "Metrô Hospital São Paulo"
+            "properties": {
+                "name": "Metrô Hospital São Paulo",
+                "id": 234
+            }
         },
         {
             "type": "Feature",
@@ -2562,7 +3258,10 @@
                     -23.6068678445822
                 ]
             },
-            "properties": "Alameda das Boninas"
+            "properties": {
+                "name": "Alameda das Boninas",
+                "id": 235
+            }
         },
         {
             "type": "Feature",
@@ -2573,7 +3272,10 @@
                     -23.5987326403293
                 ]
             },
-            "properties": "R. Leonardo Nunes"
+            "properties": {
+                "name": "R. Leonardo Nunes",
+                "id": 236
+            }
         },
         {
             "type": "Feature",
@@ -2584,7 +3286,10 @@
                     -23.6037621017182
                 ]
             },
-            "properties": "Metrô Moema"
+            "properties": {
+                "name": "Metrô Moema",
+                "id": 237
+            }
         },
         {
             "type": "Feature",
@@ -2595,7 +3300,10 @@
                     -23.60660832
                 ]
             },
-            "properties": "Jandira"
+            "properties": {
+                "name": "Jandira",
+                "id": 238
+            }
         },
         {
             "type": "Feature",
@@ -2606,7 +3314,10 @@
                     -23.6035135859775
                 ]
             },
-            "properties": "Gaivota"
+            "properties": {
+                "name": "Gaivota",
+                "id": 239
+            }
         },
         {
             "type": "Feature",
@@ -2617,7 +3328,10 @@
                     -23.609452586953
                 ]
             },
-            "properties": "Metrô Eucaliptos"
+            "properties": {
+                "name": "Metrô Eucaliptos",
+                "id": 240
+            }
         },
         {
             "type": "Feature",
@@ -2628,7 +3342,10 @@
                     -23.6057036854932
                 ]
             },
-            "properties": "Jauaperi"
+            "properties": {
+                "name": "Jauaperi",
+                "id": 241
+            }
         },
         {
             "type": "Feature",
@@ -2639,7 +3356,10 @@
                     -23.6042556584336
                 ]
             },
-            "properties": "Pintassilgo"
+            "properties": {
+                "name": "Pintassilgo",
+                "id": 242
+            }
         },
         {
             "type": "Feature",
@@ -2650,7 +3370,10 @@
                     -23.6135042882545
                 ]
             },
-            "properties": "R. Demóstenes"
+            "properties": {
+                "name": "R. Demóstenes",
+                "id": 243
+            }
         },
         {
             "type": "Feature",
@@ -2661,7 +3384,10 @@
                     -23.6107351221245
                 ]
             },
-            "properties": "Rua Nova York"
+            "properties": {
+                "name": "Rua Nova York",
+                "id": 244
+            }
         },
         {
             "type": "Feature",
@@ -2672,7 +3398,10 @@
                     -23.6170138247081
                 ]
             },
-            "properties": "Rua Flórida 53"
+            "properties": {
+                "name": "Rua Flórida 53",
+                "id": 245
+            }
         },
         {
             "type": "Feature",
@@ -2683,7 +3412,10 @@
                     -23.6129704331121
                 ]
             },
-            "properties": "R. Pe. Antônio"
+            "properties": {
+                "name": "R. Pe. Antônio",
+                "id": 246
+            }
         },
         {
             "type": "Feature",
@@ -2694,7 +3426,10 @@
                     -23.6106846259976
                 ]
             },
-            "properties": "R. Ribeiro do Vale"
+            "properties": {
+                "name": "R. Ribeiro do Vale",
+                "id": 247
+            }
         },
         {
             "type": "Feature",
@@ -2705,7 +3440,10 @@
                     -23.6110922047536
                 ]
             },
-            "properties": "Flórida 1020"
+            "properties": {
+                "name": "Flórida 1020",
+                "id": 248
+            }
         },
         {
             "type": "Feature",
@@ -2716,7 +3454,10 @@
                     -23.6188143994929
                 ]
             },
-            "properties": "R. Min. Luiz Gallotti"
+            "properties": {
+                "name": "R. Min. Luiz Gallotti",
+                "id": 249
+            }
         },
         {
             "type": "Feature",
@@ -2727,7 +3468,10 @@
                     -23.6240902348926
                 ]
             },
-            "properties": "Pássaros e Flores"
+            "properties": {
+                "name": "Pássaros e Flores",
+                "id": 250
+            }
         },
         {
             "type": "Feature",
@@ -2738,7 +3482,10 @@
                     -23.6235674733867
                 ]
             },
-            "properties": "Rochaverá"
+            "properties": {
+                "name": "Rochaverá",
+                "id": 251
+            }
         },
         {
             "type": "Feature",
@@ -2749,7 +3496,10 @@
                     -23.6194058975209
                 ]
             },
-            "properties": "R. Henrique Fischer"
+            "properties": {
+                "name": "R. Henrique Fischer",
+                "id": 252
+            }
         },
         {
             "type": "Feature",
@@ -2760,7 +3510,10 @@
                     -23.6213921603005
                 ]
             },
-            "properties": "Bacaetava"
+            "properties": {
+                "name": "Bacaetava",
+                "id": 253
+            }
         },
         {
             "type": "Feature",
@@ -2771,7 +3524,10 @@
                     -23.6268943468695
                 ]
             },
-            "properties": "Metrô Brooklin"
+            "properties": {
+                "name": "Metrô Brooklin",
+                "id": 254
+            }
         },
         {
             "type": "Feature",
@@ -2782,7 +3538,10 @@
                     -23.5716043779296
                 ]
             },
-            "properties": "Praça Oswaldo Cruz"
+            "properties": {
+                "name": "Praça Oswaldo Cruz",
+                "id": 255
+            }
         },
         {
             "type": "Feature",
@@ -2793,7 +3552,10 @@
                     -23.5727122052325
                 ]
             },
-            "properties": "R. Dr. Rafael de Barros"
+            "properties": {
+                "name": "R. Dr. Rafael de Barros",
+                "id": 256
+            }
         },
         {
             "type": "Feature",
@@ -2804,7 +3566,10 @@
                     -23.5516652847067
                 ]
             },
-            "properties": "Shopping Villa Lobos"
+            "properties": {
+                "name": "Shopping Villa Lobos",
+                "id": 257
+            }
         },
         {
             "type": "Feature",
@@ -2815,7 +3580,10 @@
                     -23.6099798374046
                 ]
             },
-            "properties": "CENU"
+            "properties": {
+                "name": "CENU",
+                "id": 258
+            }
         }
     ]
 }
