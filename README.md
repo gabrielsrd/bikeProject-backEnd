@@ -1,93 +1,125 @@
-python3 manage.py runserver
-
-endpoint: http://localhost:8000/api/ciclovias/
-
-it serves a geo-json.
 
 
-### README
+# Projeto Backend - Análise de Ciclofaixas e Estações de Bicicletas em São Paulo
 
-## Projeto Backend (Português)
+**Descrição**:  
+Este projeto backend utiliza Django para fornecer uma API RESTful que processa e serve dados geográficos no formato GeoJSON. O foco está na análise de ciclofaixas, estações de bicicletas compartilhadas e áreas de alta demanda de infraestrutura cicloviária (hotzones).  
 
-**Título**: API Backend para Análise de Ciclofaixas e Estações de Bicicletas Compartilhadas em São Paulo
+Os dados fornecidos são baseados em fontes confiáveis, como os dados abertos da Prefeitura de São Paulo e o projeto BikeScience do Prof. Dr. Fabio Kon (IME-USP). A aplicação está configurada para fornecer insights e otimizar a tomada de decisão em relação ao uso de bicicletas na cidade.  
 
-**Descrição**: Este projeto backend em Python utiliza Django para fornecer uma API que realiza cálculos e processa dados geográficos, disponibilizando-os no formato GeoJSON para o frontend da aplicação web. A API serve informações sobre:
-- Ciclofaixas (faixas dedicadas para bicicletas) em São Paulo
-- Localizações das estações de bicicletas compartilhadas da Tembici
-- Áreas que necessitam de mais infraestrutura cicloviária
-
-A API é projetada para que organizações e empresas possam obter insights sobre o uso de bicicletas na cidade, incluindo as rotas mais utilizadas e as necessidades de infraestrutura.
-
-**Funcionalidades**:
-- **API RESTful**: fornece dados sobre ciclofaixas, estações de bicicletas e zonas prioritárias em São Paulo.
-- **Cálculos Geográficos**: processa e organiza dados geoespaciais para o frontend.
-- **Formato GeoJSON**: fornece dados de forma otimizada para mapeamento interativo.
-
-**Tecnologias Utilizadas**:
-- **Backend**: Django, Python
-- **Banco de Dados**: SQLite (ou outro banco de dados Django-compatible)
-- **Formatos de Dados**: GeoJSON para dados geoespaciais
-
-**Como Executar o Projeto**:
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seuusuario/nomerepositorio-backend.git
-   ```
-2. Acesse o diretório do projeto:
-   ```bash
-   cd nomerepositorio-backend
-   ```
-3. Instale as dependências do Python:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Execute a aplicação:
-   ```bash
-   python3 manage.py runserver
-   ```
-5. Certifique-se de que o backend está rodando antes de carregar o frontend para que os dados GeoJSON possam ser servidos corretamente.
-
-6. Endpoint: http://localhost:8000/api/ciclovias/
 ---
 
-## Backend Project (English)
+## **Funcionalidades**
 
-**Title**: Backend API for Analyzing Bike Lanes and Shared Bike Stations in São Paulo
+- **API RESTful**:  
+  Fornece dados de ciclofaixas, estações de bicicletas compartilhadas e zonas prioritárias (hotzones).  
+- **Processamento de Dados Geoespaciais**:  
+  Utiliza scripts para tratar dados de shapefiles, arquivos CSV e Excel, transformando-os em GeoJSON otimizados para consumo.  
+- **Cálculos e Otimizações**:  
+  Inclui cálculos como distância entre estações e ciclofaixas, identificação de zonas de alta demanda (120 mil viagens analisadas) e agregação de dados geográficos.  
 
-**Description**: This backend project, written in Python and powered by Django, provides an API that performs calculations and processes geographical data, serving it in GeoJSON format to the web application frontend. The API delivers information on:
-- Bike lanes in São Paulo
-- Locations of Tembici shared bike stations
-- Zones needing additional bike infrastructure
+---
 
-The API is designed to help organizations and businesses gain insights on bike usage in the city, including frequently traveled routes and infrastructure needs.
+## **Endpoints Disponíveis**
 
-**Features**:
-- **RESTful API**: serves data on bike lanes, bike-sharing stations, and priority zones in São Paulo.
-- **Geographical Calculations**: processes and organizes geospatial data for the frontend.
-- **GeoJSON Format**: optimizes data output for interactive mapping.
+1. **Ciclofaixas**  
+   - **Descrição:** Retorna os dados de ciclofaixas da cidade de São Paulo.  
+   - **Endpoint:** `http://localhost:8000/api/ciclovias/`  
+   - **Formato:** GeoJSON  
 
-**Technologies Used**:
-- **Backend**: Django, Python
-- **Database**: SQLite (or other Django-compatible database)
-- **Data Formats**: GeoJSON for geospatial data
+2. **Estações de Bicicletas**  
+   - **Descrição:** Fornece informações sobre as localizações das estações de bicicletas compartilhadas da Tembici.  
+   - **Endpoint:** `http://localhost:8000/api/estacoes/`  
+   - **Formato:** GeoJSON  
 
-**How to Run the Project**:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/repositoryname-backend.git
-   ```
-2. Go to the project directory:
-   ```bash
-   cd repositoryname-backend
-   ```
-3. Install Python dependencies:
+3. **Hotzones**  
+   - **Descrição:** Apresenta zonas prioritárias de infraestrutura cicloviária, baseadas em análise de aproximadamente 120 mil viagens.  
+   - **Endpoint:** `http://localhost:8000/api/hotzones/`  
+   - **Formato:** GeoJSON  
+
+---
+
+## **Fontes de Dados**
+
+- **Ciclofaixas:** Dados abertos da Prefeitura de São Paulo, disponíveis no portal [GeoSampa](https://geosampa.prefeitura.sp.gov.br/).  
+  - Formatos: Shapefile (SAD69, SIRGAS)  
+  - Metadados: Disponíveis [aqui](https://metadados.geosampa.prefeitura.sp.gov.br/geonetwork/srv/por/catalog.search#/metadata/5d973631-65e5-447d-ab38-e5fb6b07a67b).  
+
+- **Estações de Bicicletas:** Dados fornecidos pelo projeto BikeScience, liderado pelo Prof. Dr. Fabio Kon (IME-USP), em colaboração com a Tembici.  
+
+- **Viagens (Hotzones):** Dados anonimizados de 120 mil viagens de bicicletas compartilhadas, também fornecidos pelo BikeScience.  
+
+---
+
+## **Tecnologias Utilizadas**
+
+- **Backend:** Django, Python   
+- **Processamento Geoespacial:** GeoPandas, Shapely, Pandas, SciPy, GeoPy  
+- **Formato de Dados:** GeoJSON  
+
+---
+
+## **Como Executar o Projeto**
+
+1. Instale as dependências do Python:
    ```bash
    pip install -r requirements.txt
    ```
-4. Run the application:
-   ```bash
-   python3 manage.py runserver
-   ```
-5. Ensure the backend is running before loading the frontend to enable the proper serving of GeoJSON data.77
 
-6. Endpoint: http://localhost:8000/api/ciclovias/
+
+2. Execute a aplicação:
+   ```bash
+   python manage.py runserver
+   ```
+
+3. Acesse os endpoints:
+   - Ciclofaixas: `http://localhost:8000/api/ciclovias/`  
+   - Estações: `http://localhost:8000/api/estacoes/`  
+   - Hotzones: `http://localhost:8000/api/hotzones/`  
+
+---
+
+## **Scripts para Tratamento de Dados**
+
+Os dados brutos foram processados utilizando scripts Python disponíveis na pasta `scripts/`. Abaixo estão os principais scripts:  
+
+1. **`xlsToGeoJson.py`:**  
+   Converte arquivos Excel (como `estacoes.xlsx`) para GeoJSON.  
+
+2. **`addIdCiclovia.py`:**  
+   Adiciona IDs únicos às ciclovias no formato GeoJSON.  
+
+3. **`calculateDistanciaEstacacaoCiclovia.py`:**  
+   Calcula distâncias entre as estações de bicicletas e as ciclofaixas mais próximas.  
+
+4. **`userTripsHotzonesKDEs.py`:**  
+   Analisa 120 mil viagens para identificar zonas de alta demanda (hotzones) usando análise KDE.  
+
+---
+
+## **Estrutura do Repositório**
+
+```plaintext
+├── README.md              # Documentação do projeto
+├── ciclovias              # App principal no Django
+│   ├── models.py          # Modelos do Django
+│   ├── views.py           # Views que fornecem GeoJSON
+│   ├── urls.py            # Rotas do app
+├── geojsons               # Dados geoespaciais processados
+│   ├── ciclovia.geojson
+│   ├── estacoes.geojson
+│   └── hotzones.geojson
+├── dataRaw                # Dados brutos
+├── dataClean              # Dados tratados 
+├── scripts                # Scripts de pré-processamento
+├── manage.py              # Comando principal do Django
+├── db.sqlite3             # Banco de dados local
+```
+
+---
+
+## **Observações Finais**
+
+1. **Compatibilidade dos Dados:** Durante o pré-processamento, os shapefiles foram convertidos para GeoJSON para facilitar a leitura e integração com o front-end.  
+2. **Zonas Prioritárias:** A análise das "hotzones" foi baseada em algoritmos de densidade por kernel (KDE).  
+
