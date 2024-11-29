@@ -122,4 +122,5 @@ Os dados brutos foram processados utilizando scripts Python disponíveis na past
 
 1. **Compatibilidade dos Dados:** Durante o pré-processamento, os shapefiles foram convertidos para GeoJSON para facilitar a leitura e integração com o front-end.  
 2. **Zonas Prioritárias:** A análise das "hotzones" foi baseada em algoritmos de densidade por kernel (KDE).  
+3. **FrontEnd** Link para o repositório: https://github.com/gabrielsrd/bikeProject-frontEnd 
 
