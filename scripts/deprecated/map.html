@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1228af418f4e9a6de6264d333f028e0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f1228af418f4e9a6de6264d333f028e0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1228af418f4e9a6de6264d333f028e0 = L.map(
+                "map_f1228af418f4e9a6de6264d333f028e0",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_27b64801e17f34047ed4b221c5ce9ba8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_27b64801e17f34047ed4b221c5ce9ba8.addTo(map_f1228af418f4e9a6de6264d333f028e0);
+        
+    
+            var marker_90259d790294b51fb80b57bfdea66882 = L.marker(
+                [40.74844205, -73.98565890160751],
+                {}
+            ).addTo(map_f1228af418f4e9a6de6264d333f028e0);
+        
+    
+        var popup_a73fce37474897f3b754db630a09ff8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77aeb99aa595ab2236f433bd67077185 = $(`<div id="html_77aeb99aa595ab2236f433bd67077185" style="width: 100.0%; height: 100.0%;">Empire State Building, New York, NY</div>`)[0];
+                popup_a73fce37474897f3b754db630a09ff8d.setContent(html_77aeb99aa595ab2236f433bd67077185);
+            
+        
+
+        marker_90259d790294b51fb80b57bfdea66882.bindPopup(popup_a73fce37474897f3b754db630a09ff8d)
+        ;
+
+        
+    
+    
+            var marker_6e0dd2d61cfd1fdb5b4ca157f22f7341 = L.marker(
+                [34.1340991, -118.321652],
+                {}
+            ).addTo(map_f1228af418f4e9a6de6264d333f028e0);
+        
+    
+        var popup_cd63a66535602ed97320e77566f23b0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a19890883dbbce4b399df813129abaff = $(`<div id="html_a19890883dbbce4b399df813129abaff" style="width: 100.0%; height: 100.0%;">Hollywood Sign, Los Angeles, CA</div>`)[0];
+                popup_cd63a66535602ed97320e77566f23b0c.setContent(html_a19890883dbbce4b399df813129abaff);
+            
+        
+
+        marker_6e0dd2d61cfd1fdb5b4ca157f22f7341.bindPopup(popup_cd63a66535602ed97320e77566f23b0c)
+        ;
+
+        
+    
+    
+            var marker_917c328efc738293822d01f03e9fe835 = L.marker(
+                [37.8303213, -122.4797496],
+                {}
+            ).addTo(map_f1228af418f4e9a6de6264d333f028e0);
+        
+    
+        var popup_03ae03f8a93689dd5fe863d719aa8880 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8211232175a39e742f43423f95c8393 = $(`<div id="html_f8211232175a39e742f43423f95c8393" style="width: 100.0%; height: 100.0%;">Golden Gate Bridge, San Francisco, CA</div>`)[0];
+                popup_03ae03f8a93689dd5fe863d719aa8880.setContent(html_f8211232175a39e742f43423f95c8393);
+            
+        
+
+        marker_917c328efc738293822d01f03e9fe835.bindPopup(popup_03ae03f8a93689dd5fe863d719aa8880)
+        ;
+
+        
+    
+</script>
+</html>
