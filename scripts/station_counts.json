@@ -1,0 +1,1598 @@
+[
+    {
+        "station":"1 - Largo da Batata",
+        "departures":5841.0,
+        "arrivals":4193.0,
+        "total":10034.0
+    },
+    {
+        "station":"10 - Rua Campo Verde",
+        "departures":320.0,
+        "arrivals":409.0,
+        "total":729.0
+    },
+    {
+        "station":"100 - Ita\u00fa Cultural",
+        "departures":637.0,
+        "arrivals":503.0,
+        "total":1140.0
+    },
+    {
+        "station":"101 - Pra\u00e7a Gen. Gentil Falc\u00e3o",
+        "departures":471.0,
+        "arrivals":465.0,
+        "total":936.0
+    },
+    {
+        "station":"102 - Rua James Watt",
+        "departures":404.0,
+        "arrivals":414.0,
+        "total":818.0
+    },
+    {
+        "station":"103 - Rua Hans Oersted",
+        "departures":223.0,
+        "arrivals":232.0,
+        "total":455.0
+    },
+    {
+        "station":"105 - Pra\u00e7a Jo\u00e3o Duran Alonso",
+        "departures":353.0,
+        "arrivals":389.0,
+        "total":742.0
+    },
+    {
+        "station":"106 - Rua Fl\u00f3rida",
+        "departures":281.0,
+        "arrivals":277.0,
+        "total":558.0
+    },
+    {
+        "station":"107 - Rua Indiana",
+        "departures":358.0,
+        "arrivals":391.0,
+        "total":749.0
+    },
+    {
+        "station":"109 - Pra\u00e7a Oswaldo Varella",
+        "departures":298.0,
+        "arrivals":301.0,
+        "total":599.0
+    },
+    {
+        "station":"11 - Pra\u00e7a Faria Lima",
+        "departures":283.0,
+        "arrivals":209.0,
+        "total":492.0
+    },
+    {
+        "station":"110 - Fl\u00f3rida 1670",
+        "departures":425.0,
+        "arrivals":424.0,
+        "total":849.0
+    },
+    {
+        "station":"112 - R. Lee de Forest",
+        "departures":307.0,
+        "arrivals":362.0,
+        "total":669.0
+    },
+    {
+        "station":"113 - Rua Andrade Pertence",
+        "departures":234.0,
+        "arrivals":226.0,
+        "total":460.0
+    },
+    {
+        "station":"114 - Rua Alvorada",
+        "departures":429.0,
+        "arrivals":409.0,
+        "total":838.0
+    },
+    {
+        "station":"115 - Pra\u00e7a Proc\u00f3pio Ferreira",
+        "departures":398.0,
+        "arrivals":441.0,
+        "total":839.0
+    },
+    {
+        "station":"117 - Cubo Ita\u00fa",
+        "departures":1170.0,
+        "arrivals":1212.0,
+        "total":2382.0
+    },
+    {
+        "station":"118 - Rua J\u00falio Diniz",
+        "departures":624.0,
+        "arrivals":625.0,
+        "total":1249.0
+    },
+    {
+        "station":"119 - Rua Quat\u00e1",
+        "departures":325.0,
+        "arrivals":297.0,
+        "total":622.0
+    },
+    {
+        "station":"12 - Largo da Batata II",
+        "departures":568.0,
+        "arrivals":595.0,
+        "total":1163.0
+    },
+    {
+        "station":"120 - Rua Gomes de Carvalho",
+        "departures":552.0,
+        "arrivals":557.0,
+        "total":1109.0
+    },
+    {
+        "station":"121 - Insper",
+        "departures":1495.0,
+        "arrivals":1600.0,
+        "total":3095.0
+    },
+    {
+        "station":"122 - Baluarte",
+        "departures":522.0,
+        "arrivals":487.0,
+        "total":1009.0
+    },
+    {
+        "station":"123 - R. Santa Justina",
+        "departures":618.0,
+        "arrivals":639.0,
+        "total":1257.0
+    },
+    {
+        "station":"124 - Pra\u00e7a PereIra Coutinho",
+        "departures":398.0,
+        "arrivals":409.0,
+        "total":807.0
+    },
+    {
+        "station":"125 - Natividade",
+        "departures":516.0,
+        "arrivals":658.0,
+        "total":1174.0
+    },
+    {
+        "station":"126 - Gra\u00fana",
+        "departures":315.0,
+        "arrivals":305.0,
+        "total":620.0
+    },
+    {
+        "station":"127 - Jacutinga",
+        "departures":462.0,
+        "arrivals":480.0,
+        "total":942.0
+    },
+    {
+        "station":"128 - R. Sampaio G\u00f3is",
+        "departures":387.0,
+        "arrivals":447.0,
+        "total":834.0
+    },
+    {
+        "station":"129 - Pra\u00e7a do Pombo",
+        "departures":450.0,
+        "arrivals":446.0,
+        "total":896.0
+    },
+    {
+        "station":"13 - Esporte Clube Pinheiros Funcion\u00e1rios",
+        "departures":322.0,
+        "arrivals":575.0,
+        "total":897.0
+    },
+    {
+        "station":"130 - Afonso Braz",
+        "departures":670.0,
+        "arrivals":591.0,
+        "total":1261.0
+    },
+    {
+        "station":"131 - Ibirapuera Port\u00e3o 06",
+        "departures":1517.0,
+        "arrivals":1670.0,
+        "total":3187.0
+    },
+    {
+        "station":"132 - Ibirapuera Port\u00e3o 05",
+        "departures":569.0,
+        "arrivals":627.0,
+        "total":1196.0
+    },
+    {
+        "station":"133 - Largo Mestre de Aviz",
+        "departures":224.0,
+        "arrivals":237.0,
+        "total":461.0
+    },
+    {
+        "station":"135 - Ibirapuera Port\u00e3o 10",
+        "departures":817.0,
+        "arrivals":1014.0,
+        "total":1831.0
+    },
+    {
+        "station":"138 - Chilon",
+        "departures":561.0,
+        "arrivals":617.0,
+        "total":1178.0
+    },
+    {
+        "station":"14 - Museu da Casa Brasileira",
+        "departures":958.0,
+        "arrivals":1095.0,
+        "total":2053.0
+    },
+    {
+        "station":"140 - JK Iguatemi",
+        "departures":993.0,
+        "arrivals":1290.0,
+        "total":2283.0
+    },
+    {
+        "station":"141 - Pra\u00e7a Luis Carlos Paran\u00e1",
+        "departures":995.0,
+        "arrivals":1167.0,
+        "total":2162.0
+    },
+    {
+        "station":"142 - Minhoc\u00e3o",
+        "departures":443.0,
+        "arrivals":492.0,
+        "total":935.0
+    },
+    {
+        "station":"143 - Rua Jo\u00e3o Cachoeira",
+        "departures":1192.0,
+        "arrivals":1197.0,
+        "total":2389.0
+    },
+    {
+        "station":"144 - Rua Iguatemi",
+        "departures":665.0,
+        "arrivals":837.0,
+        "total":1502.0
+    },
+    {
+        "station":"145 - CPTM Berrini",
+        "departures":341.0,
+        "arrivals":302.0,
+        "total":643.0
+    },
+    {
+        "station":"146 - Ibirapuera port\u00e3o 03",
+        "departures":1562.0,
+        "arrivals":1897.0,
+        "total":3459.0
+    },
+    {
+        "station":"149 - Rua Afonso de Freitas",
+        "departures":209.0,
+        "arrivals":133.0,
+        "total":342.0
+    },
+    {
+        "station":"15 - Rua Prof. Artur Ramos",
+        "departures":408.0,
+        "arrivals":624.0,
+        "total":1032.0
+    },
+    {
+        "station":"150 - Metr\u00f4 Para\u00edso",
+        "departures":1018.0,
+        "arrivals":549.0,
+        "total":1567.0
+    },
+    {
+        "station":"151 - Centro Cultural SP",
+        "departures":398.0,
+        "arrivals":365.0,
+        "total":763.0
+    },
+    {
+        "station":"153 - Monsenhor Passal\u00e1qua",
+        "departures":397.0,
+        "arrivals":467.0,
+        "total":864.0
+    },
+    {
+        "station":"154 - R. Condessa de S\u00e3o Joaquim",
+        "departures":295.0,
+        "arrivals":398.0,
+        "total":693.0
+    },
+    {
+        "station":"155 - Rua dos Belgas",
+        "departures":133.0,
+        "arrivals":109.0,
+        "total":242.0
+    },
+    {
+        "station":"156 - Pra\u00e7a Dom Orione",
+        "departures":349.0,
+        "arrivals":311.0,
+        "total":660.0
+    },
+    {
+        "station":"158 - Alameda Rio Claro",
+        "departures":142.0,
+        "arrivals":118.0,
+        "total":260.0
+    },
+    {
+        "station":"159 - Metr\u00f4 S\u00e3o Joaquim",
+        "departures":695.0,
+        "arrivals":709.0,
+        "total":1404.0
+    },
+    {
+        "station":"16 - Esporte Clube Pinheiros Boliche",
+        "departures":291.0,
+        "arrivals":380.0,
+        "total":671.0
+    },
+    {
+        "station":"162 - Herculano de Freitas",
+        "departures":197.0,
+        "arrivals":228.0,
+        "total":425.0
+    },
+    {
+        "station":"163 - Paim",
+        "departures":597.0,
+        "arrivals":679.0,
+        "total":1276.0
+    },
+    {
+        "station":"165 - Cemit\u00e9rio Consola\u00e7\u00e3o",
+        "departures":289.0,
+        "arrivals":279.0,
+        "total":568.0
+    },
+    {
+        "station":"166 - Metr\u00f4 Higien\u00f3polis Mackenzie",
+        "departures":237.0,
+        "arrivals":214.0,
+        "total":451.0
+    },
+    {
+        "station":"167 - Pra\u00e7a Roosevelt",
+        "departures":997.0,
+        "arrivals":1288.0,
+        "total":2285.0
+    },
+    {
+        "station":"169 - Rua S\u00e3o Domingos",
+        "departures":381.0,
+        "arrivals":472.0,
+        "total":853.0
+    },
+    {
+        "station":"17 - Rua Jos\u00e9 Gon\u00e7alves de Oliveira",
+        "departures":935.0,
+        "arrivals":672.0,
+        "total":1607.0
+    },
+    {
+        "station":"171 - Pra\u00e7a da Liberdade",
+        "departures":922.0,
+        "arrivals":1239.0,
+        "total":2161.0
+    },
+    {
+        "station":"173 - Largo de S\u00e3o Bento",
+        "departures":602.0,
+        "arrivals":769.0,
+        "total":1371.0
+    },
+    {
+        "station":"174 - Largo S\u00e3o Francisco",
+        "departures":319.0,
+        "arrivals":394.0,
+        "total":713.0
+    },
+    {
+        "station":"175 - R. Luis Coelho",
+        "departures":699.0,
+        "arrivals":459.0,
+        "total":1158.0
+    },
+    {
+        "station":"176 - R. Cel. Xavier de Toledo",
+        "departures":647.0,
+        "arrivals":924.0,
+        "total":1571.0
+    },
+    {
+        "station":"177 - Av. S\u00e3o Jo\u00e3o",
+        "departures":857.0,
+        "arrivals":1078.0,
+        "total":1935.0
+    },
+    {
+        "station":"178 - Av. S\u00e3o Lu\u00eds",
+        "departures":862.0,
+        "arrivals":1181.0,
+        "total":2043.0
+    },
+    {
+        "station":"18 - Ita\u00fa Faria Lima",
+        "departures":633.0,
+        "arrivals":591.0,
+        "total":1224.0
+    },
+    {
+        "station":"181 - Metr\u00f4 Santa Cec\u00edlia",
+        "departures":1258.0,
+        "arrivals":1527.0,
+        "total":2785.0
+    },
+    {
+        "station":"183 - Mackenzie",
+        "departures":311.0,
+        "arrivals":317.0,
+        "total":628.0
+    },
+    {
+        "station":"186 - Itamb\u00e9",
+        "departures":210.0,
+        "arrivals":172.0,
+        "total":382.0
+    },
+    {
+        "station":"187 - Parque Buenos Aires",
+        "departures":226.0,
+        "arrivals":203.0,
+        "total":429.0
+    },
+    {
+        "station":"189 - CEMG FARIA LIMA",
+        "departures":494.0,
+        "arrivals":598.0,
+        "total":1092.0
+    },
+    {
+        "station":"19 - Av. Dr. Cardoso de Melo",
+        "departures":740.0,
+        "arrivals":812.0,
+        "total":1552.0
+    },
+    {
+        "station":"192 - Pernambuco",
+        "departures":153.0,
+        "arrivals":129.0,
+        "total":282.0
+    },
+    {
+        "station":"193 - Pra\u00e7a Monte Castelo",
+        "departures":317.0,
+        "arrivals":484.0,
+        "total":801.0
+    },
+    {
+        "station":"194 - jaguaribe",
+        "departures":392.0,
+        "arrivals":412.0,
+        "total":804.0
+    },
+    {
+        "station":"196 - Alameda Barros",
+        "departures":681.0,
+        "arrivals":847.0,
+        "total":1528.0
+    },
+    {
+        "station":"197 - Albuquerque Lins",
+        "departures":121.0,
+        "arrivals":118.0,
+        "total":239.0
+    },
+    {
+        "station":"198 - Marechal Deodoro",
+        "departures":252.0,
+        "arrivals":281.0,
+        "total":533.0
+    },
+    {
+        "station":"199 - Conselheiro Brotero",
+        "departures":118.0,
+        "arrivals":148.0,
+        "total":266.0
+    },
+    {
+        "station":"2 - SESC Pinheiros",
+        "departures":300.0,
+        "arrivals":346.0,
+        "total":646.0
+    },
+    {
+        "station":"20 - CPTM Cidade Jardim",
+        "departures":477.0,
+        "arrivals":615.0,
+        "total":1092.0
+    },
+    {
+        "station":"201 - Metr\u00f4 Sumar\u00e9",
+        "departures":273.0,
+        "arrivals":218.0,
+        "total":491.0
+    },
+    {
+        "station":"204 - Consola\u00e7\u00e3o",
+        "departures":318.0,
+        "arrivals":72.0,
+        "total":390.0
+    },
+    {
+        "station":"205 - Alameda It\u00fa 1571",
+        "departures":201.0,
+        "arrivals":179.0,
+        "total":380.0
+    },
+    {
+        "station":"206 - Alameda Tiet\u00ea",
+        "departures":158.0,
+        "arrivals":103.0,
+        "total":261.0
+    },
+    {
+        "station":"207 - Bela Cintra",
+        "departures":238.0,
+        "arrivals":282.0,
+        "total":520.0
+    },
+    {
+        "station":"208 - Alameda Lorena",
+        "departures":215.0,
+        "arrivals":183.0,
+        "total":398.0
+    },
+    {
+        "station":"21 - Parque do Povo port\u00e3o 1",
+        "departures":1559.0,
+        "arrivals":1873.0,
+        "total":3432.0
+    },
+    {
+        "station":"211 - Capote Valente",
+        "departures":409.0,
+        "arrivals":366.0,
+        "total":775.0
+    },
+    {
+        "station":"212 - Rua Estados Unidos",
+        "departures":265.0,
+        "arrivals":271.0,
+        "total":536.0
+    },
+    {
+        "station":"215 - E.E. Godofredo Furtado",
+        "departures":306.0,
+        "arrivals":258.0,
+        "total":564.0
+    },
+    {
+        "station":"216 - Jo\u00e3o Moura 328",
+        "departures":214.0,
+        "arrivals":202.0,
+        "total":416.0
+    },
+    {
+        "station":"217 - Alameda Gabriel",
+        "departures":204.0,
+        "arrivals":225.0,
+        "total":429.0
+    },
+    {
+        "station":"219 - R. Joaquim Antunes",
+        "departures":282.0,
+        "arrivals":256.0,
+        "total":538.0
+    },
+    {
+        "station":"22 - Rua Leopoldo Couto",
+        "departures":609.0,
+        "arrivals":643.0,
+        "total":1252.0
+    },
+    {
+        "station":"220 - R. dos Pinheiros",
+        "departures":413.0,
+        "arrivals":424.0,
+        "total":837.0
+    },
+    {
+        "station":"222 - Rua Hor\u00e1cio Lane",
+        "departures":271.0,
+        "arrivals":275.0,
+        "total":546.0
+    },
+    {
+        "station":"223 - Fradique Coutinho 558",
+        "departures":257.0,
+        "arrivals":291.0,
+        "total":548.0
+    },
+    {
+        "station":"224 - Metr\u00f4 Fradique Coutinho",
+        "departures":619.0,
+        "arrivals":724.0,
+        "total":1343.0
+    },
+    {
+        "station":"225 - Sampaio Vidal 530",
+        "departures":216.0,
+        "arrivals":229.0,
+        "total":445.0
+    },
+    {
+        "station":"227 - R. Sim\u00e3o \u00c1lvares",
+        "departures":534.0,
+        "arrivals":527.0,
+        "total":1061.0
+    },
+    {
+        "station":"229 - R. Artur de Azevedo",
+        "departures":552.0,
+        "arrivals":590.0,
+        "total":1142.0
+    },
+    {
+        "station":"23 - CPTM Vila Ol\u00edmpia",
+        "departures":2187.0,
+        "arrivals":2006.0,
+        "total":4193.0
+    },
+    {
+        "station":"231 - Instituto Tomie Ohtake",
+        "departures":320.0,
+        "arrivals":338.0,
+        "total":658.0
+    },
+    {
+        "station":"232 - Rua Sumidouro",
+        "departures":264.0,
+        "arrivals":343.0,
+        "total":607.0
+    },
+    {
+        "station":"234 - Pra\u00e7a Roquete Pinto",
+        "departures":395.0,
+        "arrivals":530.0,
+        "total":925.0
+    },
+    {
+        "station":"235 - CPTM Hebraica Rebou\u00e7as",
+        "departures":278.0,
+        "arrivals":338.0,
+        "total":616.0
+    },
+    {
+        "station":"236 - Pra\u00e7a Ern\u00e2ni Braga",
+        "departures":262.0,
+        "arrivals":347.0,
+        "total":609.0
+    },
+    {
+        "station":"237 - BNH Vila Madalena",
+        "departures":326.0,
+        "arrivals":294.0,
+        "total":620.0
+    },
+    {
+        "station":"238 - Av. dos Semaneiros",
+        "departures":200.0,
+        "arrivals":198.0,
+        "total":398.0
+    },
+    {
+        "station":"24 - Rua Funchal",
+        "departures":867.0,
+        "arrivals":837.0,
+        "total":1704.0
+    },
+    {
+        "station":"240 - Pra\u00e7a Panamericana",
+        "departures":390.0,
+        "arrivals":417.0,
+        "total":807.0
+    },
+    {
+        "station":"241 - CPTM Cidade Universit\u00e1ria",
+        "departures":421.0,
+        "arrivals":436.0,
+        "total":857.0
+    },
+    {
+        "station":"242 - Letras",
+        "departures":44.0,
+        "arrivals":29.0,
+        "total":73.0
+    },
+    {
+        "station":"243 - Bancos\/Reitoria",
+        "departures":106.0,
+        "arrivals":117.0,
+        "total":223.0
+    },
+    {
+        "station":"244 - Metr\u00f4 Butant\u00e3",
+        "departures":377.0,
+        "arrivals":463.0,
+        "total":840.0
+    },
+    {
+        "station":"245 - P1",
+        "departures":208.0,
+        "arrivals":220.0,
+        "total":428.0
+    },
+    {
+        "station":"246 - Port\u00e3o CPTM",
+        "departures":224.0,
+        "arrivals":206.0,
+        "total":430.0
+    },
+    {
+        "station":"247 - CEPE",
+        "departures":106.0,
+        "arrivals":113.0,
+        "total":219.0
+    },
+    {
+        "station":"248 - Biblioteca Brasiliana",
+        "departures":111.0,
+        "arrivals":84.0,
+        "total":195.0
+    },
+    {
+        "station":"249 - Bandej\u00e3o Central",
+        "departures":698.0,
+        "arrivals":743.0,
+        "total":1441.0
+    },
+    {
+        "station":"25 - Rua Helena",
+        "departures":903.0,
+        "arrivals":838.0,
+        "total":1741.0
+    },
+    {
+        "station":"250 - Bandej\u00e3o Qu\u00edmica",
+        "departures":90.0,
+        "arrivals":75.0,
+        "total":165.0
+    },
+    {
+        "station":"251 - FAU",
+        "departures":36.0,
+        "arrivals":40.0,
+        "total":76.0
+    },
+    {
+        "station":"252 - Psicologia",
+        "departures":75.0,
+        "arrivals":73.0,
+        "total":148.0
+    },
+    {
+        "station":"253 - Pedalusp Bi\u00eanio",
+        "departures":104.0,
+        "arrivals":119.0,
+        "total":223.0
+    },
+    {
+        "station":"254 - Terminal de \u00d4nibus USP",
+        "departures":85.0,
+        "arrivals":89.0,
+        "total":174.0
+    },
+    {
+        "station":"255 - Bandej\u00e3o F\u00edsica",
+        "departures":29.0,
+        "arrivals":23.0,
+        "total":52.0
+    },
+    {
+        "station":"255 - Estacao Tiradentes - 275",
+        "departures":56.0,
+        "arrivals":56.0,
+        "total":112.0
+    },
+    {
+        "station":"256 - Bandej\u00e3o Prefeitura",
+        "departures":30.0,
+        "arrivals":24.0,
+        "total":54.0
+    },
+    {
+        "station":"257 - Hospital Universit\u00e1rio",
+        "departures":63.0,
+        "arrivals":37.0,
+        "total":100.0
+    },
+    {
+        "station":"258 - Odontologia",
+        "departures":69.0,
+        "arrivals":28.0,
+        "total":97.0
+    },
+    {
+        "station":"259 - Vila Indiana",
+        "departures":149.0,
+        "arrivals":72.0,
+        "total":221.0
+    },
+    {
+        "station":"26 - Pra\u00e7a Pierre Germayel",
+        "departures":704.0,
+        "arrivals":784.0,
+        "total":1488.0
+    },
+    {
+        "station":"260 - P3",
+        "departures":41.0,
+        "arrivals":46.0,
+        "total":87.0
+    },
+    {
+        "station":"261 - Pra\u00e7a Pero Vaz de Caminha",
+        "departures":204.0,
+        "arrivals":234.0,
+        "total":438.0
+    },
+    {
+        "station":"262 - Col\u00e9gio Santa Cruz",
+        "departures":462.0,
+        "arrivals":587.0,
+        "total":1049.0
+    },
+    {
+        "station":"263 - Pra\u00e7a Beethoven",
+        "departures":596.0,
+        "arrivals":705.0,
+        "total":1301.0
+    },
+    {
+        "station":"264 - Parque Villa Lobos Port\u00e3o 2",
+        "departures":1916.0,
+        "arrivals":1887.0,
+        "total":3803.0
+    },
+    {
+        "station":"267 - CPTM Villa Lobos Jaguar\u00e9",
+        "departures":303.0,
+        "arrivals":404.0,
+        "total":707.0
+    },
+    {
+        "station":"270 - Pra\u00e7a Portugal",
+        "departures":318.0,
+        "arrivals":311.0,
+        "total":629.0
+    },
+    {
+        "station":"271 - Rua Pedroso de Moraes",
+        "departures":248.0,
+        "arrivals":272.0,
+        "total":520.0
+    },
+    {
+        "station":"272 - R. Rep\u00fablica do Iraque",
+        "departures":346.0,
+        "arrivals":339.0,
+        "total":685.0
+    },
+    {
+        "station":"279 - Hotel Transam\u00e9rica Berrini",
+        "departures":69.0,
+        "arrivals":62.0,
+        "total":131.0
+    },
+    {
+        "station":"28 - Rua Comendador Miguel Calfat",
+        "departures":1014.0,
+        "arrivals":1078.0,
+        "total":2092.0
+    },
+    {
+        "station":"280 - Rua Cel. Joaquim Ferreira Lobo",
+        "departures":815.0,
+        "arrivals":817.0,
+        "total":1632.0
+    },
+    {
+        "station":"281 - Rua Cel. Joaquim Ferreira Lobo II",
+        "departures":709.0,
+        "arrivals":684.0,
+        "total":1393.0
+    },
+    {
+        "station":"282 - Cunha Horta",
+        "departures":613.0,
+        "arrivals":818.0,
+        "total":1431.0
+    },
+    {
+        "station":"286 - Turiassu",
+        "departures":198.0,
+        "arrivals":184.0,
+        "total":382.0
+    },
+    {
+        "station":"287 - Largo Padre P\u00e9ricles",
+        "departures":278.0,
+        "arrivals":304.0,
+        "total":582.0
+    },
+    {
+        "station":"290 - Metr\u00f4 Marechal Deodoro",
+        "departures":476.0,
+        "arrivals":564.0,
+        "total":1040.0
+    },
+    {
+        "station":"292 - Rua Domingos de Moraes",
+        "departures":382.0,
+        "arrivals":341.0,
+        "total":723.0
+    },
+    {
+        "station":"293 - Metr\u00f4 Ana Rosa",
+        "departures":635.0,
+        "arrivals":441.0,
+        "total":1076.0
+    },
+    {
+        "station":"295 - Vergueiro",
+        "departures":482.0,
+        "arrivals":447.0,
+        "total":929.0
+    },
+    {
+        "station":"296 - Largo Ana Rosa",
+        "departures":443.0,
+        "arrivals":417.0,
+        "total":860.0
+    },
+    {
+        "station":"297 - SESC Vila Mariana",
+        "departures":220.0,
+        "arrivals":182.0,
+        "total":402.0
+    },
+    {
+        "station":"3 - CPTM Pinheiros",
+        "departures":375.0,
+        "arrivals":769.0,
+        "total":1144.0
+    },
+    {
+        "station":"30 - Bandeira Paulista",
+        "departures":625.0,
+        "arrivals":640.0,
+        "total":1265.0
+    },
+    {
+        "station":"301 - R. Fran\u00e7a Pinto",
+        "departures":147.0,
+        "arrivals":180.0,
+        "total":327.0
+    },
+    {
+        "station":"303 - Rio Grande",
+        "departures":343.0,
+        "arrivals":351.0,
+        "total":694.0
+    },
+    {
+        "station":"304 - Gandavo",
+        "departures":497.0,
+        "arrivals":497.0,
+        "total":994.0
+    },
+    {
+        "station":"305 - MUBA",
+        "departures":195.0,
+        "arrivals":107.0,
+        "total":302.0
+    },
+    {
+        "station":"307 - Metr\u00f4 Vila Mariana",
+        "departures":824.0,
+        "arrivals":749.0,
+        "total":1573.0
+    },
+    {
+        "station":"308 - Rua Cunha",
+        "departures":361.0,
+        "arrivals":335.0,
+        "total":696.0
+    },
+    {
+        "station":"311 - Luis G\u00f3is",
+        "departures":420.0,
+        "arrivals":396.0,
+        "total":816.0
+    },
+    {
+        "station":"312 - Parque da Bicicletas",
+        "departures":303.0,
+        "arrivals":325.0,
+        "total":628.0
+    },
+    {
+        "station":"313 - Metr\u00f4 AACD Servidor",
+        "departures":352.0,
+        "arrivals":359.0,
+        "total":711.0
+    },
+    {
+        "station":"315 - Metr\u00f4 Hospital S\u00e3o Paulo",
+        "departures":239.0,
+        "arrivals":242.0,
+        "total":481.0
+    },
+    {
+        "station":"316 - Alameda das Boninas",
+        "departures":103.0,
+        "arrivals":73.0,
+        "total":176.0
+    },
+    {
+        "station":"317 - R. Leonardo Nunes",
+        "departures":462.0,
+        "arrivals":451.0,
+        "total":913.0
+    },
+    {
+        "station":"319 - Metr\u00f4 Moema",
+        "departures":1732.0,
+        "arrivals":1312.0,
+        "total":3044.0
+    },
+    {
+        "station":"32 - Ibirapuera Port\u00e3o 07",
+        "departures":460.0,
+        "arrivals":522.0,
+        "total":982.0
+    },
+    {
+        "station":"320 - Av. Jandira",
+        "departures":472.0,
+        "arrivals":463.0,
+        "total":935.0
+    },
+    {
+        "station":"321 - Gaivota",
+        "departures":261.0,
+        "arrivals":227.0,
+        "total":488.0
+    },
+    {
+        "station":"322 - Metr\u00f4 Eucaliptos",
+        "departures":1439.0,
+        "arrivals":1327.0,
+        "total":2766.0
+    },
+    {
+        "station":"324 - Jauaperi",
+        "departures":269.0,
+        "arrivals":225.0,
+        "total":494.0
+    },
+    {
+        "station":"325 - Pintassilgo",
+        "departures":462.0,
+        "arrivals":465.0,
+        "total":927.0
+    },
+    {
+        "station":"326 - Pra\u00e7a da \u00e1rvore",
+        "departures":483.0,
+        "arrivals":472.0,
+        "total":955.0
+    },
+    {
+        "station":"328 - R. Dem\u00f3stenes",
+        "departures":252.0,
+        "arrivals":249.0,
+        "total":501.0
+    },
+    {
+        "station":"33 - Ibirapuera Port\u00e3o 08",
+        "departures":410.0,
+        "arrivals":426.0,
+        "total":836.0
+    },
+    {
+        "station":"332 - Rua Nova York",
+        "departures":431.0,
+        "arrivals":429.0,
+        "total":860.0
+    },
+    {
+        "station":"333 - Rua Fl\u00f3rida 53",
+        "departures":606.0,
+        "arrivals":602.0,
+        "total":1208.0
+    },
+    {
+        "station":"334 - R. Pe. Ant\u00f4nio",
+        "departures":377.0,
+        "arrivals":395.0,
+        "total":772.0
+    },
+    {
+        "station":"335 - R. Ribeiro do Vale",
+        "departures":363.0,
+        "arrivals":398.0,
+        "total":761.0
+    },
+    {
+        "station":"336 - Fl\u00f3rida 1020",
+        "departures":316.0,
+        "arrivals":322.0,
+        "total":638.0
+    },
+    {
+        "station":"339 - R. Min. Luiz Gallotti",
+        "departures":256.0,
+        "arrivals":232.0,
+        "total":488.0
+    },
+    {
+        "station":"34 - Parque da Juventude",
+        "departures":312.0,
+        "arrivals":338.0,
+        "total":650.0
+    },
+    {
+        "station":"341 - P\u00e1ssaros e Flores",
+        "departures":179.0,
+        "arrivals":177.0,
+        "total":356.0
+    },
+    {
+        "station":"344 - ROCHAVER\u00c1",
+        "departures":476.0,
+        "arrivals":531.0,
+        "total":1007.0
+    },
+    {
+        "station":"345 - R. Henrique Fischer",
+        "departures":609.0,
+        "arrivals":685.0,
+        "total":1294.0
+    },
+    {
+        "station":"346 - Bacaetava",
+        "departures":266.0,
+        "arrivals":250.0,
+        "total":516.0
+    },
+    {
+        "station":"347 - Metr\u00f4 Brooklin",
+        "departures":522.0,
+        "arrivals":506.0,
+        "total":1028.0
+    },
+    {
+        "station":"35 - Rua Benedito Lapin",
+        "departures":393.0,
+        "arrivals":397.0,
+        "total":790.0
+    },
+    {
+        "station":"354 - Pra\u00e7a Oswaldo Cruz",
+        "departures":1083.0,
+        "arrivals":1016.0,
+        "total":2099.0
+    },
+    {
+        "station":"355 - R. Dr. Rafael de Barros",
+        "departures":236.0,
+        "arrivals":107.0,
+        "total":343.0
+    },
+    {
+        "station":"358 - Shopping Villa Lobos",
+        "departures":289.0,
+        "arrivals":319.0,
+        "total":608.0
+    },
+    {
+        "station":"359 - CENU",
+        "departures":113.0,
+        "arrivals":87.0,
+        "total":200.0
+    },
+    {
+        "station":"36 - E.E. Aristides de Castro",
+        "departures":1535.0,
+        "arrivals":1541.0,
+        "total":3076.0
+    },
+    {
+        "station":"37 - Edif\u00edcio Infinity",
+        "departures":1390.0,
+        "arrivals":1401.0,
+        "total":2791.0
+    },
+    {
+        "station":"39 - Rua Jesuino Arruda",
+        "departures":235.0,
+        "arrivals":204.0,
+        "total":439.0
+    },
+    {
+        "station":"4 - Rua Diogo Moreira",
+        "departures":626.0,
+        "arrivals":837.0,
+        "total":1463.0
+    },
+    {
+        "station":"40 - Bras\u00edlia",
+        "departures":610.0,
+        "arrivals":621.0,
+        "total":1231.0
+    },
+    {
+        "station":"41 - CPTM Santo Amaro",
+        "departures":105.0,
+        "arrivals":111.0,
+        "total":216.0
+    },
+    {
+        "station":"43 - Herois da FEB",
+        "departures":304.0,
+        "arrivals":304.0,
+        "total":608.0
+    },
+    {
+        "station":"44 - Ibirapuera Port\u00e3o 09",
+        "departures":857.0,
+        "arrivals":1181.0,
+        "total":2038.0
+    },
+    {
+        "station":"46 - P\u00e7 Tenente Coronel Heleuses Nogueira",
+        "departures":223.0,
+        "arrivals":224.0,
+        "total":447.0
+    },
+    {
+        "station":"47 - Suzano",
+        "departures":379.0,
+        "arrivals":403.0,
+        "total":782.0
+    },
+    {
+        "station":"48 - Itacema",
+        "departures":442.0,
+        "arrivals":437.0,
+        "total":879.0
+    },
+    {
+        "station":"5 - Chic\u00e3o Vive",
+        "departures":492.0,
+        "arrivals":470.0,
+        "total":962.0
+    },
+    {
+        "station":"50 - Rua Andr\u00e9 Fernandes",
+        "departures":699.0,
+        "arrivals":699.0,
+        "total":1398.0
+    },
+    {
+        "station":"51 - Braz Leme",
+        "departures":225.0,
+        "arrivals":227.0,
+        "total":452.0
+    },
+    {
+        "station":"53 - Google S\u00e3o Paulo",
+        "departures":769.0,
+        "arrivals":976.0,
+        "total":1745.0
+    },
+    {
+        "station":"54 - C\u00f4nego Amaral Mello",
+        "departures":76.0,
+        "arrivals":81.0,
+        "total":157.0
+    },
+    {
+        "station":"56 - Henrique Schaumann",
+        "departures":261.0,
+        "arrivals":232.0,
+        "total":493.0
+    },
+    {
+        "station":"57 - Pra\u00e7a Caetano Fracaroli",
+        "departures":198.0,
+        "arrivals":140.0,
+        "total":338.0
+    },
+    {
+        "station":"58 - R. Lisboa",
+        "departures":127.0,
+        "arrivals":87.0,
+        "total":214.0
+    },
+    {
+        "station":"59 - EBAC",
+        "departures":388.0,
+        "arrivals":245.0,
+        "total":633.0
+    },
+    {
+        "station":"6 - Rua Manduri",
+        "departures":750.0,
+        "arrivals":872.0,
+        "total":1622.0
+    },
+    {
+        "station":"60 - Euclides da Silveira",
+        "departures":204.0,
+        "arrivals":243.0,
+        "total":447.0
+    },
+    {
+        "station":"61 - Ponte da Casa Verde",
+        "departures":141.0,
+        "arrivals":148.0,
+        "total":289.0
+    },
+    {
+        "station":"62 - P\u00e7a. Pe. Lu\u00eds Alves de S. Castro",
+        "departures":165.0,
+        "arrivals":204.0,
+        "total":369.0
+    },
+    {
+        "station":"63 - Club Athletico Paulistano",
+        "departures":280.0,
+        "arrivals":318.0,
+        "total":598.0
+    },
+    {
+        "station":"64 - Av Marqu\u00eas de S\u00e3o Vicente",
+        "departures":139.0,
+        "arrivals":159.0,
+        "total":298.0
+    },
+    {
+        "station":"65 - Terminal Barra Funda",
+        "departures":161.0,
+        "arrivals":175.0,
+        "total":336.0
+    },
+    {
+        "station":"66 - Metr\u00f4 Barra Funda",
+        "departures":258.0,
+        "arrivals":338.0,
+        "total":596.0
+    },
+    {
+        "station":"67 - Matarazzo",
+        "departures":160.0,
+        "arrivals":160.0,
+        "total":320.0
+    },
+    {
+        "station":"68 - Pra\u00e7a Nicolau Scarpa",
+        "departures":205.0,
+        "arrivals":271.0,
+        "total":476.0
+    },
+    {
+        "station":"69 - Oscar Freire",
+        "departures":481.0,
+        "arrivals":534.0,
+        "total":1015.0
+    },
+    {
+        "station":"7 - Pra\u00e7a Joaquim Roberto",
+        "departures":499.0,
+        "arrivals":651.0,
+        "total":1150.0
+    },
+    {
+        "station":"70 - Alameda Casa Branca",
+        "departures":323.0,
+        "arrivals":391.0,
+        "total":714.0
+    },
+    {
+        "station":"71 - Pamplona",
+        "departures":418.0,
+        "arrivals":437.0,
+        "total":855.0
+    },
+    {
+        "station":"72 - Queluz",
+        "departures":206.0,
+        "arrivals":231.0,
+        "total":437.0
+    },
+    {
+        "station":"73 - Gin\u00e1sio Ibirapuera",
+        "departures":204.0,
+        "arrivals":349.0,
+        "total":553.0
+    },
+    {
+        "station":"74 - C\u00edrculo Militar",
+        "departures":209.0,
+        "arrivals":307.0,
+        "total":516.0
+    },
+    {
+        "station":"75 - Viaduto Tut\u00f3ia",
+        "departures":196.0,
+        "arrivals":275.0,
+        "total":471.0
+    },
+    {
+        "station":"76 - 8\u00b0 Batalh\u00e3o",
+        "departures":271.0,
+        "arrivals":386.0,
+        "total":657.0
+    },
+    {
+        "station":"77 - Alameda J. Eug\u00eanio de Lima",
+        "departures":245.0,
+        "arrivals":250.0,
+        "total":495.0
+    },
+    {
+        "station":"79 - P\u00e7a David Raw",
+        "departures":80.0,
+        "arrivals":92.0,
+        "total":172.0
+    },
+    {
+        "station":"80 - Pra\u00e7a Alexandre de Gusm\u00e3o",
+        "departures":182.0,
+        "arrivals":147.0,
+        "total":329.0
+    },
+    {
+        "station":"81 - Sesc Pomp\u00e9ia",
+        "departures":303.0,
+        "arrivals":356.0,
+        "total":659.0
+    },
+    {
+        "station":"82 - Palestra It\u00e1lia",
+        "departures":496.0,
+        "arrivals":578.0,
+        "total":1074.0
+    },
+    {
+        "station":"83 - Augusta",
+        "departures":305.0,
+        "arrivals":302.0,
+        "total":607.0
+    },
+    {
+        "station":"85 - Pra\u00e7a do Ciclista",
+        "departures":2915.0,
+        "arrivals":1458.0,
+        "total":4373.0
+    },
+    {
+        "station":"86 - Shopping Center 3",
+        "departures":2381.0,
+        "arrivals":1576.0,
+        "total":3957.0
+    },
+    {
+        "station":"87 - Parque Prefeito M\u00e1rio Covas",
+        "departures":1404.0,
+        "arrivals":1126.0,
+        "total":2530.0
+    },
+    {
+        "station":"88 - Jo\u00e3o Ramalho",
+        "departures":163.0,
+        "arrivals":170.0,
+        "total":333.0
+    },
+    {
+        "station":"89 - Caiub\u00ed",
+        "departures":167.0,
+        "arrivals":163.0,
+        "total":330.0
+    },
+    {
+        "station":"9 - Rua Gr\u00e9cia",
+        "departures":641.0,
+        "arrivals":828.0,
+        "total":1469.0
+    },
+    {
+        "station":"90 - Alameda Campinas",
+        "departures":1764.0,
+        "arrivals":1163.0,
+        "total":2927.0
+    },
+    {
+        "station":"91 - Paulista 778",
+        "departures":1103.0,
+        "arrivals":864.0,
+        "total":1967.0
+    },
+    {
+        "station":"92 - Metr\u00f4 Brigadeiro",
+        "departures":1755.0,
+        "arrivals":732.0,
+        "total":2487.0
+    },
+    {
+        "station":"93 - R. Carlos Sampaio",
+        "departures":267.0,
+        "arrivals":213.0,
+        "total":480.0
+    },
+    {
+        "station":"95 - R. Manoel da N\u00f3brega",
+        "departures":789.0,
+        "arrivals":420.0,
+        "total":1209.0
+    },
+    {
+        "station":"96 - Tut\u00f3ia",
+        "departures":244.0,
+        "arrivals":253.0,
+        "total":497.0
+    },
+    {
+        "station":"97 - Pra\u00e7a Irm\u00e3os Karmam",
+        "departures":196.0,
+        "arrivals":209.0,
+        "total":405.0
+    },
+    {
+        "station":"98 - Sampaio Viana",
+        "departures":143.0,
+        "arrivals":105.0,
+        "total":248.0
+    },
+    {
+        "station":"99 - Parque da \u00c1gua Branca",
+        "departures":184.0,
+        "arrivals":162.0,
+        "total":346.0
+    },
+    {
+        "station":0,
+        "departures":0.0,
+        "arrivals":61.0,
+        "total":61.0
+    },
+    {
+        "station":0,
+        "departures":0.0,
+        "arrivals":20.0,
+        "total":20.0
+    },
+    {
+        "station":0,
+        "departures":0.0,
+        "arrivals":10.0,
+        "total":10.0
+    },
+    {
+        "station":"house",
+        "departures":1.0,
+        "arrivals":0.0,
+        "total":1.0
+    }
+]

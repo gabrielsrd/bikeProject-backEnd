@@ -81,4 +81,76 @@ class HotZonesAPIView(APIView):
 
         print("GeoJSON data loaded successfully.")
         return JsonResponse(ciclovias_data)
-    
+
+class StationsAPIView(APIView):
+    def get(self, request):
+        # Show current path
+        print(f"Current working directory: {os.getcwd()}")
+        geojson_file_path = os.path.join("geojsons", "stations.geojson")
+        print(f"GeoJSON file path: {geojson_file_path}")
+
+        try:
+            # Open and load the GeoJSON file
+            with open(geojson_file_path, "r", encoding="utf-8") as file:
+                stations_data = json.load(file)
+        except FileNotFoundError:
+            print("GeoJSON file not found.")
+            return Response({"error": "GeoJSON file not found."}, status=404)
+        except json.JSONDecodeError as e:
+            print(f"Invalid GeoJSON format: {e}")
+            return Response({"error": "Invalid GeoJSON format."}, status=400)
+        except Exception as e:
+            print(f"Unexpected error: {e}")
+            return Response({"error": "Internal server error."}, status=500)
+
+        print("GeoJSON data loaded successfully.")
+        return JsonResponse(stations_data)
+
+class HourlyCountsAPIView(APIView):
+    def get(self, request):
+        # Show current path
+        print(f"Current working directory: {os.getcwd()}")
+        json_file_path = os.path.join("geojsons", "hourly_counts.json")
+        print(f"JSON file path: {json_file_path}")
+
+        try:
+            # Open and load the JSON file
+            with open(json_file_path, "r", encoding="utf-8") as file:
+                hourly_counts_data = json.load(file)
+        except FileNotFoundError:
+            print("JSON file not found.")
+            return Response({"error": "JSON file not found."}, status=404)
+        except json.JSONDecodeError as e:
+            print(f"Invalid JSON format: {e}")
+            return Response({"error": "Invalid JSON format."}, status=400)
+        except Exception as e:
+            print(f"Unexpected error: {e}")
+            return Response({"error": "Internal server error."}, status=500)
+
+        print("JSON data loaded successfully.")
+        return JsonResponse(hourly_counts_data, safe=False)
+
+class StationsHistogramAPIView(APIView):
+    def get(self, request):
+        print("Loading JSON data histogram...")
+        # Exibe o diretório atual para depuração
+        print(f"Current working directory: {os.getcwd()}")
+        json_file_path = os.path.join("geojsons", "station_histogram_with_id.json")
+        print(f"JSON file path: {json_file_path}")
+
+        try:
+            # Abre e carrega o arquivo JSON
+            with open(json_file_path, "r", encoding="utf-8") as file:
+                histogram_data = json.load(file)
+        except FileNotFoundError:
+            print("JSON file not found.")
+            return Response({"error": "JSON file not found."}, status=404)
+        except json.JSONDecodeError as e:
+            print(f"Invalid JSON format: {e}")
+            return Response({"error": "Invalid JSON format."}, status=400)
+        except Exception as e:
+            print(f"Unexpected error: {e}")
+            return Response({"error": "Internal server error."}, status=500)
+
+        print("JSON data loaded successfully.")
+        return JsonResponse(histogram_data, safe=False)
