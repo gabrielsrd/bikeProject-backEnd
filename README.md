@@ -1,5 +1,3 @@
-
-
 # Projeto Backend - Análise de Ciclofaixas e Estações de Bicicletas em São Paulo
 
 **Descrição**:  
@@ -66,7 +64,6 @@ Os dados fornecidos são baseados em fontes confiáveis, como os dados abertos d
    pip install -r requirements.txt
    ```
 
-
 2. Execute a aplicação:
    ```bash
    python manage.py runserver
@@ -76,6 +73,25 @@ Os dados fornecidos são baseados em fontes confiáveis, como os dados abertos d
    - Ciclofaixas: `http://localhost:8000/api/ciclovias/`  
    - Estações: `http://localhost:8000/api/estacoes/`  
    - Hotzones: `http://localhost:8000/api/hotzones/`  
+
+---
+
+## **Executando com Docker**
+
+1. **Construir a imagem Docker:**
+   ```bash
+   docker build -t bikeproject-backend .
+   ```
+
+2. **Executar o container:**
+   ```bash
+   docker run -p 8000:8000 bikeproject-backend
+   ```
+
+3. **Acessar os endpoints:**
+   - Ciclofaixas: `http://localhost:8000/api/ciclovias/`  
+   - Estações: `http://localhost:8000/api/estacoes/`  
+   - Hotzones: `http://localhost:8000/api/hotzones/`
 
 ---
 
@@ -122,5 +138,5 @@ Os dados brutos foram processados utilizando scripts Python disponíveis na past
 
 1. **Compatibilidade dos Dados:** Durante o pré-processamento, os shapefiles foram convertidos para GeoJSON para facilitar a leitura e integração com o front-end.  
 2. **Zonas Prioritárias:** A análise das "hotzones" foi baseada em algoritmos de densidade por kernel (KDE).  
-3. **FrontEnd** Link para o repositório: https://github.com/gabrielsrd/bikeProject-frontEnd 
+3. **FrontEnd** Link para o repositório: https://github.com/gabrielsrd/bikeProject-frontEnd
 
