@@ -1,0 +1,336 @@
+station_id,station_name
+1,Largo da Batata
+2,SESC Pinheiros
+3,CPTM Pinheiros
+4,Rua Diogo Moreira
+5,Chicão Vive
+6,Rua Manduri
+7,Praça Joaquim Roberto
+9,Rua Grécia
+10,Rua Campo Verde
+11,Praça Faria Lima
+12,Largo da Batata II
+13,Esporte Clube Pinheiros Funcionários
+14,Museu da Casa Brasileira
+15,Rua Prof. Artur Ramos
+16,Esporte Clube Pinheiros Boliche
+17,Rua José Gonçalves de Oliveira
+18,Itaú Faria Lima
+19,Av. Dr. Cardoso de Melo
+20,CPTM Cidade Jardim
+21,Parque do Povo portão 1
+22,Rua Leopoldo Couto
+23,CPTM Vila Olímpia
+24,Rua Funchal
+25,Rua Helena
+26,Praça Pierre Germayel
+27,Rua Min. Jesuíno Cardoso
+28,Rua Comendador Miguel Calfat
+29,Rua João Franco
+30,Bandeira Paulista
+31,Rua Jacques Félix
+32,Ibirapuera Portão 07
+33,Ibirapuera Portão 08
+34,Parque da Juventude
+35,Rua Benedito Lapin
+36,E.E. Aristides de Castro
+37,Edifício Infinity
+38,Viradouro
+39,Rua Jesuino Arruda
+40,Brasília
+41,CPTM Santo Amaro
+42,Hotel Unique
+43,Herois da FEB
+44,Ibirapuera Portão 09
+45,Marechal Bitencourt
+46,Pç Tenente Coronel Heleuses Nogueira
+47,Suzano
+48,Itacema
+49,Tapinás
+50,Rua Prof. Carlos de Carvalho
+51,Braz Leme
+53,Google São Paulo
+54,Col�gio Madre Alix
+55,Jacupiranga
+56,Henrique Schaumann
+57,Praça Caetano Fracaroli
+58,R. Lisboa
+59,EBAC
+60,Euclides da Silveira
+61,Ponte da Casa Verde
+62,Pça. Pe. Luís Alves de S. Castro
+63,Club Athletico Paulistano
+64,Av Marquês de São Vicente
+65,Terminal Barra Funda
+66,Metrô Barra Funda
+67,Matarazzo
+68,Praça Nicolau Scarpa
+69,Oscar Freire
+70,Alameda Casa Branca
+71,Pamplona
+72,Queluz
+73,Ginásio Ibirapuera
+74,Círculo Militar
+75,Viaduto Tutóia
+76,8° Batalhão
+77,Alameda J. Eugênio de Lima
+78,Alameda Franca
+79,Pça David Raw
+80,Praça Alexandre de Gusmão
+81,Sesc Pompéia
+82,Palestra Itália
+83,Augusta
+84,Alameda Itú 1219
+85,Praça do Ciclista
+86,Shopping Center 3
+87,Parque Prefeito Mário Covas
+88,João Ramalho
+89,Caiubí
+90,Alameda Campinas
+91,Paulista 778
+92,Metrô Brigadeiro
+93,R. Carlos Sampaio
+94,Alameda Jaú
+95,R. Manoel da Nóbrega
+96,Tutóia
+97,Praça Irmãos Karmam
+98,Sampaio Viana
+99,Parque da Água Branca
+100,Itaú Cultural
+101,Praça Gen. Gentil Falcão
+102,Rua James Watt
+103,Rua Hans Oersted
+105,Praça João Duran Alonso
+106,Rua Flórida
+107,Rua Indiana
+108,Rua Surubim
+109,Praça Oswaldo Varella
+110,Flórida 1670
+111,Rua Edward Weston
+112,R. Lee de Forest
+113,Rua Andrade Pertence
+114,Rua Alvorada
+115,Praça Procópio Ferreira
+116,Praça Dr. Francisco Patti
+117,Cubo Itaú
+118,Rua Júlio Diniz
+119,Rua Quatá
+120,Rua Gomes de Carvalho
+121,Insper
+122,Baluarte
+123,R. Santa Justina
+124,Praça PereIra Coutinho
+125,Natividade
+126,Graúna
+127,Jacutinga
+128,R. Sampaio Góis
+129,Sabiá
+130,Afonso Braz
+131,Ibirapuera Portão 06
+132,Ibirapuera Portão 05
+133,Largo Mestre de Aviz
+134,Parque Ibirapuera
+135,Ibirapuera Portão 10
+137,Rua do Rocio
+138,Chilon
+140,JK Iguatemi
+141,Praça Luis Carlos Paraná
+142,Minhocão
+143,Rua João Cachoeira
+144,Rua Iguatemi
+145,CPTM Berrini
+146,Ibirapuera portão 03
+147,Rua Min Jesuíno Cardoso II
+148,R. Maria Figueiredo
+149,Rua Afonso de Freitas
+150,Metrô Paraíso
+151,Centro Cultural SP
+152,Rua Santa Madalena
+153,Monsenhor Passaláqua
+154,R. Condessa de São Joaquim
+155,Rua dos Belgas
+156,Praça Dom Orione
+157,Theatro Ribalta
+158,Alameda Rio Claro
+159,Metrô São Joaquim
+162,Herculano de Freitas
+163,Paim
+165,Cemitério Consolação
+167,Praça Roosevelt
+169,Rua São Domingos
+171,Praça da Liberdade
+172,Praça da Sé
+173,Largo de São Bento
+174,Largo São Francisco
+175,R. Luis Coelho
+176,R. Cel. Xavier de Toledo
+177,Av. São João
+178,Av. São Luís
+181,Metrô Santa Cecília
+183,Mackenzie
+186,Itambé
+187,Parque Buenos Aires
+189,CEMG FARIA LIMA
+192,Pernambuco
+193,Praça Monte Castelo
+194,jaguaribe
+196,Alameda Barros
+197,Albuquerque Lins
+198,Marechal Deodoro
+199,Conselheiro Brotero
+201,Metrô Sumaré
+202,Arruda Alvim
+203,Capote Valente 822
+204,Consolação
+205,Alameda Itú 1571
+206,Alameda Tietê
+207,Bela Cintra
+208,Alameda Lorena
+209,Haddock Lobo
+210,Capote Valente 429
+211,Capote Valente 145
+212,Rua Estados Unidos
+213,Guadelupe
+214,João Moura 993
+215,E.E. Godofredo Furtado
+216,João Moura 328
+217,Alameda Gabriel
+218,Cemitério Cardeal
+219,R. Joaquim Antunes
+220,R. dos Pinheiros
+221,Sampaio Vidal 27
+222,Rua Horácio Lane
+223,Fradique Coutinho 558
+224,Metrô Fradique Coutinho
+225,Sampaio Vidal 530
+226,Fradique Coutinho 941
+227,R. Simão Álvares
+229,R. Artur de Azevedo
+230,R. Mariana Correia
+231,Instituto Tomie Ohtake
+232,Rua Sumidouro
+233,Rua Paraopeba
+234,Praça Roquete Pinto
+235,CPTM Hebraica Rebouças
+236,Praça Ernâni Braga
+237,BNH Vila Madalena
+238,Av. dos Semaneiros
+239,Avenida AntÃ´nio Batuira
+240,Praça Panamericana
+241,CPTM Cidade Universitária
+242,Letras
+243,Bancos/Reitoria
+244,Metrô Butantã
+245,P1
+246,Portão CPTM
+247,CEPE
+248,Biblioteca Brasiliana
+249,Bandejão Central
+250,Bandejão Química
+251,FEA
+252,Psicologia
+253,Pedalusp Biênio
+254,Terminal de Ônibus USP
+255,Estacao Tiradentes - 275
+256,Bandejão Prefeitura
+257,Hospital Universit
+258,Odontologia
+259,Vila Indiana
+260,P3
+261,Praça Pero Vaz de Caminha
+262,Colégio Santa Cruz
+263,Praça Beethoven
+264,Parque Villa Lobos Portão 2
+265,Teste - Base -Opera��o
+266,Harmonia
+267,CPTM Villa Lobos Jaguaré
+268,Hotel Maksoud Plaza
+269,R. Blumenau
+270,Praça Portugal
+271,R. FrÃ¶ben
+272,R. República do Iraque
+273,R. Hayden
+274,BAUMANN
+275,R. Hassib Mofarrej
+276,R. Carneiro da Silva
+277,Carlos Weber 223
+278,R. Tripoli
+279,Hotel Transamérica Berrini
+280,Rua Cel. Joaquim Ferreira Lobo
+281,Rua Cel. Joaquim Ferreira Lobo II
+282,Cunha Horta
+286,Turiassu
+287,Largo Padre Péricles
+290,Metrô Marechal Deodoro
+292,Rua Domingos de Moraes
+293,Metrô Ana Rosa
+294,Metrô Ana Rosa II
+295,Vergueiro
+296,Largo Ana Rosa
+297,SESC Vila Mariana
+298,Av. Cons. Rodrigues Alves
+299,R. Bag�
+300,Caravelas
+301,R. França Pinto
+302,Tangará
+303,Rio Grande
+304,Gandavo
+305,MUBA
+306,Placeholder
+307,Metrô Vila Mariana
+308,Rua Cunha
+309,269
+310,R. Cel. Lisboa
+311,Luis Góis
+312,Parque da Bicicletas
+313,Metrô AACD Servidor
+314,R. José de Magalhães
+315,Metrô Hospital São Paulo
+316,Alameda das Boninas
+317,R. Leonardo Nunes
+318,Gabriel de Rezende Passos
+319,Metrô Moema
+320,Av. Jandira
+321,Gaivota
+322,Metrô Eucaliptos
+323,Eucaliptos
+324,Canário
+325,Pintassilgo
+326,Inhamb�
+327,Arapan�s
+328,R. Demóstenes
+329,Bandeirantes
+331,Rua Nebraska
+332,Rua Nova York
+333,Rua Flórida 53
+334,R. Pe. Antônio
+335,R. Ribeiro do Vale
+336,Flórida 1020
+337,Castilho
+338,Pitú
+339,R. Min. Luiz Gallotti
+340,R. Oscar Gomes Cardim II
+341,Pássaros e Flores
+342,R. Santo Arc�dio
+343,Jurubatuba
+344,ROCHAVERÁ
+345,R. Henrique Fischer
+346,Bacaetava
+347,Metrô Brooklin
+348,R. JoÃ£o Pais
+349,Cancioneiro de Évora
+354,Praça Oswaldo Cruz
+355,R. Dr. Rafael de Barros
+358,Shopping Villa Lobos
+359,CENU
+370,Placeholder
+388,Placeholder
+390,Ifood pedal Fradique
+397,Ifood Pedal Itaim
+398,Ifood pedal Fradique
+403,TEMBICI- Base
+423,PAO DE ACUCAR 02
+428,Ifood pedal Fradique
+429,Ifood Faria Lima (Bolsão)
+436,Bikesp Faria Lima
+437,Bikesp Faria Lima
