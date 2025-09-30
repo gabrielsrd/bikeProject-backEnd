@@ -139,59 +139,29 @@ class HourlyCountsAPIView(APIView):
 
 class StationsHistogramAPIView(APIView):
     def get(self, request):
-        # Path to your CSV file
-        csv_file = "dataRaw/viagens_processadas.csv"
+        # Path to your CSV file (adjust as necessary)
+        csv_file = "dataRaw/userTrips.csv"
 
-        # Define dtypes for columns to avoid mixed type warnings
-        dtypes = {
-            'duration_seconds': 'int64',
-            'initial_station_id': 'int64',
-            'initial_station_name': 'str',
-            'start_time': 'str',  # Will be converted to datetime later
-            'final_station_id': 'int64',
-            'final_station_name': 'str',
-            'end_time': 'str',  # Will be converted to datetime later
-            'birth_year': 'str'  # Load as string to handle mixed formats
-        }
-
-        # Load the CSV file with specified dtypes
+        # Load the CSV file
         try:
-            df = pd.read_csv(csv_file, dtype=dtypes, low_memory=False)
+            df = pd.read_csv(csv_file)
         except FileNotFoundError:
             return Response({"error": "CSV file not found"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-        except pd.errors.ParserError as e:
-            return Response({"error": f"Error parsing CSV file: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-        # Process birth_year to extract year as nullable integer
-        def extract_year(value):
-            if pd.isna(value) or value == '':
-                return pd.NA  # Preserve missing values
-            try:
-                # Handle YYYY-MM-DD format
-                if '-' in value:
-                    return pd.to_datetime(value).year
-                # Handle YYYY format
-                return int(value)
-            except (ValueError, TypeError):
-                return pd.NA  # Return NA for invalid formats
-
-        df['birth_year'] = df['birth_year'].apply(extract_year).astype('Int64')
 
         # Convert time columns to datetime
-        try:
-            df['start_time'] = pd.to_datetime(df['start_time'])
-            df['end_time'] = pd.to_datetime(df['end_time'])
-        except Exception as e:
-            return Response({"error": f"Error converting time columns: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        df['start_time'] = pd.to_datetime(df['start_time'])
+        df['end_time'] = pd.to_datetime(df['end_time'])
 
-        # Extract day, hour, and month
+        # Extract day, hour, month, and station IDs
         df['start_day'] = df['start_time'].dt.dayofweek  # 0=Mon, 1=Tue, ..., 6=Sun
         df['end_day'] = df['end_time'].dt.dayofweek
         df['start_hour'] = df['start_time'].dt.hour
         df['end_hour'] = df['end_time'].dt.hour
         df['month'] = df['start_time'].dt.month
+        df['start_station_id'] = df['initial_station_name'].apply(extract_station_id)
+        df['end_station_id'] = df['final_station_name'].apply(extract_station_id)
 
-        # Query params
+        # query params
         selected_days = request.query_params.get('days', None) 
         exclude_months = request.query_params.get('months', None) 
         station_id = request.query_params.get('station_id', None) 
@@ -226,7 +196,7 @@ class StationsHistogramAPIView(APIView):
             try:
                 station_id = int(station_id)
                 print(f"Filtering by station_id: {station_id}")
-                df = df[(df['initial_station_id'] == station_id) | (df['final_station_id'] == station_id)]
+                df = df[(df['start_station_id'] == station_id) | (df['end_station_id'] == station_id)]
             except (ValueError, TypeError):
                 return Response({"error": "Invalid 'station_id' parameter"}, status=status.HTTP_400_BAD_REQUEST)
 
@@ -235,8 +205,8 @@ class StationsHistogramAPIView(APIView):
             print("Applying USP filter (stations 242-260)")
             usp_range = range(242, 261) 
             df = df[
-                (df['initial_station_id'].isin(usp_range)) | 
-                (df['final_station_id'].isin(usp_range))
+                (df['start_station_id'].isin(usp_range)) | 
+                (df['end_station_id'].isin(usp_range))
             ]
             print(f"After USP filter, DataFrame size: {df.shape}")
             if df.empty:
@@ -247,25 +217,28 @@ class StationsHistogramAPIView(APIView):
         df_arrivals = df
 
         # Calculate counts
-        departures_counts = df_departures.groupby(['initial_station_name', 'initial_station_id', 'start_day', 'start_hour']).size().reset_index(name='departures')
-        arrivals_counts = df_arrivals.groupby(['final_station_name', 'final_station_id', 'end_day', 'end_hour']).size().reset_index(name='arrivals')
+        departures_counts = df_departures.groupby(['initial_station_name', 'start_day', 'start_hour']).size().reset_index(name='departures')
+        arrivals_counts = df_arrivals.groupby(['final_station_name', 'end_day', 'end_hour']).size().reset_index(name='arrivals')
+
+        # Extract station IDs
+        departures_counts['station_id'] = departures_counts['initial_station_name'].apply(extract_station_id)
+        arrivals_counts['station_id'] = arrivals_counts['final_station_name'].apply(extract_station_id)
 
         # Rename columns
         departures_counts = departures_counts.rename(columns={
             'initial_station_name': 'station',
-            'initial_station_id': 'station_id',
             'start_day': 'day',
             'start_hour': 'hour'
         })
         arrivals_counts = arrivals_counts.rename(columns={
             'final_station_name': 'station',
-            'final_station_id': 'station_id',
             'end_day': 'day',
             'end_hour': 'hour'
         })
 
-        # Merge
-        histogram_data = pd.merge(departures_counts, arrivals_counts, on=['station_id', 'station', 'day', 'hour'], how='outer').fillna(0)
+        #Merge
+        histogram_data = pd.merge(departures_counts, arrivals_counts, on=['station_id', 'day', 'hour'], how='outer').fillna(0)
+        histogram_data['station'] = histogram_data['station_x'].combine_first(histogram_data['station_y'])
         histogram_data = histogram_data[['station_id', 'station', 'day', 'hour', 'departures', 'arrivals']]
 
         # Convert to JSON format
