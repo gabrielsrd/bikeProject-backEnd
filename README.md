@@ -6,7 +6,7 @@ Este projeto backend utiliza Django para fornecer uma API RESTful que processa e
 Os dados fornecidos são baseados em fontes confiáveis, como os dados abertos da Prefeitura de São Paulo e o projeto BikeScience do Prof. Dr. Fabio Kon (IME-USP). A aplicação está configurada para fornecer insights e otimizar a tomada de decisão em relação ao uso de bicicletas na cidade.  
 
 ---
-
+.venv/bin/python3.12 manage.py runserver 0.0.0.0:8000
 ## **Funcionalidades**
 
 - **API RESTful**:  

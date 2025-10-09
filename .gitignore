@@ -14,6 +14,13 @@ dataRaw/Tembici-SaoPaulo/extracted/
 *.db
 *.sqlite3
 
+# Environment files
+.env
+.venv/
+
+# Docker
+docker-compose.override.yml
+
 # Temporary files
 temp/
 tmp/
@@ -21,3 +28,11 @@ tmp/
 
 # Log files
 *.log
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

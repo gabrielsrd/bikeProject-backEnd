@@ -7,19 +7,14 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
-    volumes:
-      - .:/app
-      - /app/.venv  # Exclude the virtual environment from volume mount
-      - /app/__pycache__  # Also exclude Python cache
+    # No volume mounts - everything is copied into container
     environment:
       - DEBUG=1
-      - DATABASE_URL=sqlite:///app/db.sqlite3  # Use SQLite for now
+      - DATABASE_URL=sqlite:///app/db.sqlite3
     command: >
-      sh -c "python manage.py makemigrations &&
+      sh -c "python manage.py makemigrations ciclovias &&
              python manage.py migrate &&
              python manage.py runserver 0.0.0.0:8000"
-    depends_on:
-      - db
 
   # PostgreSQL database (for future use)
   db:
