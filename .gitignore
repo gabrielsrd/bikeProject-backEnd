@@ -1,1 +1,23 @@
 __pycache__
+
+# Large data files
+dataRaw/
+dataClean/
+*.csv
+*.xlsx
+*.zip
+
+# Tembici extracted data
+dataRaw/Tembici-SaoPaulo/extracted/
+
+# SQLite databases
+*.db
+*.sqlite3
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Log files
+*.log
