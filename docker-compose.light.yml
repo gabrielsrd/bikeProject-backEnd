@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.light
+    container_name: bikeproject-backend-light
+    ports:
+      - "8000:8000"
+    volumes:
+      # Only mount what we need for the app to run
+      - ./db.sqlite3:/app/db.sqlite3
+      - ./geojsons:/app/geojsons
+      - ./manage.py:/app/manage.py
+      - ./myproject:/app/myproject
+      - ./ciclovias:/app/ciclovias
+      # Optional: mount these if needed
+      # - ./dataClean:/app/dataClean
+      # - ./scripts:/app/scripts
+    environment:
+      - DEBUG=1
+      - PYTHONUNBUFFERED=1
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+    restart: unless-stopped

@@ -38,4 +38,9 @@ node_modules
 
 # Large data files (but keep essential ones)
 dataRaw/Tembici-SaoPaulo/*.zip
+dataRaw/Tembici-SaoPaulo/
+dataRaw/shpCiclovias/
+dataRaw/*.csv
 *.csv.backup
+*.bak.*
+db.sqlite3.bak*

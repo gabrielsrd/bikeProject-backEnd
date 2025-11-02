@@ -1,0 +1,38 @@
+# Lightweight Dockerfile for bikeProject backend
+# Only copies essential files, not the large raw data
+FROM python:3.12-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Set work directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        postgresql-client \
+        build-essential \
+        libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+COPY requirements.txt /app/
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy only essential application files
+COPY manage.py /app/
+COPY myproject/ /app/myproject/
+COPY ciclovias/ /app/ciclovias/
+COPY geojsons/ /app/geojsons/
+
+# Note: db.sqlite3, dataRaw/, dataClean/, and scripts/ will be mounted as volumes
+# This keeps the image small and allows data persistence
+
+# Expose port
+EXPOSE 8000
+
+# Command to run the application
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

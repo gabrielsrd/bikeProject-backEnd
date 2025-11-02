@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bikeproject-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount the entire project for development
+      - .:/app
+      # Exclude virtual environment and cache directories
+      - /app/.venv
+      - /app/.venv-1
+      - /app/__pycache__
+      # Database file is included in the . mount, so it persists
+    environment:
+      - DEBUG=1
+      - PYTHONUNBUFFERED=1
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+    restart: unless-stopped
