@@ -17,6 +17,8 @@ dataRaw/Tembici-SaoPaulo/extracted/
 # Environment files
 .env
 .venv/
+venv/
+env/
 
 # Docker
 docker-compose.override.yml

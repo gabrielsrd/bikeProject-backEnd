@@ -10,6 +10,7 @@ import os
 from django.http import JsonResponse
 import re
 from rest_framework import status
+from django.db.models import F
 
 def extract_station_id(name):
     if not isinstance(name, str):
@@ -495,4 +496,101 @@ class StationsHistogramDBAPIView(APIView):
         result.sort(key=lambda x: (x['station_id'] or 0))
 
         print(f"DB version returning aggregated payload for {len(result)} stations (days_count={days_count})")
+        return Response(result, status=status.HTTP_200_OK)
+
+class TripFlowsAPIView(APIView):
+    """
+    Retorna os principais fluxos de viagens entre estações
+    Agregado e otimizado para visualização no mapa
+    """
+    def get(self, request):
+        from django.db.models import Count, Q
+        from .models import Trip
+        
+        # Parâmetros de filtro (mesmos do histogram)
+        selected_days = request.query_params.get('days', None)
+        exclude_months = request.query_params.get('months', None)
+        usp = request.query_params.get('usp', None)
+        min_trips = int(request.query_params.get('min_trips', '10'))  # Mínimo de viagens para aparecer
+        limit = int(request.query_params.get('limit', '100'))  # Top N fluxos
+        
+        print(f"Trip Flows Query parameters: {request.query_params}")
+        print(f"Selected days: {selected_days}")
+        print(f"Excluded months: {exclude_months}")
+        print(f"USP filter: {usp}")
+        print(f"Min trips: {min_trips}, Limit: {limit}")
+        
+        queryset = Trip.objects.all()
+        
+        # Aplicar filtros (mesma lógica do StationsHistogramDBAPIView)
+        if selected_days:
+            try:
+                selected_days = [int(day) for day in selected_days.split(',')]
+                queryset = queryset.filter(start_day__in=selected_days)
+            except (ValueError, TypeError):
+                return Response({"error": "Invalid 'days' parameter"}, status=status.HTTP_400_BAD_REQUEST)
+        else:
+            # Default to weekdays
+            queryset = queryset.filter(start_day__lt=5)
+        
+        if exclude_months:
+            try:
+                exclude_months = [int(month) for month in exclude_months.split(',')]
+                queryset = queryset.exclude(month__in=exclude_months)
+            except (ValueError, TypeError):
+                return Response({"error": "Invalid 'months' parameter"}, status=status.HTTP_400_BAD_REQUEST)
+        
+        if usp and usp.lower() == 'true':
+            print("Applying USP filter (stations 242-260)")
+            usp_range = range(242, 261)
+            queryset = queryset.filter(
+                Q(initial_station__station_id__in=usp_range) | 
+                Q(final_station__station_id__in=usp_range)
+            )
+        
+        # Agregar fluxos: contar viagens por par origem-destino
+        # Excluir viagens onde origem = destino (mesma estação)
+        flows = queryset.exclude(
+            initial_station__station_id=F('final_station__station_id')
+        ).values(
+            'initial_station__station_id',
+            'initial_station__latitude',
+            'initial_station__longitude',
+            'initial_station__name',
+            'final_station__station_id',
+            'final_station__latitude',
+            'final_station__longitude',
+            'final_station__name',
+        ).annotate(
+            trip_count=Count('id')
+        ).filter(
+            trip_count__gte=min_trips,  # Apenas fluxos significativos
+            initial_station__isnull=False,
+            final_station__isnull=False,
+            initial_station__latitude__isnull=False,
+            final_station__latitude__isnull=False,
+            final_station__longitude__isnull=False,
+            initial_station__longitude__isnull=False
+        ).order_by('-trip_count')[:limit]
+        
+        # Formatar resposta
+        result = []
+        for flow in flows:
+            result.append({
+                'origin_station_id': flow['initial_station__station_id'],
+                'origin_station_name': flow['initial_station__name'],
+                'origin_coords': [
+                    flow['initial_station__latitude'],
+                    flow['initial_station__longitude']
+                ],
+                'destination_station_id': flow['final_station__station_id'],
+                'destination_station_name': flow['final_station__name'],
+                'destination_coords': [
+                    flow['final_station__latitude'],
+                    flow['final_station__longitude']
+                ],
+                'trip_count': flow['trip_count']
+            })
+        
+        print(f"Returning {len(result)} trip flows")
         return Response(result, status=status.HTTP_200_OK)
