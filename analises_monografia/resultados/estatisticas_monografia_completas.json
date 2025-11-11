@@ -1,0 +1,624 @@
+{
+  "metadata": {
+    "gerado_em": "2025-11-10 22:41:41",
+    "script": "GERAR_ESTATISTICAS_COMPLETAS.py",
+    "database": "../db.sqlite3"
+  },
+  "periodo": {
+    "primeira_viagem": "01/01/2020",
+    "ultima_viagem": "30/04/2022",
+    "primeira_viagem_iso": "2020-01-01",
+    "ultima_viagem_iso": "2022-04-30",
+    "anos": 2.3
+  },
+  "geral": {
+    "total_viagens_db": 4704485,
+    "total_viagens_usp": 128202,
+    "total_estacoes_usp": 25,
+    "percentual_viagens_usp": 2.73
+  },
+  "viagens_tipo": {
+    "internas": 53901,
+    "externas": 74301,
+    "percentual_internas": 42.0,
+    "percentual_externas": 58.0
+  },
+  "estacoes_ranking": [
+    {
+      "posicao": 1,
+      "station_id": 231,
+      "nome": "240 - Praça Panamericana",
+      "viagens": 35998,
+      "percentual": 19.8
+    },
+    {
+      "posicao": 2,
+      "station_id": 30,
+      "nome": "249 - Bandejão Central",
+      "viagens": 31357,
+      "percentual": 17.2
+    },
+    {
+      "posicao": 3,
+      "station_id": 149,
+      "nome": "241 - CPTM Cidade Universitária",
+      "viagens": 24065,
+      "percentual": 13.2
+    },
+    {
+      "posicao": 4,
+      "station_id": 22,
+      "nome": "244 - Metrô Butantã",
+      "viagens": 19185,
+      "percentual": 10.5
+    },
+    {
+      "posicao": 5,
+      "station_id": 68,
+      "nome": "246 - Portão CPTM",
+      "viagens": 9591,
+      "percentual": 5.3
+    },
+    {
+      "posicao": 6,
+      "station_id": 134,
+      "nome": "245 - P1",
+      "viagens": 8831,
+      "percentual": 4.8
+    },
+    {
+      "posicao": 7,
+      "station_id": 169,
+      "nome": "255 - Estacao Tiradentes - 255",
+      "viagens": 5296,
+      "percentual": 2.9
+    },
+    {
+      "posicao": 8,
+      "station_id": 38,
+      "nome": "247 - CEPE",
+      "viagens": 5196,
+      "percentual": 2.9
+    },
+    {
+      "posicao": 9,
+      "station_id": 16,
+      "nome": "248 - Biblioteca Brasiliana",
+      "viagens": 4812,
+      "percentual": 2.6
+    },
+    {
+      "posicao": 10,
+      "station_id": 218,
+      "nome": "253 - Pedalusp Biênio",
+      "viagens": 4766,
+      "percentual": 2.6
+    },
+    {
+      "posicao": 11,
+      "station_id": 142,
+      "nome": "250 - Bandejão Química",
+      "viagens": 4349,
+      "percentual": 2.4
+    },
+    {
+      "posicao": 12,
+      "station_id": 241,
+      "nome": "251 - FAU",
+      "viagens": 4164,
+      "percentual": 2.3
+    },
+    {
+      "posicao": 13,
+      "station_id": 237,
+      "nome": "243 - Bancos/Reitoria",
+      "viagens": 3429,
+      "percentual": 1.9
+    },
+    {
+      "posicao": 14,
+      "station_id": 5,
+      "nome": "259 - Vila Indiana",
+      "viagens": 3268,
+      "percentual": 1.8
+    },
+    {
+      "posicao": 15,
+      "station_id": 169,
+      "nome": "255 - Estacao Tiradentes - 275",
+      "viagens": 3149,
+      "percentual": 1.7
+    },
+    {
+      "posicao": 16,
+      "station_id": 43,
+      "nome": "254 - Terminal de Ônibus USP",
+      "viagens": 2782,
+      "percentual": 1.5
+    },
+    {
+      "posicao": 17,
+      "station_id": 169,
+      "nome": "255 - Bandejão Física",
+      "viagens": 2469,
+      "percentual": 1.4
+    },
+    {
+      "posicao": 18,
+      "station_id": 251,
+      "nome": "252 - Psicologia",
+      "viagens": 2445,
+      "percentual": 1.3
+    },
+    {
+      "posicao": 19,
+      "station_id": 45,
+      "nome": "257 - Hospital Universitário",
+      "viagens": 1798,
+      "percentual": 1.0
+    },
+    {
+      "posicao": 20,
+      "station_id": 176,
+      "nome": "258 - Odontologia",
+      "viagens": 1532,
+      "percentual": 0.8
+    },
+    {
+      "posicao": 21,
+      "station_id": 32,
+      "nome": "256 - Bandejão Prefeitura",
+      "viagens": 1472,
+      "percentual": 0.8
+    },
+    {
+      "posicao": 22,
+      "station_id": 241,
+      "nome": "251 - FEA",
+      "viagens": 1101,
+      "percentual": 0.6
+    },
+    {
+      "posicao": 23,
+      "station_id": 202,
+      "nome": "242 - Letras",
+      "viagens": 730,
+      "percentual": 0.4
+    },
+    {
+      "posicao": 24,
+      "station_id": 237,
+      "nome": "243 - Bancos / Reitoria",
+      "viagens": 310,
+      "percentual": 0.2
+    },
+    {
+      "posicao": 25,
+      "station_id": 169,
+      "nome": "255 - Estacao Tiradentes - 396",
+      "viagens": 8,
+      "percentual": 0.0
+    }
+  ],
+  "temporal_hora": {
+    "hora_pico": 17,
+    "viagens_hora_pico": 12569,
+    "percentual_hora_pico": 9.8,
+    "distribuicao": [
+      {
+        "hora": 17,
+        "viagens": 12569
+      },
+      {
+        "hora": 16,
+        "viagens": 10982
+      },
+      {
+        "hora": 18,
+        "viagens": 10581
+      },
+      {
+        "hora": 12,
+        "viagens": 9429
+      },
+      {
+        "hora": 11,
+        "viagens": 8890
+      },
+      {
+        "hora": 13,
+        "viagens": 8869
+      },
+      {
+        "hora": 15,
+        "viagens": 8501
+      },
+      {
+        "hora": 7,
+        "viagens": 7799
+      },
+      {
+        "hora": 14,
+        "viagens": 7346
+      },
+      {
+        "hora": 19,
+        "viagens": 6711
+      },
+      {
+        "hora": 10,
+        "viagens": 6706
+      },
+      {
+        "hora": 9,
+        "viagens": 6031
+      },
+      {
+        "hora": 8,
+        "viagens": 6016
+      },
+      {
+        "hora": 6,
+        "viagens": 4634
+      },
+      {
+        "hora": 20,
+        "viagens": 3688
+      },
+      {
+        "hora": 21,
+        "viagens": 3122
+      },
+      {
+        "hora": 22,
+        "viagens": 2287
+      },
+      {
+        "hora": 5,
+        "viagens": 1794
+      },
+      {
+        "hora": 23,
+        "viagens": 1015
+      },
+      {
+        "hora": 0,
+        "viagens": 457
+      },
+      {
+        "hora": 4,
+        "viagens": 257
+      },
+      {
+        "hora": 1,
+        "viagens": 245
+      },
+      {
+        "hora": 2,
+        "viagens": 157
+      },
+      {
+        "hora": 3,
+        "viagens": 116
+      }
+    ]
+  },
+  "temporal_semana": {
+    "viagens_dias_uteis": 88482,
+    "viagens_fins_semana": 39720,
+    "percentual_dias_uteis": 69.0,
+    "percentual_fins_semana": 31.0,
+    "distribuicao": [
+      {
+        "dia": "Domingo",
+        "viagens": 17184
+      },
+      {
+        "dia": "Segunda",
+        "viagens": 18027
+      },
+      {
+        "dia": "Terça",
+        "viagens": 18083
+      },
+      {
+        "dia": "Quarta",
+        "viagens": 17331
+      },
+      {
+        "dia": "Quinta",
+        "viagens": 16552
+      },
+      {
+        "dia": "Sexta",
+        "viagens": 18489
+      },
+      {
+        "dia": "Sábado",
+        "viagens": 22536
+      }
+    ]
+  },
+  "temporal_mes": {
+    "viagens_periodo_letivo": 89466,
+    "percentual_periodo_letivo": 69.8,
+    "mes_pico": "2022-04",
+    "viagens_mes_pico": 15343,
+    "distribuicao": [
+      {
+        "mes": "2022-04",
+        "viagens": 15343
+      },
+      {
+        "mes": "2022-03",
+        "viagens": 12592
+      },
+      {
+        "mes": "2020-03",
+        "viagens": 7731
+      },
+      {
+        "mes": "2022-02",
+        "viagens": 6910
+      },
+      {
+        "mes": "2021-09",
+        "viagens": 6355
+      },
+      {
+        "mes": "2021-11",
+        "viagens": 6049
+      },
+      {
+        "mes": "2021-08",
+        "viagens": 4852
+      },
+      {
+        "mes": "2022-01",
+        "viagens": 4721
+      },
+      {
+        "mes": "2021-07",
+        "viagens": 4608
+      },
+      {
+        "mes": "2021-12",
+        "viagens": 4594
+      },
+      {
+        "mes": "2021-10",
+        "viagens": 4498
+      },
+      {
+        "mes": "2021-06",
+        "viagens": 3782
+      },
+      {
+        "mes": "2021-04",
+        "viagens": 3687
+      },
+      {
+        "mes": "2021-01",
+        "viagens": 3630
+      },
+      {
+        "mes": "2021-05",
+        "viagens": 3562
+      },
+      {
+        "mes": "2021-03",
+        "viagens": 3534
+      },
+      {
+        "mes": "2020-11",
+        "viagens": 3498
+      },
+      {
+        "mes": "2020-01",
+        "viagens": 3399
+      },
+      {
+        "mes": "2020-09",
+        "viagens": 3224
+      },
+      {
+        "mes": "2020-10",
+        "viagens": 3217
+      },
+      {
+        "mes": "2021-02",
+        "viagens": 3202
+      },
+      {
+        "mes": "2020-12",
+        "viagens": 2810
+      },
+      {
+        "mes": "2020-02",
+        "viagens": 2682
+      },
+      {
+        "mes": "2020-08",
+        "viagens": 2483
+      },
+      {
+        "mes": "2020-07",
+        "viagens": 2180
+      },
+      {
+        "mes": "2020-04",
+        "viagens": 2176
+      },
+      {
+        "mes": "2020-05",
+        "viagens": 1540
+      },
+      {
+        "mes": "2020-06",
+        "viagens": 1343
+      }
+    ]
+  },
+  "rotas_top20": [
+    {
+      "posicao": 1,
+      "origem_id": 149,
+      "origem_nome": "241 - CPTM Cidade Universitária",
+      "destino_id": 151,
+      "destino_nome": "358 - Shopping Villa Lobos",
+      "viagens": 2995
+    },
+    {
+      "posicao": 2,
+      "origem_id": 44,
+      "origem_nome": "1 - Largo da Batata",
+      "destino_id": 231,
+      "destino_nome": "240 - Praça Panamericana",
+      "viagens": 2100
+    },
+    {
+      "posicao": 3,
+      "origem_id": 149,
+      "origem_nome": "241 - CPTM Cidade Universitária",
+      "destino_id": 186,
+      "destino_nome": "262 - Colégio Santa Cruz",
+      "viagens": 2037
+    },
+    {
+      "posicao": 4,
+      "origem_id": 186,
+      "origem_nome": "262 - Colégio Santa Cruz",
+      "destino_id": 149,
+      "destino_nome": "241 - CPTM Cidade Universitária",
+      "viagens": 1970
+    },
+    {
+      "posicao": 5,
+      "origem_id": 231,
+      "origem_nome": "240 - Praça Panamericana",
+      "destino_id": 44,
+      "destino_nome": "1 - Largo da Batata",
+      "viagens": 1720
+    },
+    {
+      "posicao": 6,
+      "origem_id": 252,
+      "origem_nome": "264 - Parque Villa Lobos Portão 2",
+      "destino_id": 231,
+      "destino_nome": "240 - Praça Panamericana",
+      "viagens": 1459
+    },
+    {
+      "posicao": 7,
+      "origem_id": 231,
+      "origem_nome": "240 - Praça Panamericana",
+      "destino_id": 252,
+      "destino_nome": "264 - Parque Villa Lobos Portão 2",
+      "viagens": 1244
+    },
+    {
+      "posicao": 8,
+      "origem_id": 22,
+      "origem_nome": "244 - Metrô Butantã",
+      "destino_id": 30,
+      "destino_nome": "249 - Bandejão Central",
+      "viagens": 1201
+    },
+    {
+      "posicao": 9,
+      "origem_id": 266,
+      "origem_nome": "263 - Praça Beethoven",
+      "destino_id": 149,
+      "destino_nome": "241 - CPTM Cidade Universitária",
+      "viagens": 1197
+    },
+    {
+      "posicao": 10,
+      "origem_id": 151,
+      "origem_nome": "358 - Shopping Villa Lobos",
+      "destino_id": 149,
+      "destino_nome": "241 - CPTM Cidade Universitária",
+      "viagens": 1139
+    },
+    {
+      "posicao": 11,
+      "origem_id": 30,
+      "origem_nome": "249 - Bandejão Central",
+      "destino_id": 122,
+      "destino_nome": "193 - Praça Monte Castelo",
+      "viagens": 1047
+    },
+    {
+      "posicao": 12,
+      "origem_id": 30,
+      "origem_nome": "249 - Bandejão Central",
+      "destino_id": 22,
+      "destino_nome": "244 - Metrô Butantã",
+      "viagens": 1037
+    },
+    {
+      "posicao": 13,
+      "origem_id": 149,
+      "origem_nome": "241 - CPTM Cidade Universitária",
+      "destino_id": 266,
+      "destino_nome": "263 - Praça Beethoven",
+      "viagens": 1015
+    },
+    {
+      "posicao": 14,
+      "origem_id": 68,
+      "origem_nome": "246 - Portão CPTM",
+      "destino_id": 30,
+      "destino_nome": "249 - Bandejão Central",
+      "viagens": 955
+    },
+    {
+      "posicao": 15,
+      "origem_id": 30,
+      "origem_nome": "249 - Bandejão Central",
+      "destino_id": 68,
+      "destino_nome": "246 - Portão CPTM",
+      "viagens": 773
+    },
+    {
+      "posicao": 16,
+      "origem_id": 266,
+      "origem_nome": "263 - Praça Beethoven",
+      "destino_id": 231,
+      "destino_nome": "240 - Praça Panamericana",
+      "viagens": 730
+    },
+    {
+      "posicao": 17,
+      "origem_id": 231,
+      "origem_nome": "240 - Praça Panamericana",
+      "destino_id": 266,
+      "destino_nome": "263 - Praça Beethoven",
+      "viagens": 722
+    },
+    {
+      "posicao": 18,
+      "origem_id": 134,
+      "origem_nome": "245 - P1",
+      "destino_id": 30,
+      "destino_nome": "249 - Bandejão Central",
+      "viagens": 707
+    },
+    {
+      "posicao": 19,
+      "origem_id": 30,
+      "origem_nome": "249 - Bandejão Central",
+      "destino_id": 134,
+      "destino_nome": "245 - P1",
+      "viagens": 649
+    },
+    {
+      "posicao": 20,
+      "origem_id": 44,
+      "origem_nome": "1 - Largo da Batata",
+      "destino_id": 22,
+      "destino_nome": "244 - Metrô Butantã",
+      "viagens": 647
+    }
+  ]
+}

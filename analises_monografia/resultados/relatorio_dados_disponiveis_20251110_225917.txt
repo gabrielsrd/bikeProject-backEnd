@@ -1,0 +1,31 @@
+================================================================================
+RELATÓRIO: ANÁLISE DE DADOS DISPONÍVEIS TEMBICI
+================================================================================
+Data: 2025-11-10 22:59:17
+
+ARQUIVO CONSOLIDATED ATUAL:
+  - Registros: 11,603,422
+  - Período: 2020-01-01 a 2022-04-30
+  - Tamanho: 1.84 GB
+
+ZIPs DISPONÍVEIS:
+  - Bike Sampa 2022-2023-0406T135701Z-001.zip
+  - BikeSampa-20210216T220100Z-001.zip
+  - BikeSampa-20220801T192433Z-001.zip
+  - São Paulo-20230823T180223Z-001.zip
+  - São Paulo-20230823T180223Z-002.zip
+  - TemBici-São Paulo-20190516T212910Z-001.zip
+  - drive-download-20200210T193005Z-001.zip
+
+DADOS POR ANO (CSVs analisados):
+  2020: 1,936,935 registros
+  2021: 1,704,565 registros
+  2022: 1,252,050 registros
+
+POSSÍVEIS DADOS NÃO INCLUÍDOS:
+  Dados 2018-2019:
+    - TemBici-São Paulo-20190516T212910Z-001.zip
+  Dados 2023:
+    - Bike Sampa 2022-2023-0406T135701Z-001.zip
+    - São Paulo-20230823T180223Z-001.zip
+    - São Paulo-20230823T180223Z-002.zip

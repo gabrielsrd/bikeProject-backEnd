@@ -1,0 +1,52 @@
+================================================================================
+               RELATÓRIO CONSOLIDADO - BIKESCIENCE USP
+                    Análise de Viagens de Bicicletas Compartilhadas
+================================================================================
+
+Data de geração: 11/11/2025 21:29:02
+Autor: Gabriel da Silva Alves
+Instituição: IME-USP
+
+================================================================================
+
+1. ESTATÍSTICAS GERAIS
+--------------------------------------------------------------------------------
+Total de viagens no banco de dados: 9,183,856
+Total de estações cadastradas: 492
+Estações no campus USP: 19
+Viagens envolvendo USP: 92,737 (1.01%)
+Período: 26/01/2018 a 30/04/2022
+Duração: 4.3 anos
+
+2. VIAGENS INTERNAS vs EXTERNAS
+--------------------------------------------------------------------------------
+Viagens internas (USP → USP): 63,598 (68.6%)
+Viagens externas (USP ↔ Fora): 29,139 (31.4%)
+
+3. TOP 5 ESTAÇÕES MAIS UTILIZADAS
+--------------------------------------------------------------------------------
+1. 255 - 255 - Estacao Tiradentes - 255          :  43,103 viagens
+2. 249 - 249 -BandejÃ£o Central                  :  31,428 viagens
+3. 244 - 244 - Metrô Butantã                     :  19,185 viagens
+4. 246 - 246 - PORTÃO CPTM                      :   9,672 viagens
+5. 245 - 245                                     :   8,838 viagens
+
+4. PADRÕES TEMPORAIS
+--------------------------------------------------------------------------------
+Hora de pico: 17h (8,335 viagens)
+Dia da semana com mais viagens: Terça
+Viagens em dias úteis: 72.3%
+Média por dia útil: 13,406 viagens
+Média por dia de fim de semana: 12,854 viagens
+Mês com mais viagens: Março
+Viagens em período letivo: 74.1%
+
+5. TOP 3 ROTAS MAIS FREQUENTES
+--------------------------------------------------------------------------------
+1. 244 - Metrô Butantã → 249 -BandejÃ£o Central: 1,201 viagens
+2. 249 -BandejÃ£o Central → 193 - Praça Monte Castelo: 1,047 viagens
+3. 249 -BandejÃ£o Central → 244 - Metrô Butantã: 1,037 viagens
+
+================================================================================
+Fim do relatório
+================================================================================

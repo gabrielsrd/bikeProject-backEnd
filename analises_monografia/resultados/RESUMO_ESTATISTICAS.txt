@@ -1,0 +1,31 @@
+
+RESUMO DAS ESTATÍSTICAS PARA A MONOGRAFIA
+==========================================
+
+PERÍODO: 01/01/2020 a 30/04/2022 (2.3 anos)
+
+DADOS GERAIS:
+- Total de viagens no sistema: 4,704,485
+- Total de viagens USP: 128,202 (2.73% do total)
+- Total de estações USP: 25
+
+VIAGENS INTERNAS vs EXTERNAS:
+- Internas (USP→USP): 53,901 (42.0%)
+- Externas (USP↔Cidade): 74,301 (58.0%)
+
+TOP 5 ESTAÇÕES:
+1. ID 231 - 240 - Praça Panamericana: 35,998 (19.8%)
+2. ID 30 - 249 - Bandejão Central: 31,357 (17.2%)
+3. ID 149 - 241 - CPTM Cidade Universitária: 24,065 (13.2%)
+4. ID 22 - 244 - Metrô Butantã: 19,185 (10.5%)
+5. ID 68 - 246 - Portão CPTM: 9,591 (5.3%)
+
+PADRÕES TEMPORAIS:
+- Hora de pico: 17h com 12,569 viagens
+- Dias úteis: 69.0% | Fins de semana: 31.0%
+- Período letivo: 69.8%
+
+TOP 3 ROTAS:
+1. 241 - CPTM Cidade Universitária → 358 - Shopping Villa Lobos: 2,995
+2. 1 - Largo da Batata → 240 - Praça Panamericana: 2,100
+3. 241 - CPTM Cidade Universitária → 262 - Colégio Santa Cruz: 2,037

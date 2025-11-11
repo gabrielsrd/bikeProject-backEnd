@@ -1,0 +1,226 @@
+% Sugestões de texto para incluir na monografia
+% Baseado nos resultados das análises geradas pelos scripts
+% 
+% Uso: Copie e adapte os trechos conforme necessário
+
+%==============================================================================
+% PARA A SEÇÃO: Fontes de Dados (Cap 2)
+%==============================================================================
+
+Os dados utilizados neste trabalho foram disponibilizados pelo projeto 
+BikeScience, em parceria com a empresa Tembici, operadora do sistema de 
+bicicletas compartilhadas de São Paulo. O banco de dados analisado contém 
+\totalViagensDB{} viagens registradas entre \dataPrimeiraViagem{} e 
+\dataUltimaViagem{}, abrangendo um período de \anosDataset{} anos.
+
+Especificamente para o campus do Butantã da USP, foram identificadas 
+\totalViagensUSP{} viagens envolvendo as \totalEstacoesUSP{} estações 
+instaladas no campus. Destas, \viagensInternasUSP{} (\percentualInternas\%) 
+correspondem a viagens internas ao campus (origem e destino dentro da USP), 
+enquanto \viagensExternasUSP{} viagens têm uma das pontas fora do campus, 
+evidenciando a integração do sistema de bicicletas compartilhadas com a 
+mobilidade urbana mais ampla.
+
+%==============================================================================
+% PARA A SEÇÃO: Discussão - Diferenças entre Estações (Cap 5)
+%==============================================================================
+
+\subsection{Estações mais utilizadas}
+
+A análise do volume de viagens por estação revela padrões claros de uso no 
+campus. A Figura~\ref{fig:ranking-estacoes} apresenta o ranking completo das 
+\totalEstacoesUSP{} estações USP ordenadas por volume total de viagens 
+(saídas + chegadas).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{ranking_estacoes_usp}
+  \caption{Ranking de estações USP por volume de viagens (período: \dataPrimeiraViagem{} a \dataUltimaViagem{})}
+  \label{fig:ranking-estacoes}
+\end{figure}
+
+As cinco estações mais movimentadas são:
+
+\begin{enumerate}
+  \item \textbf{\topEstacao1ID{} - \topEstacao1Nome{}}: \topEstacao1Viagens{} viagens
+  \item \textbf{\topEstacao2ID{} - \topEstacao2Nome{}}: \topEstacao2Viagens{} viagens
+  \item \textbf{\topEstacao3ID{} - \topEstacao3Nome{}}: \topEstacao3Viagens{} viagens
+  \item \textbf{\topEstacao4ID{} - \topEstacao4Nome{}}: \topEstacao4Viagens{} viagens
+  \item \textbf{\topEstacao5ID{} - \topEstacao5Nome{}}: \topEstacao5Viagens{} viagens
+\end{enumerate}
+
+A estação \topEstacao1Nome{} destaca-se como a mais utilizada, concentrando 
+grande volume de viagens devido à sua localização central e proximidade com 
+o restaurante universitário, ponto de convergência natural da comunidade 
+acadêmica durante os horários de refeição.
+
+A estação \topEstacao2Nome{} ocupa a segunda posição, atuando como principal 
+ponto de acesso externo ao campus. Sua alta demanda reflete a integração do 
+sistema de bicicletas compartilhadas com o transporte público metropolitano.
+
+\subsection{Balanço entre saídas e chegadas}
+
+A Figura~\ref{fig:balanco-estacoes} mostra o balanço entre saídas e chegadas 
+para cada estação, onde valores positivos indicam mais partidas que chegadas 
+(estações "geradoras") e valores negativos indicam o oposto (estações 
+"atratoras").
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{balanco_estacoes_usp}
+  \caption{Balanço de viagens por estação (verde = mais saídas, vermelho = mais chegadas)}
+  \label{fig:balanco-estacoes}
+\end{figure}
+
+Observa-se que a estação \topEstacao2Nome{} apresenta balanço negativo 
+significativo, funcionando como atratora, enquanto outras estações apresentam 
+balanço mais equilibrado ou ligeiramente positivo.
+
+%==============================================================================
+% PARA A SEÇÃO: Discussão - Padrões Temporais (Cap 5)
+%==============================================================================
+
+\subsection{Distribuição por hora do dia}
+
+A Figura~\ref{fig:viagens-hora} mostra a distribuição de viagens ao longo do 
+dia. Observa-se claramente que o horário de pico ocorre às \horaPico{}, com 
+\viagensHoraPico{} viagens registradas nesse período.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{viagens_por_hora}
+  \caption{Distribuição de viagens USP por hora do dia}
+  \label{fig:viagens-hora}
+\end{figure}
+
+Este padrão sugere forte relação com os horários de refeições e intervalos 
+entre aulas, evidenciando o uso do sistema como meio de locomoção durante o 
+expediente acadêmico.
+
+\subsection{Dias úteis vs fim de semana}
+
+A análise temporal revela que \percentualDiasUteis\% das viagens ocorrem em 
+dias úteis, com média de \mediaDiaUtil{} viagens por dia útil contra apenas 
+\mediaFimSemana{} viagens por dia de fim de semana. 
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{viagens_por_dia_semana}
+  \caption{Distribuição de viagens USP por dia da semana}
+  \label{fig:viagens-dia-semana}
+\end{figure}
+
+Este padrão, ilustrado na Figura~\ref{fig:viagens-dia-semana}, confirma que 
+o uso do sistema está fortemente vinculado às atividades acadêmicas regulares, 
+com demanda significativamente reduzida aos finais de semana.
+
+\subsection{Sazonalidade e período letivo}
+
+A distribuição mensal de viagens (Figura~\ref{fig:viagens-mes}) evidencia 
+clara sazonalidade, com \percentualPeriodoLetivo\% das viagens concentradas 
+no período letivo. O mês de \mesPico{} apresenta o maior volume de viagens.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{viagens_por_mes}
+  \caption{Distribuição de viagens USP por mês (todos os anos agregados)}
+  \label{fig:viagens-mes}
+\end{figure}
+
+Observa-se redução significativa em janeiro, fevereiro, julho e dezembro, 
+correspondentes aos períodos de férias acadêmicas, reforçando a conclusão de 
+que o sistema atende predominantemente à comunidade universitária em suas 
+atividades regulares.
+
+%==============================================================================
+% PARA A SEÇÃO: Discussão - Fluxos (Cap 5)
+%==============================================================================
+
+\subsection{Rotas mais frequentes}
+
+A análise de fluxos origem-destino identifica os principais pares de estações 
+conectados por viagens. A Figura~\ref{fig:top-rotas} apresenta as 20 rotas 
+mais frequentes.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{top20_rotas_frequentes}
+  \caption{Top 20 rotas mais frequentes entre estações}
+  \label{fig:top-rotas}
+\end{figure}
+
+As três rotas mais utilizadas são:
+
+\begin{enumerate}
+  \item \textbf{\topRota1OrigemNome{} → \topRota1DestinoNome{}}: \topRota1Viagens{} viagens
+  \item \textbf{\topRota2OrigemNome{} → \topRota2DestinoNome{}}: \topRota2Viagens{} viagens
+  \item \textbf{\topRota3OrigemNome{} → \topRota3DestinoNome{}}: \topRota3Viagens{} viagens
+\end{enumerate}
+
+Estas rotas revelam os principais eixos de deslocamento no campus, conectando 
+pontos de alimentação, estudo e acesso externo.
+
+\subsection{Fluxos internos vs externos}
+
+Do total de \totalViagensUSP{} viagens envolvendo o campus, \viagensInternasUSP{} 
+(\percentualInternas\%) são viagens internas (ambas as estações dentro da USP), 
+enquanto \viagensExternasUSP{} viagens conectam o campus com a cidade.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{fluxos_internos_externos}
+  \caption{Distribuição entre viagens internas e externas ao campus}
+  \label{fig:fluxos-internos-externos}
+\end{figure}
+
+A predominância de viagens internas (Figura~\ref{fig:fluxos-internos-externos}) 
+demonstra que o sistema de bicicletas compartilhadas desempenha papel importante 
+na mobilidade interna do campus, facilitando deslocamentos entre diferentes 
+unidades acadêmicas e pontos de serviço.
+
+%==============================================================================
+% PARA A SEÇÃO: Discussão - Impacto COVID-19 (Cap 5)
+%==============================================================================
+
+\subsection{Impacto da pandemia COVID-19}
+
+A Figura~\ref{fig:evolucao-temporal} apresenta a evolução mensal das viagens 
+ao longo do período analisado, evidenciando o impacto da pandemia de COVID-19.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{evolucao_temporal_viagens}
+  \caption{Evolução temporal das viagens USP (2020-2022), destacando o período de pandemia}
+  \label{fig:evolucao-temporal}
+\end{figure}
+
+Observa-se queda abrupta no volume de viagens a partir de março de 2020, 
+coincidindo com as medidas de isolamento social e suspensão das atividades 
+presenciais. A retomada gradual é visível ao longo de 2021 e 2022, acompanhando 
+o retorno progressivo das atividades acadêmicas presenciais.
+
+%==============================================================================
+% PARA A SEÇÃO: Conclusão
+%==============================================================================
+
+Este trabalho analisou \totalViagensUSP{} viagens de bicicletas compartilhadas 
+envolvendo o campus do Butantã da USP, identificando padrões claros de uso:
+
+\begin{itemize}
+  \item \textbf{Uso predominantemente acadêmico}: \percentualDiasUteis\% das 
+        viagens ocorrem em dias úteis e \percentualPeriodoLetivo\% em período letivo
+  
+  \item \textbf{Mobilidade interna}: \percentualInternas\% das viagens são 
+        internas ao campus, evidenciando o papel do sistema na conexão entre 
+        diferentes pontos do campus
+  
+  \item \textbf{Padrões horários}: Pico de uso às \horaPico{}, coincidindo 
+        com horários de intervalo e refeições
+  
+  \item \textbf{Concentração em poucas estações}: A estação \topEstacao1Nome{} 
+        concentra \topEstacao1Viagens{} viagens, atuando como hub principal
+\end{itemize}
+
+%==============================================================================
+% FIM DAS SUGESTÕES
+%==============================================================================
