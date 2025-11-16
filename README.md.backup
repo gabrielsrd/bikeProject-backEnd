@@ -1,0 +1,521 @@
+# BikeScience Backend - Sistema de Análise de Mobilidade Urbana
+
+Backend Django para análise de dados de bicicletas compartilhadas (Bike Sampa/Tembici) em São Paulo, desenvolvido como parte do Trabalho de Conclusão de Curso do IME-USP.
+
+## 📋 Índice
+
+- [Visão Geral](#visão-geral)
+- [Início Rápido](#início-rápido)
+- [Instalação Completa](#instalação-completa)
+- [Processamento de Dados](#processamento-de-dados)
+- [API Endpoints](#api-endpoints)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Análises da Monografia](#análises-da-monografia)
+- [Documentação](#documentação)
+
+---
+
+## Visão Geral
+
+Este sistema analisa aproximadamente **9.2 milhões de viagens** de bicicletas compartilhadas realizadas entre 2018 e 2022 na cidade de São Paulo, com foco especial no campus da Universidade de São Paulo (Cidade Universitária).
+
+### Funcionalidades
+
+- **API RESTful** para consulta de viagens, estações e infraestrutura cicloviária
+- **Análise geoespacial** de padrões de uso e zonas de alta demanda
+- **Processamento de dados** de múltiplas fontes (CSV, XLSX, GeoJSON)
+- **Estatísticas temporais** (horários de pico, sazonalidade, tendências)
+- **Foco acadêmico** em mobilidade urbana sustentável
+
+### Fontes de Dados
+
+- **Viagens:** Projeto BikeScience (Prof. Dr. Fabio Kon - IME/USP)
+- **Ciclofaixas:** Portal GeoSampa - Prefeitura de São Paulo
+- **Estações:** Tembici via Projeto BikeScience
+
+---
+
+## Início Rápido
+
+Para executar o servidor com os dados já processados:
+
+```bash
+# 1. Navegar até o diretório do projeto
+cd bikeProject-backEnd
+
+# 2. Ativar ambiente virtual
+source venv/bin/activate
+
+# 3. Iniciar servidor de desenvolvimento
+python manage.py runserver
+```
+
+O servidor estará disponível em: **http://localhost:8000/api/**
+
+**Requisitos:** Python 3.12+, banco de dados SQLite já configurado
+
+---
+
+## Instalação Completa
+
+### Passo 1: Configurar Ambiente Python
+
+```bash
+# Criar ambiente virtual
+python3 -m venv venv
+
+# Ativar ambiente virtual
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate   # Windows
+
+# Instalar dependências
+pip install -r requirements.txt
+```
+
+### Passo 2: Processar Dados (Primeira Instalação)
+
+O sistema processa dados brutos de múltiplos arquivos CSV/XLSX em um arquivo consolidado.
+
+#### Consolidação de Dados
+
+```bash
+# Consolidar arquivos do diretório dataRaw/Tembici-SaoPaulo/
+python3 scripts/consolidate_tembici_COMPLETO.py
+```
+
+**Tempo de processamento:** 30-60 minutos  
+**Resultado:** `dataRaw/consolidated_tembici_data_COMPLETO.csv` (~4.3 GB)
+
+**Estrutura do CSV gerado:**
+```csv
+trip_id,duration_seconds,initial_station_name,start_time,final_station_name,end_time,birth_year,initial_station_latitude,initial_station_longitude,final_station_latitude,final_station_longitude
+```
+
+O script realiza:
+- Extração de arquivos ZIP
+- Normalização de formatos (XLSX antigos → CSV padrão)
+- Adição de coordenadas geográficas das estações
+- Validação e limpeza de dados
+
+### Passo 3: Configurar Banco de Dados
+
+```bash
+# Criar estrutura do banco de dados
+python manage.py migrate
+```
+
+### Passo 4: Importar Dados para SQLite
+
+```bash
+# Importar todos os dados
+python manage.py import_trips dataRaw/consolidated_tembici_data_COMPLETO.csv \
+  --batch-size 10000 \
+  --total-rows 23000000
+```
+
+**Opções de importação:**
+
+```bash
+# Importar apenas estações da USP (IDs 238-261)
+python manage.py import_trips dataRaw/consolidated_tembici_data_COMPLETO.csv \
+  --station-id-min 238 \
+  --station-id-max 261
+
+# Importar com progresso detalhado
+python manage.py import_trips dataRaw/consolidated_tembici_data_COMPLETO.csv \
+  --precount \
+  --chunk-rows 200000
+```
+
+**Tempo de importação:** 60-120 minutos para dataset completo  
+**Resultado:** `db.sqlite3` (~3.4 GB, 9.2M viagens)
+
+### Passo 5: Executar Servidor
+
+```bash
+python manage.py runserver
+
+# Para acesso externo (opcional)
+python manage.py runserver 0.0.0.0:8000
+```
+
+Acesse a API em: **http://localhost:8000/api/**
+
+---
+
+## Processamento de Dados
+
+### Pipeline de Dados
+
+```
+┌──────────────────────────────────────────────────────────┐
+│ 1. Dados Brutos (dataRaw/Tembici-SaoPaulo/)             │
+│    • 7 arquivos ZIP                                      │
+│    • ~45 CSVs/XLSXs individuais (2018-2023)             │
+└──────────────────────────────────────────────────────────┘
+                         ↓
+┌──────────────────────────────────────────────────────────┐
+│ 2. Consolidação (scripts/consolidate_tembici_COMPLETO.py)│
+│    • Extração de ZIPs                                    │
+│    • Normalização de formatos                            │
+│    • Geocodificação de estações                         │
+│    • Validação de dados                                  │
+└──────────────────────────────────────────────────────────┘
+                         ↓
+┌──────────────────────────────────────────────────────────┐
+│ 3. CSV Consolidado                                       │
+│    • consolidated_tembici_data_COMPLETO.csv              │
+│    • 4.3 GB, ~23M viagens (2018-2023)                   │
+└──────────────────────────────────────────────────────────┘
+                         ↓
+┌──────────────────────────────────────────────────────────┐
+│ 4. Importação SQLite (import_trips)                      │
+│    • Criação de estações (Station)                       │
+│    • Criação de viagens (Trip)                          │
+│    • Indexação e otimização                             │
+└──────────────────────────────────────────────────────────┘
+                         ↓
+┌──────────────────────────────────────────────────────────┐
+│ 5. Banco de Dados (db.sqlite3)                          │
+│    • 3.4 GB, 9.2M viagens                               │
+│    • Período: 2018-01 a 2022-04                         │
+│    • 492 estações únicas                                │
+└──────────────────────────────────────────────────────────┘
+```
+
+### Scripts de Consolidação Disponíveis
+
+| Script | Descrição | Uso Recomendado |
+|--------|-----------|-----------------|
+| `consolidate_tembici_COMPLETO.py` | ⭐ Versão completa (2018-2023) | Dataset principal |
+| `consolidate_tembici_data.py` | Versão original (2020-2022) | Subconjunto |
+| `consolidate_tembici_simple.py` | Versão simplificada | Testes rápidos |
+| `efficient_tembici_consolidator.py` | Otimizado para memória limitada | Máquinas com < 8GB RAM |
+
+---
+
+## API Endpoints
+
+Base URL: `http://localhost:8000/api/`
+
+### Endpoints de Dados do Banco
+
+| Endpoint | Descrição | Exemplo |
+|----------|-----------|---------|
+| `/api/station_histogram/` | Histograma de viagens por estação | Contagem de viagens iniciadas/finalizadas |
+| `/api/trip_flows/` | Análise de fluxos entre estações | Matriz origem-destino |
+| `/api/stations/` | Lista de estações cadastradas | Dados completos das estações |
+| `/api/trips/` | Lista de viagens | Consulta e filtros de viagens |
+
+### Endpoints GeoJSON
+
+| Endpoint | Descrição | Retorno |
+|----------|-----------|---------|
+| `/api/ciclovias/` | Ciclofaixas de São Paulo | GeoJSON (MultiLineString) |
+| `/api/estacoes/` | Estações Tembici | GeoJSON (Point) |
+| `/api/hotzones/` | Zonas de alta demanda | GeoJSON (Polygon) |
+
+### Exemplos de Requisições
+
+```bash
+# Obter histograma de estações
+curl http://localhost:8000/api/station_histogram/
+
+# Analisar fluxos entre estações
+curl http://localhost:8000/api/trip_flows/
+
+# Baixar ciclofaixas (GeoJSON)
+curl http://localhost:8000/api/ciclovias/ -o ciclovias.geojson
+
+# Obter estações no formato GeoJSON
+curl http://localhost:8000/api/estacoes/ -o estacoes.geojson
+```
+
+### Interface Admin
+
+Django Admin disponível em: `http://localhost:8000/admin/`
+
+```bash
+# Criar superusuário
+python manage.py createsuperuser
+```
+
+---
+
+## 📊 Processamento de Dados
+
+### Scripts Disponíveis
+
+| Script | Função | Uso |
+|--------|--------|-----|
+| `consolidate_tembici_data.py` | ⭐ Consolida CSVs (recomendado) | `python3 scripts/consolidate_tembici_data.py` |
+| `consolidate_tembici_simple.py` | Versão simplificada | Para datasets menores |
+| `consolidate_tembici_cleaned.py` | Com limpeza de dados | Remove duplicatas/inválidos |
+| `efficient_tembici_consolidator.py` | Otimizado memória | Para máquinas com pouca RAM |
+
+### Management Commands
+
+```bash
+# Importar viagens do CSV
+python manage.py import_trips <caminho_csv> [opções]
+
+# Opções:
+#   --station-id-min <id>  # ID mínimo da estação
+#   --station-id-max <id>  # ID máximo da estação
+#   --batch-size <n>       # Tamanho do lote (padrão: 10000)
+
+# Exemplo: Importar apenas estações USP (238-261)
+python manage.py import_trips dataRaw/consolidated_tembici_data.csv \
+  --station-id-min 238 --station-id-max 261
+```
+
+### Fluxo de Dados
+
+```
+📦 ZIPs (7 arquivos)
+  ├── 2018-2020 (formato antigo)
+  └── 2021-2023 (formato novo + coordenadas)
+         ↓
+📝 consolidate_tembici_data.py
+  ├── Extrai ZIPs
+  ├── Normaliza formatos
+  └── Gera CSV único
+         ↓
+📊 consolidated_tembici_data.csv (~1.9GB, 11M+ registros)
+         ↓
+🗄️ import_trips (Django command)
+  ├── Cria estações (Station)
+  ├── Cria viagens (Trip)
+  └── Aplica filtros (opcional)
+         ↓
+💾 db.sqlite3 (SQLite database)
+         ↓
+🌐 API Django REST
+```
+
+---
+
+## Estrutura do Projeto
+
+```
+bikeProject-backEnd/
+├── manage.py                   # Django CLI
+├── requirements.txt            # Dependências Python
+├── db.sqlite3                  # Banco de dados SQLite
+│
+├── myproject/                  # Configurações Django
+│   ├── settings.py            # Configurações principais
+│   ├── urls.py                # Rotas principais
+│   └── wsgi.py                # Interface WSGI
+│
+├── ciclovias/                  # Aplicação principal
+│   ├── models.py              # Models: Station, Trip
+│   ├── views.py               # Views da API
+│   ├── urls.py                # Rotas da aplicação
+│   ├── admin.py               # Interface admin
+│   └── management/
+│       └── commands/
+│           └── import_trips.py    # Comando de importação
+│
+├── scripts/                    # Scripts de processamento
+│   ├── consolidate_tembici_COMPLETO.py     # Consolidação completa
+│   ├── consolidate_tembici_data.py         # Consolidação original
+│   ├── import_to_sqlite_COMPLETO.py        # Importação standalone
+│   ├── verificar_dataset_COMPLETO.py       # Verificação de dados
+│   ├── xlsToGeoJson.py                     # Conversão Excel → GeoJSON
+│   ├── userTripsHotzonesKDEs.py            # Análise de hotzones (KDE)
+│   └── stationsHistogram.py                # Geração de histogramas
+│
+├── dataRaw/                    # Dados brutos (não versionado)
+│   ├── Tembici-SaoPaulo/      # ZIPs com CSVs originais
+│   └── consolidated_tembici_data_COMPLETO.csv   # CSV consolidado
+│
+├── geojsons/                   # Dados geoespaciais
+│   ├── ciclovia.geojson       # Infraestrutura cicloviária
+│   ├── estacoes.geojson       # Localização das estações
+│   └── hotzones.geojson       # Zonas de alta demanda
+│
+├── analises_monografia/        # Análises para TCC
+│   ├── 01_verificar_dados.py
+│   ├── 02_analise_temporal.py
+│   ├── 03_analise_por_estacao.py
+│   ├── 04_analise_fluxos.py
+│   ├── 05_gerar_relatorio.py
+│   ├── executar_todas_analises.sh
+│   └── resultados/
+│       ├── graficos/          # Gráficos PNG (300 DPI)
+│       ├── *.csv              # Dados estatísticos
+│       └── estatisticas_monografia.tex    # Comandos LaTeX
+│
+└── docs/                       # Documentação
+    ├── GUIA_PROCESSAMENTO_DADOS.md
+    ├── DOCKER_SETUP.md
+    └── DOCKER_USAGE.md
+```
+
+---
+
+## Análises da Monografia
+
+O diretório `analises_monografia/` contém scripts para gerar todas as análises e gráficos do TCC.
+
+### Executar Todas as Análises
+
+```bash
+# Executar pipeline completo de análises
+cd analises_monografia
+./executar_todas_analises.sh
+```
+
+Isso gera:
+- **Gráficos** (PNG, 300 DPI) em `resultados/graficos/`
+- **Estatísticas** (CSV) em `resultados/`
+- **Comandos LaTeX** em `resultados/estatisticas_monografia.tex`
+- **Relatório completo** em `resultados/relatorio_completo.txt`
+
+### Scripts Individuais
+
+```bash
+# 1. Verificação de dados
+python3 01_verificar_dados.py
+
+# 2. Análise temporal (horas, dias, meses)
+python3 02_analise_temporal.py
+
+# 3. Análise por estação (rankings, padrões)
+python3 03_analise_por_estacao.py
+
+# 4. Análise de fluxos (origem-destino)
+python3 04_analise_fluxos.py
+
+# 5. Geração de relatório final
+python3 05_gerar_relatorio.py
+```
+
+### Estatísticas Principais
+
+Com o dataset completo (9.2M viagens, 2018-2022):
+
+- **Total de viagens**: 9,183,856
+- **Viagens USP**: 92,737 (1.01% do total)
+- **Estações no campus**: 19
+- **Período analisado**: Janeiro/2018 - Abril/2022
+- **Estações totais**: 492
+
+**Top 5 Estações USP:**
+1. Estação Tiradentes (255): 43,103 viagens
+2. Bandejão Central (249): 31,428 viagens
+3. Metrô Butantã (244): 19,185 viagens
+4. Portão CPTM (246): 9,672 viagens
+5. Estação 245: 8,838 viagens
+
+---
+
+## Documentação
+
+### Guias Disponíveis
+
+- **[GUIA_PROCESSAMENTO_DADOS.md](docs/GUIA_PROCESSAMENTO_DADOS.md)** - Detalhes do processamento de dados
+- **[DOCKER_SETUP.md](docs/DOCKER_SETUP.md)** - Configuração Docker
+- **[DOCKER_USAGE.md](docs/DOCKER_USAGE.md)** - Uso com Docker
+
+### Tecnologias Utilizadas
+
+**Backend:**
+- Django 5.0.6 - Framework web
+- Django REST Framework 3.15 - API REST
+- SQLite - Banco de dados
+
+**Processamento de Dados:**
+- Pandas 2.2.2 - Manipulação de dados tabulares
+- NumPy 1.26.4 - Computação numérica
+- GeoPandas - Dados geoespaciais
+- Shapely - Geometrias e operações espaciais
+- openpyxl - Leitura de arquivos Excel
+
+**Visualização:**
+- Matplotlib - Geração de gráficos
+- Seaborn - Visualizações estatísticas
+
+---
+
+## Docker (Opcional)
+
+### Executar com Docker Compose
+
+```bash
+# Iniciar serviços
+docker-compose up -d
+
+# Parar serviços
+docker-compose down
+```
+
+### Build Manual
+
+```bash
+# Construir imagem
+docker build -t bikeproject-backend .
+
+# Executar container
+docker run -p 8000:8000 bikeproject-backend
+```
+
+**Configurações disponíveis:**
+- `docker-compose.yml` - Configuração padrão
+- `docker-compose.sqlite.yml` - Com volume persistente SQLite
+
+Consulte [DOCKER_SETUP.md](docs/DOCKER_SETUP.md) para mais detalhes.
+
+---
+
+## Testes
+
+```bash
+# Testar fluxos de viagens
+python test_trip_flows.py
+
+# Testar endpoints da API
+python test_endpoints.py
+
+# Testar importação de dados
+python test_django.py
+
+# Verificar banco de dados
+python check_db.py
+```
+
+---
+
+## Créditos
+
+**Desenvolvido por:** Gabriel da Silva Alves  
+**Instituição:** Instituto de Matemática e Estatística - Universidade de São Paulo (IME-USP)  
+**Orientador:** Prof. Dr. Fabio Kon  
+**Ano:** 2024-2025
+
+### Agradecimentos
+
+- Projeto BikeScience (IME-USP) pelo fornecimento dos dados de viagens
+- Prefeitura de São Paulo pelo Portal GeoSampa e dados de infraestrutura cicloviária
+- Tembici (Bike Sampa) pela disponibilização dos dados de uso do sistema
+
+---
+
+## Referências
+
+- [Projeto BikeScience - IME/USP](https://www.ime.usp.br/~kon/bikesampa/)
+- [GeoSampa - Portal de Dados Abertos](https://geosampa.prefeitura.sp.gov.br/)
+- [Metadados GeoSampa](https://metadados.geosampa.prefeitura.sp.gov.br/)
+- [Repositório Frontend](https://github.com/gabrielsrd/bikeProject-frontEnd)
+
+---
+
+## Licença
+
+Este projeto foi desenvolvido como parte de um Trabalho de Conclusão de Curso (TCC) do IME-USP.  
+Os dados utilizados são de domínio público ou foram disponibilizados para fins acadêmicos.
+
+---
+
+**Última atualização:** Novembro 2025

@@ -8,6 +8,21 @@ Este script processa TODOS os dados disponíveis (2018-2023):
 - 2022-2023: CSVs novos (formato novo)
 
 Output: consolidated_tembici_data_COMPLETO.csv
+
+IMPORTANTE - GEOCODIFICAÇÃO:
+-----------------------------
+Este script tenta adicionar coordenadas das estações usando:
+1. Arquivo geojsons/estacoes.geojson (se disponível)
+2. Arquivos XLSX de estações nos ZIPs extraídos
+
+⚠️  PROBLEMA CONHECIDO: Estações antigas (2018-2019) podem não ter coordenadas
+    nas fontes disponíveis, resultando em latitude/longitude NULL no CSV.
+
+SOLUÇÃO: Após importar dados para o SQLite, execute:
+    python3 scripts/fix_missing_coordinates.py
+
+Este script de correção preenche coordenadas faltantes usando as coordenadas
+médias das viagens já importadas no banco SQLite (dados reais de uso).
 """
 
 import os
@@ -91,12 +106,12 @@ class TembiciCompleteProcessor:
         logger.info(f"\n✓ Extração completa!")
                 
     def load_station_coordinates(self):
-        """Carrega coordenadas das estações"""
+        """Carrega coordenadas das estações de múltiplas fontes"""
         logger.info("\n" + "="*80)
         logger.info("ETAPA 2: CARREGANDO COORDENADAS DAS ESTAÇÕES")
         logger.info("="*80)
         
-        # 1. Tentar GeoJSON principal
+        # 1. Tentar GeoJSON principal (estacoes.geojson)
         stations_geojson = self.data_dir.parent.parent / "geojsons" / "estacoes.geojson"
         if stations_geojson.exists():
             try:
@@ -113,9 +128,11 @@ class TembiciCompleteProcessor:
                                     'latitude': coords[1],
                                     'longitude': coords[0]
                                 }
-                logger.info(f"   ✓ Carregadas {len(self.stations_info)} estações do GeoJSON")
+                logger.info(f"   ✓ Carregadas {len(self.stations_info)} estações de estacoes.geojson")
             except Exception as e:
-                logger.warning(f"   ⚠ Erro ao carregar GeoJSON: {e}")
+                logger.warning(f"   ⚠ Erro ao carregar estacoes.geojson: {e}")
+        else:
+            logger.info(f"   ℹ️  estacoes.geojson não encontrado (normal para dados antigos)")
         
         # 2. Procurar arquivos XLSX de estações nos ZIPs extraídos
         xlsx_stations = list(self.extracted_dir.glob("**/Estações*.xlsx"))
