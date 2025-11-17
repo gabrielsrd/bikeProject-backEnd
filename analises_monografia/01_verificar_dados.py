@@ -72,13 +72,11 @@ def analisar_periodo_temporal():
 
 def identificar_estacoes_usp():
     """Identifica e analisa estações do campus USP"""
-    print_section("ESTAÇÕES DO CAMPUS USP (IDs 242-260)")
+    print_section("ESTAÇÕES DO CAMPUS USP (17 estações)")
     
-    # Buscar estações USP
-    estacoes_usp = Station.objects.filter(
-        station_id__gte=242,
-        station_id__lte=260
-    ).order_by('station_id')
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks).order_by('station_id')
     
     total_estacoes_usp = estacoes_usp.count()
     print(f"\n📍 Total de estações USP: {total_estacoes_usp}")
@@ -103,11 +101,9 @@ def analisar_viagens_usp():
     """Analisa viagens que envolvem o campus USP"""
     print_section("ANÁLISE DE VIAGENS USP")
     
-    # Buscar IDs das estações USP
-    estacoes_usp = Station.objects.filter(
-        station_id__gte=242,
-        station_id__lte=260
-    )
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks)
     
     # Viagens que começam OU terminam na USP
     viagens_usp = Trip.objects.filter(
@@ -175,7 +171,10 @@ def gerar_resumo_executivo():
     print_section("RESUMO EXECUTIVO")
     
     total_viagens = Trip.objects.count()
-    estacoes_usp = Station.objects.filter(station_id__gte=242, station_id__lte=260)
+    
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks)
     
     viagens_usp = Trip.objects.filter(
         initial_station__in=estacoes_usp
@@ -211,10 +210,9 @@ def salvar_estatisticas_csv():
     os.makedirs(output_dir, exist_ok=True)
     
     # 1. Estatísticas por estação USP
-    estacoes_usp = Station.objects.filter(
-        station_id__gte=242,
-        station_id__lte=260
-    ).order_by('station_id')
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks).order_by('station_id')
     
     dados_estacoes = []
     for estacao in estacoes_usp:

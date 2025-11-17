@@ -13,6 +13,7 @@ import pandas as pd
 from datetime import datetime
 
 # Configurar Django
+sys.path.append('/home/gbiel/gabriel/usp/tcc/bikeProject-backEnd')
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
 django.setup()
 

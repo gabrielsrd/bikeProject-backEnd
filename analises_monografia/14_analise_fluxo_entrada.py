@@ -253,7 +253,7 @@ ax1.barh(range(len(labels)), viagens, color=colors, edgecolor='black')
 ax1.set_yticks(range(len(labels)))
 ax1.set_yticklabels(labels, fontsize=9)
 ax1.set_xlabel('Número de viagens', fontsize=11, fontweight='bold')
-ax1.set_title('Top 15 Origens Externas\n(De onde vêm para o campus)', 
+ax1.set_title('Top 15 Origens Externas - Fluxo de Entrada\nTotal: 12.410 viagens (20,7% do campus)', 
               fontsize=13, fontweight='bold', pad=15)
 ax1.invert_yaxis()
 ax1.grid(True, alpha=0.3, axis='x')
@@ -271,7 +271,7 @@ ax2.barh(range(len(labels_dest)), viagens_dest, color=colors_dest, edgecolor='bl
 ax2.set_yticks(range(len(labels_dest)))
 ax2.set_yticklabels(labels_dest, fontsize=9)
 ax2.set_xlabel('Número de viagens', fontsize=11, fontweight='bold')
-ax2.set_title('Top 10 Destinos no Campus\n(Para onde vão os que entram)', 
+ax2.set_title('Top 10 Destinos no Campus - Fluxo de Entrada\nTotal: 12.410 viagens', 
               fontsize=13, fontweight='bold', pad=15)
 ax2.invert_yaxis()
 ax2.grid(True, alpha=0.3, axis='x')
@@ -289,7 +289,7 @@ colors_hora = ['#D62828' if h == 7 else '#06A77D' if h in [8, 18] else '#1E88E5'
 ax3.bar(horas_list, viagens_por_hora, color=colors_hora, edgecolor='black', alpha=0.8)
 ax3.set_xlabel('Hora do dia', fontsize=11, fontweight='bold')
 ax3.set_ylabel('Número de viagens', fontsize=11, fontweight='bold')
-ax3.set_title('Distribuição Horária - Fluxo de Entrada\n(Destaque: pico matinal às 7h)', 
+ax3.set_title('Distribuição Horária - Fluxo de Entrada\nTotal: 12.410 viagens (pico às 7h)', 
               fontsize=13, fontweight='bold', pad=15)
 ax3.set_xticks(range(0, 24, 2))
 ax3.grid(True, alpha=0.3, axis='y')
@@ -311,7 +311,7 @@ explode = (0.05, 0)
 
 ax4.pie(sizes, explode=explode, labels=labels_pie, colors=colors_pie, autopct='',
         startangle=90, textprops={'fontsize': 11, 'fontweight': 'bold'})
-ax4.set_title('Proporção de Viagens desde\nEstações de Transporte Público', 
+ax4.set_title('Origens do Fluxo de Entrada - Transporte Público\nTotal: 12.410 viagens', 
               fontsize=13, fontweight='bold', pad=15)
 
 plt.tight_layout()

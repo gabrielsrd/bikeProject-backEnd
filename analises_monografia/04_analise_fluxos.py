@@ -50,7 +50,9 @@ def analisar_fluxos_principais():
     print("  ANÁLISE DE FLUXOS - ROTAS MAIS FREQUENTES")
     print("="*80)
     
-    estacoes_usp = Station.objects.filter(station_id__gte=242, station_id__lte=260)
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks)
     
     # Contar viagens por par origem-destino
     fluxos_dict = defaultdict(int)
@@ -145,7 +147,9 @@ def fluxos_internos_externos():
     print("  FLUXOS INTERNOS vs EXTERNOS")
     print("="*80)
     
-    estacoes_usp = Station.objects.filter(station_id__gte=242, station_id__lte=260)
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks)
     estacoes_usp_ids = set(estacoes_usp.values_list('station_id', flat=True))
     
     # Categorizar viagens
@@ -228,10 +232,9 @@ def matriz_origem_destino_usp():
     print("  MATRIZ ORIGEM-DESTINO (ESTAÇÕES USP)")
     print("="*80)
     
-    estacoes_usp = Station.objects.filter(
-        station_id__gte=242, 
-        station_id__lte=260
-    ).order_by('station_id')
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks).order_by('station_id')
     
     # Criar mapeamento id -> índice
     estacoes_ids = [e.station_id for e in estacoes_usp]
@@ -302,10 +305,9 @@ def principais_destinos_por_estacao():
     print("  PRINCIPAIS DESTINOS POR ESTAÇÃO")
     print("="*80)
     
-    estacoes_usp = Station.objects.filter(
-        station_id__gte=242, 
-        station_id__lte=260
-    ).order_by('station_id')
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks).order_by('station_id')
     
     # Selecionar top 5 estações para análise detalhada
     dados_estacoes = []

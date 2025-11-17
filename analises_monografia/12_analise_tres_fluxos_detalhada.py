@@ -219,13 +219,13 @@ ax3.set_xticks(range(0, 24, 2))
 # Gráfico 4: Pizza com proporções gerais
 ax4 = axes[1, 1]
 sizes = [total_internas, total_entrada, total_saida]
-labels = [f'Interno\n(USP→USP)\n{total_internas:,}\n({100*total_internas/total_geral:.1f}%)',
-          f'Entrada\n(Ext→USP)\n{total_entrada:,}\n({100*total_entrada/total_geral:.1f}%)',
-          f'Saída\n(USP→Ext)\n{total_saida:,}\n({100*total_saida/total_geral:.1f}%)']
+labels = [f'Interna\n34.126 viagens\n(57,0%)',
+          f'Entrada\n12.410 viagens\n(20,7%)',
+          f'Saída\n13.385 viagens\n(22,3%)']
 colors_pie = ['#2E86AB', '#A23B72', '#F18F01']
 ax4.pie(sizes, labels=labels, colors=colors_pie, autopct='', startangle=90,
         textprops={'fontsize': 11, 'fontweight': 'bold'})
-ax4.set_title('Distribuição Geral dos Três Tipos de Fluxo', 
+ax4.set_title('Distribuição Geral dos Três Tipos de Fluxo\nTotal: 59.921 viagens', 
               fontsize=14, fontweight='bold', pad=15)
 
 plt.tight_layout()

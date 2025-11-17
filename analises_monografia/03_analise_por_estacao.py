@@ -50,10 +50,9 @@ def ranking_estacoes():
     print("  RANKING DE ESTAÇÕES USP")
     print("="*80)
     
-    estacoes_usp = Station.objects.filter(
-        station_id__gte=242, 
-        station_id__lte=260
-    ).order_by('station_id')
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks).order_by('station_id')
     
     dados_estacoes = []
     for estacao in estacoes_usp:
@@ -147,10 +146,9 @@ def analise_top5_estacoes_por_hora():
     print("="*80)
     
     # Obter ranking
-    estacoes_usp = Station.objects.filter(
-        station_id__gte=242, 
-        station_id__lte=260
-    )
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks)
     
     dados_estacoes = []
     for estacao in estacoes_usp:
@@ -298,10 +296,9 @@ def heatmap_estacoes_hora():
     print("  HEATMAP: ESTAÇÕES vs HORA DO DIA")
     print("="*80)
     
-    estacoes_usp = Station.objects.filter(
-        station_id__gte=242, 
-        station_id__lte=260
-    ).order_by('station_id')
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks).order_by('station_id')
     
     # Matriz: estações x horas
     matriz = []

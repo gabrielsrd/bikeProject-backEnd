@@ -203,10 +203,11 @@ class StationsHistogramAPIView(APIView):
 
         # filtro USP
         if usp and usp.lower() == 'true':
-            usp_range = range(242, 261) 
+            # 17 estacoes USP (PKs internos) - exclui 244-Metro Butanta e 255-Tiradentes
+            usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
             df = df[
-                (df['start_station_id'].isin(usp_range)) | 
-                (df['end_station_id'].isin(usp_range))
+                (df['start_station_id'].isin(usp_pks)) | 
+                (df['end_station_id'].isin(usp_pks))
             ]
 
         df_departures = df
@@ -314,10 +315,11 @@ class StationsHistogramDBAPIView(APIView):
                 return Response({"error": "Invalid 'station_id' parameter"}, status=status.HTTP_400_BAD_REQUEST)
         
         if usp and usp.lower() == 'true':
-            usp_range = range(242, 261)
+            # 17 estacoes USP (PKs internos)
+            usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
             queryset = queryset.filter(
-                Q(initial_station__station_id__in=usp_range) | 
-                Q(final_station__station_id__in=usp_range)
+                Q(initial_station_id__in=usp_pks) | 
+                Q(final_station_id__in=usp_pks)
             )
         
         period_map = {}
@@ -547,10 +549,11 @@ class TripFlowsAPIView(APIView):
                 return Response({"error": "Invalid 'months' parameter"}, status=status.HTTP_400_BAD_REQUEST)
         
         if usp and usp.lower() == 'true':
-            usp_range = range(242, 261)
+            # 17 estacoes USP (PKs internos)
+            usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
             queryset = queryset.filter(
-                Q(initial_station__station_id__in=usp_range) | 
-                Q(final_station__station_id__in=usp_range)
+                Q(initial_station_id__in=usp_pks) | 
+                Q(final_station_id__in=usp_pks)
             )
         
         # agregar fluxos

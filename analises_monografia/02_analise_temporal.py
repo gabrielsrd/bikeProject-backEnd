@@ -48,7 +48,9 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def obter_viagens_usp():
     """Retorna queryset de viagens USP"""
-    estacoes_usp = Station.objects.filter(station_id__gte=242, station_id__lte=260)
+    # 17 estacoes USP (PKs internos)
+    usp_pks = [56826, 56659, 48848, 38637, 37915, 48852, 38476, 56642, 38582, 56762, 38425, 56965, 56713, 56654, 56640, 44878, 42323]
+    estacoes_usp = Station.objects.filter(id__in=usp_pks)
     return Trip.objects.filter(
         Q(initial_station__in=estacoes_usp) | Q(final_station__in=estacoes_usp)
     )

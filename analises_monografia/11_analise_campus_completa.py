@@ -45,38 +45,33 @@ plt.rcParams['font.size'] = 11
 OUTPUT_DIR = '/home/gbiel/gabriel/usp/tcc/bikeProject-backEnd/analises_monografia/resultados'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# IDs REAIS das 17 estações USP DENTRO do perímetro do campus (CORRETO Nov 2025)
-# Critério: estações geograficamente DENTRO ou no LIMITE do campus USP
-# EXCLUI: CPTM Cidade Universitária, Metrô Butantã, Estacao Tiradentes (FORA do campus)
+# PKs internos das 17 estações USP (CORRETO - Nov 2025)
+# EXCLUI: 244-Metrô Butantã e 255-Tiradentes (fora do campus)
 ESTACOES_USP = [
-    # Dentro do perímetro central (12 estações)
     56826,  # 242 - Letras
     56659,  # 243 - Bancos/Reitoria
+    48848,  # 245 - P1
+    38637,  # 246 - Portão CPTM
+    37915,  # 247 - CEPE
     48852,  # 248 - Biblioteca Brasiliana
     38476,  # 249 - Bandejão Central
     56642,  # 250 - Bandejão Química
-    38582,  # 251 - IME/FAU
+    38582,  # 251 - FAU
     56762,  # 252 - Psicologia
-    38425,  # 253 - Biênio Poli USP
+    38425,  # 253 - Pedalusp Biênio
     56965,  # 254 - Terminal de Ônibus USP
     56713,  # 256 - Bandejão Prefeitura
-    56640,  # 258 - Odontologia
-    44878,  # 259 - Portão 1 USP
-    # No limite / instalações USP (5 estações)
-    37915,  # 247 - CEPE
-    48848,  # 245 - Raia Olímpica USP
-    38637,  # 246 - PORTÃO CPTM
     56654,  # 257 - Hospital Universitário
-    42323,  # 260 - Harmonia
+    56640,  # 258 - Odontologia
+    44878,  # 259 - Vila Indiana
+    42323,  # 260 - P3
 ]
 
 # Estações-portal (pontos de entrada/saída no LIMITE do campus)
-# Nota: Metrô Butantã e CPTM Cidade Universitária estão FORA do campus,
-# mas são analisados como destinos de viagens que saem da USP
 ESTACOES_PORTAL = {
-    38637: 'PORTÃO CPTM',      # 246 - No limite do campus
-    48848: 'Raia Olímpica',    # 245 - Sul do campus
-    44878: 'Portão 1 USP',     # 259 - Norte do campus
+    38637: 'PORTÃO CPTM',      # 246
+    48848: 'P1',               # 245
+    44878: 'Vila Indiana',     # 259
 }
 
 ESTACOES_BANDEJAO = {
@@ -467,8 +462,9 @@ def main():
     """Executa todas as análises focadas no campus."""
     print("\n" + "🚴"*40)
     print("\n   ANÁLISES FOCADAS NO CAMPUS USP")
-    print("   Dataset: 92.737 viagens (origem OU destino na USP)")
-    print("   Viagens internas: 63.598 (origem E destino na USP)")
+    print("   Dataset: 59.921 viagens (origem OU destino na USP)")
+    print("   Viagens internas: 34.126 (origem E destino na USP)")
+    print("   Estações: 17 (IDs 242,243,245-260 exceto 244,255)")
     print("\n" + "🚴"*40)
     
     inicio = datetime.now()
