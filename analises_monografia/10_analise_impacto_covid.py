@@ -104,7 +104,13 @@ def analise_impacto_covid():
     
     # Adicionar colunas de classificação
     df['periodo_covid'] = df.apply(lambda x: classificar_periodo_covid(x['ano'], x['mes']), axis=1)
-    df['mes_ano'] = pd.to_datetime(df[['ano', 'mes']].assign(dia=1))
+    
+    # Preparar dataframe para conversão de data (renomear colunas para inglês)
+    df_date = df[['ano', 'mes']].copy()
+    df_date.columns = ['year', 'month']
+    df_date['day'] = 1
+    df['mes_ano'] = pd.to_datetime(df_date)
+    
     df['mes_ano_str'] = df['ano'].astype(str) + '-' + df['mes'].astype(str).str.zfill(2)
     
     # =================================================================
